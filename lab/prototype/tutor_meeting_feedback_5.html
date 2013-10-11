@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Leeds for Life 4 | Prototype</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico">
+		
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<link rel='stylesheet' href='sass/lfl4.css'>
+		<script src='js/modernizr-2.6.2.min.js'></script>
+		<meta http-equiv="cleartype" content="on">
+	</head>
+	<body>
+<div class="lfl-banner">
+
+	<div class="wrapper">
+
+		<h1 class="two-line-brevier"><a href="index.html">LEEDS for LIFE</a></h1>    
+		
+		<div role="navigation" class="nav nav--rev">
+		
+				<!-- Dashboard - logged in -->
+				<a class="" href="dashboard.html">Dashboard</a>
+				<!-- Log in -->
+				<!-- <a class="float--right" href="#">Log in</a> -->
+		
+			    <!-- Mobile nav toggle -->
+				<a class="mobile-nav__target" href="#">Menu</a>
+				   
+				<!-- Unlogged in access -->
+				<ul class="nav float--left nav--padding nav--mobile-links animated">
+					<li><a href="opportunities.html">Opportunities</a></li>
+					<li><a href="the_foundation.html">Apply for funding</a></li>
+					<li><a href="case_studies.html">Case studies</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+	
+		</div>	    
+
+	
+	</div>	
+			
+</div>  
+<div role="main" class="wrapper">
+<div class="secondary-nav">	
+	<a class="mobile-nav__target" href="#">Menu</a>
+		<ul class=" nav nav--padding nav--mobile-links ">
+			<li><a href="tutor_dashboard.html">Students</a></li>
+			<li><a href="tutor_upcoming_appointments.html">Upcoming Appointments</a></li>
+			<li><a href="tutor_book_meetings.html">Set up Meetings</a></li>
+		</ul>				
+	<a href="#help"><span class="i  i--block  i--block--right  i--help  i--large"></span></a>				   	    
+</div>
+<h2>Meeting feedback</h2>
+
+<ol class="breadcrumb  nav">
+       <li><a href="tutor_dashboard.html">Simon Badger</a> 
+       <li class="current"><a href="#"> Personal Tutorial Meeting 1</a></li>
+</ol>
+
+<h3>Year One, Personal Tutorial Meeting 1: Induction (Beginning of Semester One)</h3>
+
+<a class="slider__target" href="#">View agenda</a>
+
+<div class="agenda">
+	<h4>University of Leeds Personal Tutoring Model: indicative agenda</h4>
+	<p>Year 1, meeting 1 (within first two weeks of semester 1)</p>
+	<ul>
+		<li>Discuss and confirm module choice/registration and advise as necessary;</li>
+		<li>If not already explained in induction week, explain PT system - how it supports students in normal course of academic personal and professional development; how referral role works to help support student through particular difficulties; how PT is student's first point-of-contact within Department/School</li>
+		<li>Explain that effective personal tutoring is a partnership between tutor and tutee where the tutee must also fulfil their responsibilities</li>
+		<li>Introduce or remind students of the range of student support and development opportunities at UoL (e.g. The Leeds for Life website/ Skills@Library/ Library training sessions / LUU / Careers Centre / Welfare Services)</li>
+	</ul>
+</div>
+
+
+<ol class="form-wizard">
+<div class="gw">
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback.html"><span class="form-wizard__number">1</span> <span>About you</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_2.html"><span class="form-wizard__number">2</span> <span>Becoming a student at UoL</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_3.html"><span class="form-wizard__number">3</span> <span>Student life</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_4.html"><span class="form-wizard__number">4</span> <span>Discussion points</span></a></li>
+	<li class="current form-wizard__item"><a class='current' href="tutor_meeting_feedback_5.html"><span class="form-wizard__number">5</span> <span>Developing your employability</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_6.html"><span class="form-wizard__number">6</span> <span>Feedback and attendance recording</span></a></li>
+</div>
+</ol>
+<form>
+
+<fieldset>
+
+   <legend>5. Developing your employability</legend>
+
+   <label for="">Use the space below to tell your personal tutor about your current thoughts on a future career. Visit the Careers Centre to discuss your planning – it’s never too early.</label>
+   <textarea id="">Pellentesque mi sem, tristique ut faucibus et, lobortis id dui. Suspendisse potenti. Aliquam egestas massa nec mauris luctus rutrum. Morbi dignissim arcu id lorem posuere pulvinar. Sed orci est, mattis eu auctor pulvinar, viverra in odio. Aenean arcu tellus, tincidunt a laoreet a, interdum vitae libero. Curabitur ante mauris, tristique egestas placerat nec, aliquet sit amet mauris. Cras dictum cursus leo, nec ornare felis gravida in. Quisque nulla mi, porttitor non sollicitudin ac, eleifend non nunc. Proin aliquet venenatis ipsum vitae ullamcorper. Fusce in magna risus. Ut commodo mauris at ipsum egestas et egestas elit posuere. Pellentesque nec purus sit amet justo fermentum faucibus. Nullam condimentum porta pulvinar. Donec mattis mollis sapien.</textarea>
+
+   <fieldset>
+		<legend>12. Have you joined any University societies or other co-curricular activities (EG volunteering)?</legend>
+		<label><input class="yes_toggle" type="radio" name="yes-no" value="yes"> Yes</label> 
+   	    <label><input class="no_toggle" type="radio" name="yes-no" value="no"> No</label>
+   </fieldset>
+   
+   <label for="">The list of opportunities on the Leeds for Life site (<a href="https://leedsforlife.leeds.ac.uk/default.aspx">leedsforlife.leeds.ac.uk</a>) can give you ideas and inspiration. As a record for future reference, note in the box below the activities you are involved in and the skills they are helping you with.</label>
+	
+   <textarea id="">Pellentesque mi sem, tristique ut faucibus et, lobortis id dui. Suspendisse potenti. Aliquam egestas massa nec mauris luctus rutrum. Morbi dignissim arcu id lorem posuere pulvinar. Sed orci est, mattis eu auctor pulvinar, viverra in odio. Aenean arcu tellus, tincidunt a laoreet a, interdum vitae libero. Curabitur ante mauris, tristique egestas placerat nec, aliquet sit amet mauris. Cras dictum cursus leo, nec ornare felis gravida in. Quisque nulla mi, porttitor non sollicitudin ac, eleifend non nunc. Proin aliquet venenatis ipsum vitae ullamcorper. Fusce in magna risus. Ut commodo mauris at ipsum egestas et egestas elit posuere. Pellentesque nec purus sit amet justo fermentum faucibus. Nullam condimentum porta pulvinar. Donec mattis mollis sapien.</textarea>
+
+   <fieldset>
+		<legend>13. Are you in, or considering, paid employment this session?</legend>
+   	    <label><input class="yes_toggle" type="radio" name="yes-no" value="yes"> Yes</label> 
+   	    <label><input class="no_toggle" type="radio" name="yes-no" value="no"> No</label>
+   </fieldset>
+   
+   <a class="slider__target" href="#">More info</a>
+	<p class="form-help-text">If you are in paid employment during term-time, discuss this with your personal tutor to ensure there are no study/work conflicts. If you would like help finding paid employment contact Joblink
+(<a href="http://www.leedsuniversityunion.org.uk/jobs/">leedsuniversityunion.org.uk/jobs</a>).</p>
+
+   <fieldset>
+		<legend>14. Are you aware of the opportunities listed on the Leeds for Life website?</legend>
+        <label><input class="yes_toggle" type="radio" name="yes-no" value="yes"> Yes</label> 
+        <label><input class="no_toggle" type="radio" name="yes-no" value="no"> No</label>
+   </fieldset>
+   
+   <a class="slider__target" href="#">More info</a>
+	<p class="form-help-text">Your school and other providers such as LUU offer opportunities to develop your skills. The Leeds for Life website (<a href="https://leedsforlife.leeds.ac.uk/default.aspx">leedsforlife.leeds.ac.uk</a>) has a database of volunteering opportunities. You can apply for Foundation funding for your own skills-development project and you can contact Leeds graduates to find out about a wide range of career paths. Record your experience of any opportunities you take in your Living CV.</p>
+
+	<label for="">Which of the 19 Leeds for Life skills do you view as your particular strengths? Use the box below to record evidence of these skills using examples from your previous study, work, travel or other experiences.</label>
+
+   <textarea id="">Pellentesque mi sem, tristique ut faucibus et, lobortis id dui. Suspendisse potenti. Aliquam egestas massa nec mauris luctus rutrum. Morbi dignissim arcu id lorem posuere pulvinar. Sed orci est, mattis eu auctor pulvinar, viverra in odio. Aenean arcu tellus, tincidunt a laoreet a, interdum vitae libero. Curabitur ante mauris, tristique egestas placerat nec, aliquet sit amet mauris. Cras dictum cursus leo, nec ornare felis gravida in. Quisque nulla mi, porttitor non sollicitudin ac, eleifend non nunc. Proin aliquet venenatis ipsum vitae ullamcorper. Fusce in magna risus. Ut commodo mauris at ipsum egestas et egestas elit posuere. Pellentesque nec purus sit amet justo fermentum faucibus. Nullam condimentum porta pulvinar. Donec mattis mollis sapien.</textarea>
+
+   <label for="">Which of the 19 Leeds for Life skills are ones that you most need to develop for your academic, personal and professional development? Use the box below to identify opportunities to help you develop these skills.</label>
+
+   <textarea id="">Pellentesque mi sem, tristique ut faucibus et, lobortis id dui. Suspendisse potenti. Aliquam egestas massa nec mauris luctus rutrum. Morbi dignissim arcu id lorem posuere pulvinar. Sed orci est, mattis eu auctor pulvinar, viverra in odio. Aenean arcu tellus, tincidunt a laoreet a, interdum vitae libero. Curabitur ante mauris, tristique egestas placerat nec, aliquet sit amet mauris. Cras dictum cursus leo, nec ornare felis gravida in. Quisque nulla mi, porttitor non sollicitudin ac, eleifend non nunc. Proin aliquet venenatis ipsum vitae ullamcorper. Fusce in magna risus. Ut commodo mauris at ipsum egestas et egestas elit posuere. Pellentesque nec purus sit amet justo fermentum faucibus. Nullam condimentum porta pulvinar. Donec mattis mollis sapien.</textarea>
+
+</fieldset>
+
+<a href="tutor_meeting_feedback_6.html" class="btn">Next - Feedback &amp; attendance recording &raquo;</a>
+
+</form>
+</div>
+<div role="contentinfo"></div>
+</body>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/script.js'></script>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 	<meta name="language" content="en-uk" />
+  	<meta name="author" content="http://matthewtyas.com" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" />
+  	<link rel="apple-touch-icon" href="iphone-icon.png" />
+	<link media="screen"   href="css/screen.css" rel="stylesheet" type="text/css"/>
+	<title>Ty's 30th Pub Crawl | List</title>
+	<script src="js/publist.js"></script>
+	<!--<script type="text/javascript" src="//use.typekit.net/edx0zsz.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
+</head>
+<body onload="onit();">  
+	<div class="wrap"> 
+
+			<header>
+				<nav>
+					<ul>
+						<li><a href="index.html" class="current button left"><span aria-hidden="true" class="icon-list"></span> List</a></li>
+						<li><a href="map.html" class="button right"><span aria-hidden="true" class="icon-marker"></span> Map</a></li>
+					</ul>
+				</nav>
+				<div class="header-block">
+					<div class="title">
+						<h1><span aria-hidden="true" class="icon-mug"></span>The life of Ty</h1>
+						<p>Tap the pubs as you have visited them. Visit the map for route and descriptions.</p><p>Rejoice in my life.</p>
+					</div>
+					<div class="ty">
+						<img width="120" src="images/ty-animated-2.gif" />
+					</div>
+				</div>
+			</header>
+
+			<div class="main">
+				
+			<div id="content">
+			
+			<div class="col">
+				<h2><span aria-hidden="true" class="icon-home"></span> Pubs</h2>
+				<ul id="list"></ul>
+			</div>
+			<div class="col">
+				<h2><span aria-hidden="true" class="icon-checkmark"></span> Visited</h2>
+				<ul id="done"></ul>
+			</div>
+				<p id="notsupport">
+				Your current web browser does not support HTML5 local storage. Please try on <a href="http://www.apple.com/safari/" title="Safari Download">Safari</a>, <a href="http://www.mozilla.com/firefox/" title="Firefox Download">Firefox</a> or <a href="http://www.google.com/chrome" title="Chrome Download">Chrome</a>.
+				</p>
+				
+			</div>
+			
+			<div class="tools">
+			
+			<div id="new">
+			
+			<div class="form-wrap">
+			<h3><span aria-hidden="true" class="icon-share"></span> Off piste?</h3>
+				<form id="submit">
+				    <p>Add an extra pub.</p>
+					<input type="text" id="newItem" placeholder="Pub name" />
+					<button type="submit">Add to list</button>
+				</form>
+			</div>
+			
+			</div>
+			
+			<div class="fuck-up">
+				<h3><span aria-hidden="true" class="icon-cross"></span> Reset list</h3>
+				<div>
+				<a href="#" class="clear" title="Clear All Data" onclick="clearAll();return false;">Reset</a>
+				<p><em>You will have to re-add your pubs... macca soz</em></p>
+				</div>
+			</div>
+			
+			</div>
+			
+			</div>
+			
+			<footer>
+				A thing by <a href="http://www.matthewtyas.com" target="_blank">matthewtyas.com</a>
+			</footer>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Leeds for Life 4 | Prototype</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico">
+		
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<link rel='stylesheet' href='sass/lfl4.css'>
+		<script src='js/modernizr-2.6.2.min.js'></script>
+		<meta http-equiv="cleartype" content="on">
+	</head>
+	<body>
+<div class="lfl-banner">
+
+	<div class="wrapper">
+
+		<h1 class="two-line-brevier"><a href="index.html">LEEDS for LIFE</a></h1>    
+		
+		<div role="navigation" class="nav nav--rev">
+		
+				<!-- Dashboard - logged in -->
+				<a class="" href="dashboard.html">Dashboard</a>
+				<!-- Log in -->
+				<!-- <a class="float--right" href="#">Log in</a> -->
+		
+			    <!-- Mobile nav toggle -->
+				<a class="mobile-nav__target" href="#">Menu</a>
+				   
+				<!-- Unlogged in access -->
+				<ul class="nav float--left nav--padding nav--mobile-links animated">
+					<li><a href="opportunities.html">Opportunities</a></li>
+					<li><a href="the_foundation.html">Apply for funding</a></li>
+					<li><a href="case_studies.html">Case studies</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+	
+		</div>	    
+
+	
+	</div>	
+			
+</div>  
+<div role="main" class="wrapper">
+<div class="secondary-nav">	
+	<a class="mobile-nav__target" href="#">Menu</a>
+		<ul class=" nav nav--padding nav--mobile-links ">
+			<li><a href="tutor_dashboard.html">Students</a></li>
+			<li><a href="tutor_upcoming_appointments.html">Upcoming Appointments</a></li>
+			<li><a href="tutor_book_meetings.html">Set up Meetings</a></li>
+		</ul>				
+	<a href="#help"><span class="i  i--block  i--block--right  i--help  i--large"></span></a>				   	    
+</div>
+<h2>Meeting feedback</h2>
+
+<ol class="breadcrumb  nav">
+       <li><a href="tutor_dashboard.html">Simon Badger</a> 
+       <li class="current"><a href="#"> Personal Tutorial Meeting 1</a></li>
+</ol>
+
+<h3>Year One, Personal Tutorial Meeting 1: Induction (Beginning of Semester One)</h3>
+
+<a class="slider__target" href="#">View agenda</a>
+
+<div class="agenda">
+	<h4>University of Leeds Personal Tutoring Model: indicative agenda</h4>
+	<p>Year 1, meeting 1 (within first two weeks of semester 1)</p>
+	<ul>
+		<li>Discuss and confirm module choice/registration and advise as necessary;</li>
+		<li>If not already explained in induction week, explain PT system - how it supports students in normal course of academic personal and professional development; how referral role works to help support student through particular difficulties; how PT is student's first point-of-contact within Department/School</li>
+		<li>Explain that effective personal tutoring is a partnership between tutor and tutee where the tutee must also fulfil their responsibilities</li>
+		<li>Introduce or remind students of the range of student support and development opportunities at UoL (e.g. The Leeds for Life website/ Skills@Library/ Library training sessions / LUU / Careers Centre / Welfare Services)</li>
+	</ul>
+</div>
+
+
+<ol class="form-wizard">
+<div class="gw">
+	<li class="current form-wizard__item"><a class='current' href="tutor_meeting_feedback.html"><span class="form-wizard__number">1</span> <span>About you</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_2.html"><span class="form-wizard__number">2</span> <span>Becoming a student at UoL</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_3.html"><span class="form-wizard__number">3</span> <span>Student life</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_4.html"><span class="form-wizard__number">4</span> <span>Discussion points</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_5.html"><span class="form-wizard__number">5</span> <span>Developing your employability</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_6.html"><span class="form-wizard__number">6</span> <span>Feedback and attendance recording</span></a></li>
+</div>
+</ol>
+<form>
+
+<fieldset>
+
+	<legend>1. About You</legend>
+	
+	<label for="">To help your personal tutor get to know you, please tell us about your home town/country, interests and hobbies, and any gap-year activities and/or work experience.</label>
+	
+	<textarea id="">
+Pellentesque mi sem, tristique ut faucibus et, lobortis id dui. Suspendisse potenti. Aliquam egestas massa nec mauris luctus rutrum. Morbi dignissim arcu id lorem posuere pulvinar. Sed orci est, mattis eu auctor pulvinar, viverra in odio. Aenean arcu tellus, tincidunt a laoreet a, interdum vitae libero. Curabitur ante mauris, tristique egestas placerat nec, aliquet sit amet mauris. Cras dictum cursus leo, nec ornare felis gravida in. Quisque nulla mi, porttitor non sollicitudin ac, eleifend non nunc. Proin aliquet venenatis ipsum vitae ullamcorper. Fusce in magna risus. Ut commodo mauris at ipsum egestas et egestas elit posuere. Pellentesque nec purus sit amet justo fermentum faucibus. Nullam condimentum porta pulvinar. Donec mattis mollis sapien.
+	</textarea>
+	
+	<label for="">Why did you choose your course? And why did you choose the University of Leeds?</label>
+	
+	<textarea id="">
+Mauris eu eros at tortor tincidunt lacinia eu non eros. Nunc lorem felis, imperdiet lacinia imperdiet non, vehicula a ante. Praesent egestas elementum est, sit amet tempus orci vehicula id. Ut pellentesque odio a massa bibendum ornare. Nunc tellus justo, viverra ut ullamcorper at, convallis et dolor. Nunc varius mauris ut neque interdum tempus. In volutpat tellus sed tortor rutrum pellentesque. Sed dignissim scelerisque augue, sit amet aliquam leo euismod at. Ut quis leo arcu. Sed lobortis, magna a bibendum lobortis, neque quam mattis leo, pretium sollicitudin metus ligula eget ante. In placerat metus at quam adipiscing pharetra. Aenean odio tortor, eleifend sit amet molestie non, interdum et sapien.
+	</textarea>
+
+</fieldset>
+
+<a href="tutor_meeting_feedback_2.html" class="btn">Next - Step 2. Becoming a student a UoL &raquo;</a>
+
+</form>
+</div>
+<div role="contentinfo"></div>
+</body>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/script.js'></script>
+</html>

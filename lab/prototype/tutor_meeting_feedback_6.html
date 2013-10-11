@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Leeds for Life 4 | Prototype</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico">
+		
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<link rel='stylesheet' href='sass/lfl4.css'>
+		<script src='js/modernizr-2.6.2.min.js'></script>
+		<meta http-equiv="cleartype" content="on">
+	</head>
+	<body>
+<div class="lfl-banner">
+
+	<div class="wrapper">
+
+		<h1 class="two-line-brevier"><a href="index.html">LEEDS for LIFE</a></h1>    
+		
+		<div role="navigation" class="nav nav--rev">
+		
+				<!-- Dashboard - logged in -->
+				<a class="" href="dashboard.html">Dashboard</a>
+				<!-- Log in -->
+				<!-- <a class="float--right" href="#">Log in</a> -->
+		
+			    <!-- Mobile nav toggle -->
+				<a class="mobile-nav__target" href="#">Menu</a>
+				   
+				<!-- Unlogged in access -->
+				<ul class="nav float--left nav--padding nav--mobile-links animated">
+					<li><a href="opportunities.html">Opportunities</a></li>
+					<li><a href="the_foundation.html">Apply for funding</a></li>
+					<li><a href="case_studies.html">Case studies</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+	
+		</div>	    
+
+	
+	</div>	
+			
+</div>  
+<div role="main" class="wrapper">
+<div class="secondary-nav">	
+	<a class="mobile-nav__target" href="#">Menu</a>
+		<ul class=" nav nav--padding nav--mobile-links ">
+			<li><a href="tutor_dashboard.html">Students</a></li>
+			<li><a href="tutor_upcoming_appointments.html">Upcoming Appointments</a></li>
+			<li><a href="tutor_book_meetings.html">Set up Meetings</a></li>
+		</ul>				
+	<a href="#help"><span class="i  i--block  i--block--right  i--help  i--large"></span></a>				   	    
+</div>
+<h2>Meeting feedback</h2>
+
+<ol class="breadcrumb  nav">
+       <li><a href="tutor_dashboard.html">Simon Badger</a> 
+       <li class="current"><a href="#"> Personal Tutorial Meeting 1</a></li>
+</ol>
+
+<h3>Year One, Personal Tutorial Meeting 1: Induction (Beginning of Semester One)</h3>
+
+<a class="slider__target" href="#">View agenda</a>
+
+<div class="agenda">
+	<h4>University of Leeds Personal Tutoring Model: indicative agenda</h4>
+	<p>Year 1, meeting 1 (within first two weeks of semester 1)</p>
+	<ul>
+		<li>Discuss and confirm module choice/registration and advise as necessary;</li>
+		<li>If not already explained in induction week, explain PT system - how it supports students in normal course of academic personal and professional development; how referral role works to help support student through particular difficulties; how PT is student's first point-of-contact within Department/School</li>
+		<li>Explain that effective personal tutoring is a partnership between tutor and tutee where the tutee must also fulfil their responsibilities</li>
+		<li>Introduce or remind students of the range of student support and development opportunities at UoL (e.g. The Leeds for Life website/ Skills@Library/ Library training sessions / LUU / Careers Centre / Welfare Services)</li>
+	</ul>
+</div>
+
+
+<ol class="form-wizard">
+<div class="gw">
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback.html"><span class="form-wizard__number">1</span> <span>About you</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_2.html"><span class="form-wizard__number">2</span> <span>Becoming a student at UoL</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_3.html"><span class="form-wizard__number">3</span> <span>Student life</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_4.html"><span class="form-wizard__number">4</span> <span>Discussion points</span></a></li>
+	<li class="form-wizard__item"><a href="tutor_meeting_feedback_5.html"><span class="form-wizard__number">5</span> <span>Developing your employability</span></a></li>
+	<li class="current form-wizard__item"><a class='current' href="tutor_meeting_feedback_6.html"><span class="form-wizard__number">6</span> <span>Feedback and attendance recording</span></a></li>
+</div>
+</ol>
+<form>
+
+<fieldset>
+
+   <legend>7. Post-Tutorial Comments</legend>
+   
+   <label for="">Provide feedback to your tutee after the tutorial.</label>
+   
+   <textarea id=""></textarea>
+   
+   <p>Please be aware that once you submit your post-tutorial feedback to your tutee, the form will be locked down and you will not be able to make any further changes. You can opt to save your comments and amend them before finally submitting them to your tutee.</p>
+   
+   <fieldset class="attendance">
+ 
+		<legend>Attendance Monitoring: Use only if your School records attendance at the type of meeting you are adding.</legend>
+
+		<label>Session took place on:</label>
+		<div>
+		   <select>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			
+		    <select>
+				<option value="1">January</option>
+				<option value="2">February</option>
+				<option value="3">March</option>
+				<option value="4">April</option>
+				<option value="5">May</option>
+				<option value="6">June</option>
+				<option value="7">July</option>
+				<option value="8">August</option>
+				<option value="9">September</option>
+				<option value="10">October</option>
+				<option value="11">November</option>
+				<option value="12">December</option>
+			</select>
+			
+		    <select>
+				<option value="2013">2013</option>
+				<option value="2012">2012</option>
+			</select>
+			
+		    <select>
+				<option value="0">00</option>
+				<option value="1">01</option>
+				<option value="2">02</option>
+				<option value="3">03</option>
+				<option value="4">04</option>
+				<option value="5">05</option>
+				<option value="6">06</option>
+				<option value="7">07</option>
+				<option value="8">08</option>
+				<option value="9">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+			</select> : 
+		    
+		    <select>
+				<option value="0">00</option>
+				<option value="1">01</option>
+				<option value="2">02</option>
+				<option value="3">03</option>
+				<option value="4">04</option>
+				<option value="5">05</option>
+				<option value="6">06</option>
+				<option value="7">07</option>
+				<option value="8">08</option>
+				<option value="9">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+				<option value="32">32</option>
+				<option value="33">33</option>
+				<option value="34">34</option>
+				<option value="35">35</option>
+				<option value="36">36</option>
+				<option value="37">37</option>
+				<option value="38">38</option>
+				<option value="39">39</option>
+				<option value="40">40</option>
+				<option value="41">41</option>
+				<option value="42">42</option>
+				<option value="43">43</option>
+				<option value="44">44</option>
+				<option value="45">45</option>
+				<option value="46">46</option>
+				<option value="47">47</option>
+				<option value="48">48</option>
+				<option value="49">49</option>
+				<option value="50">50</option>
+				<option value="51">51</option>
+				<option value="52">52</option>
+				<option value="53">53</option>
+				<option value="54">54</option>
+				<option value="55">55</option>
+				<option value="56">56</option>
+				<option value="57">57</option>
+				<option value="58">58</option>
+			</select>
+		</div>
+		<label>The recorded attendance is:</label> 
+		<div>
+			<select>
+				<option value="NotRecorded">NotRecorded</option>
+				<option value="Present">Present</option>
+				<option value="ExplainedAbsence">ExplainedAbsence</option>
+				<option value="AbsenceRequested">AbsenceRequested</option>
+				<option value="Absent">Absent</option>
+			</select>
+		</div>	
+    </fieldset>
+            
+</fieldset>
+
+<a href="tutor_dashboard.html" class="btn">Save &amp; Exit</a>
+
+</form>
+  
+
+</div>
+<div role="contentinfo"></div>
+</body>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/script.js'></script>
+</html>

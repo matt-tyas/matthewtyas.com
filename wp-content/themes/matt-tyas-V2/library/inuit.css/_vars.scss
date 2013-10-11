@@ -1,0 +1,76 @@
+/*------------------------------------*\
+    $VARS
+\*------------------------------------*/
+/**
+ * Set up project-specific variables here which are then used throughout your
+ * build. These variables are automatically picked up by inuit.css so you should
+ * never need to modify any framework code.
+ */
+
+// Base stuff
+$base-font-size:    10!default;
+$base-line-height:  24!default;
+
+// Assign our `$base-line-height` to a new spacing var for more transparency.
+$base-spacing-unit: $base-line-height!default;
+$half-spacing-unit: $base-spacing-unit / 2!default;
+
+// Font-sizes (in pixels). Refer to relevant sections for their implementations.
+$giga-size:         96!default;
+$mega-size:         72!default;
+
+/* M Tyas big heading */
+$kilo-size:         48!default;
+
+$h1-size:           24!default;
+$h2-size:           21!default;
+$h3-size:           18!default;
+$h4-size:           16!default;
+$h5-size:           16!default;
+$h6-size:           14!default;
+$p-size:            16!default;
+
+$milli-size:        12!default;
+$micro-size:        10!default;
+
+/* 
+Max-width
+--------- */
+
+$max-width:        1024px;
+
+/* ----------------------------------------------------------------
+	Fonts Reference
+    ------------------
+    
+    Headings:     'Helvetica Neue', Helvetica, Arial, sans-serif;
+    Body Copy     'Droid Serif', georgia, serif;
+    Small Print:  'Droid Sans', sans-serif;   
+------------------------------------------------------------------- */
+
+$head-face:        "Helvetica Neue", sans-serif!default;
+$body-face:        "Droid Serif", georgia, serif;
+$small-face:       "Droid Sans", sans-serif;
+// Supply a full code font-stack to combat this: jsfiddle.net/csswizardry/uD6UW
+$code-face:         Inconsolata, Monaco, Consolas, "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace!default;
+$brand-face:       "Helvetica Neue", sans-serif!default;
+
+/* --------------------------------- 
+	Colour Reference
+    --------------------	
+	Dark Blue:   #2E5A78
+	Light Blue:  #C3E3F8
+	Dark Brown:  #853938
+	Light Brown: #CFB0AF
+	Off White:   #FAFAFA
+----------------------------------- */
+
+$dark-blue:        #2E5A78!default;
+$light-blue:       #C3E3F8!default;
+$dark-brown:       #853938!default;
+$light-brown:      #CFB0AF!default;
+$off-white:        #FAFAFA!default;
+$grey-bg:		   #F1F1F1!default;
+$brand-color:      #4a8ec2!default;
+
+

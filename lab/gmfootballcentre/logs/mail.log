@@ -1,0 +1,14 @@
+2012-02-07 14:02:06 u66778313 4ArgXQ-1Rog9E3xM2-00BZ7x |< REMOTE=89.242.222.71 SCRIPT=/index.php -- /usr/sbin/sendmail -t -i
+2012-02-07 14:02:06 u66778313 4ArgXQ-1Rog9E3xM2-00BZ7x <= S=leon_valentine@hotmail.co.uk SZ=915 D=0 SID=392967618
+2012-02-07 14:02:07 u66778313 4ArgXQ-1Rog9E3xM2-00BZ7x => lee@premierfc.com msmtp.kundenserver.de[172.19.35.7] 250 Message 0MQJyK-1S6tko4BtE-00UD2Y accepted by mreu2.kundenserver.de
+2012-02-07 18:47:23 u66778313 4AUMWd-1S2AsA2F9Z-00YTod |< REMOTE=41.139.97.145 SCRIPT=/index.php -- /usr/sbin/sendmail -t -i
+2012-02-07 18:47:23 u66778313 4AUMWd-1S2AsA2F9Z-00YTod <= S=ezicostarboy07@yahoo.com SZ=69130 D=0 SID=392967618
+2012-02-07 18:47:24 u66778313 4AUMWd-1S2AsA2F9Z-00YTod => lee@premierfc.com msmtp.kundenserver.de[172.19.35.7] 250 Message 0M3qBK-1SmEjh2YLq-00rm9l accepted by mreu4.kundenserver.de
+2012-02-08 02:43:54 u66778313 4ACpfr-1SJrKp2nCX-00qEOS |< REMOTE=109.230.216.203 SCRIPT=/index.php -- /usr/sbin/sendmail -t -i
+2012-02-08 02:43:54 u66778313 4ACpfr-1SJrKp2nCX-00qEOS <= S=tiquzg@wfmszc.com SZ=1125 D=0 SID=392967618
+2012-02-08 02:43:54 u66778313 4ACpfr-1SJrKp2nCX-00qEOS WW transaction error after mail command: msmtp.kundenserver.de[172.19.35.7] 421 invalid sender domain \'wfmszc.com\' (misconfigured dns?)
+2012-02-08 02:43:54 u66778313 4ACpfr-1SJrKp2nCX-00qEOS EE could not send mail
+2012-02-08 02:43:55 u66778313 4Ab7au-1RsB9J0aAQ-00691b |< REMOTE=109.230.216.203 SCRIPT=/index.php -- /usr/sbin/sendmail -t -i
+2012-02-08 02:43:55 u66778313 4Ab7au-1RsB9J0aAQ-00691b <= S=tiquzg@wfmszc.com SZ=1125 D=0 SID=392967618
+2012-02-08 02:43:55 u66778313 4Ab7au-1RsB9J0aAQ-00691b WW transaction error after mail command: msmtp.kundenserver.de[172.19.35.7] 421 invalid sender domain \'wfmszc.com\' (misconfigured dns?)
+2012-02-08 02:43:55 u66778313 4Ab7au-1RsB9J0aAQ-00691b EE could not send mail

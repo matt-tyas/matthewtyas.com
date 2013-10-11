@@ -1,0 +1,156 @@
+<!doctype html>
+<!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="cleartype" content="on">
+	<title>Kilto Take</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Mobile viewport optimized: http://t.co/dKP3o1e -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <!-- CSS compiled by SASS -->
+    <link href="css/screen.css" rel="stylesheet" media="screen">       
+    <!-- Modernizr -->
+    <script src="js/libs/modernizr-2.6.1.min.js"></script> 
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="js/libs/selectivizr-min.js"></script>
+    <![endif]--> 
+    <script src="http://www.google.com/jsapi"></script>
+    <script>google.load("swfobject", "2.2");</script>
+    <!-- For everything else -->
+    <link rel="shortcut icon" href="images/icons/favicon.ico">	
+	<!-- http://t.co/y1jPVnT -->
+	<link rel="canonical" href="/">	
+</head>
+<body>
+	<div class="main">
+		<h1 id="logo-fittext">KILTO TAKE</h1>
+	</div>
+	<nav class="nav-wrap">
+		<div class="table-main">
+			<ul class="nav main-nav">
+				<li><a href="http://medicalrecords.bleepsandblops.com/artists/kilto-take/" target="_blank"><span>ABOUT</span></a></li>
+				<li><a href="https://soundcloud.com/kiltotake" target="_blank"><span>MUSIC</span></a></li>
+				<li><a href="http://www.youtube.com/user/kiltotake" target="_blank"><span>VIDEO</span></a></li>
+				<li><a href="http://medicalrecords.bleepsandblops.com/live/" target="_blank"><span>LIVE</span></a></li>
+				<li><a href="http://kiltotake.us6.list-manage.com/subscribe?u=53996830b5a86d047602fe555&id=a1f02c93eb" target="_blank"><span>MAILING LIST</span></a></li>
+				<li><a href="http://medicalrecords.bleepsandblops.com/artists/kilto-take/" target="_blank"><span>CONTACT</span></a></li>
+			</ul>
+		</div>
+		<div class="table">
+			<ul class="nav social-nav">
+				<li>
+					<a href="http://www.youtube.com/user/kiltotake" target="_blank">
+						<i aria-hidden="true" class="icon-youtube-sign"></i>
+						<span class="screen-reader-text">You Tube</span>
+                    </a>
+				</li>
+				<li>
+					<a href="https://twitter.com/kiltotake/" target="_blank">
+						<i aria-hidden="true" class="icon-twitter"></i>
+						<span class="screen-reader-text">Twitter</span>
+                    </a>
+				</li>
+				<li>
+					<a href="http://www.facebook.com/kiltotake" target="_blank">
+						<i aria-hidden="true" class="icon-facebook"></i>
+						<span class="screen-reader-text">Facebook</span>
+                    </a>
+				</li>
+				<li>
+					<a href="https://soundcloud.com/kiltotake" target="_blank">
+						<i aria-hidden="true" class="icon-soundcloud"></i>
+						<span class="screen-reader-text">Soundcloud</span>
+                    </a>
+				</li>
+			</ul>
+		</div>
+		<a class="single" href="https://itunes.apple.com/gb/album/atonement-single/id598312939" target="_blank">
+			<img src="images/kilto-take-single.jpg" alt="Kilto Take single" />
+			<p>NEW SINGLE<br />
+			   OUT NOW</p>
+		</a>
+		<div class="audio-player">
+			<div class="audio-player-hide">
+				<audio id="player" controls autoplay="true">
+					  <source src="audio/Atonement.ogg" type="audio/ogg" >
+					  <source src="audio/Atonement.mp3" type="audio/mp3" >
+					  <object class="playerpreview" type="application/x-shockwave-flash" data="audio/player_mp3_mini.swf" width="200" height="20">
+			          <param name="movie" value="audio/player_mp3_mini.swf" />
+			          <param name="bgcolor" value="#000000" />
+			          <param name="FlashVars" value="mp3=audio/Atonement.mp3" />
+			          <embed href="audio/player_mp3_mini.swf" bgcolor="#000000" width="200" height="20" name="movie" align="" type="application/x-shockwave-flash" flashvars="mp3=audio/Atonement.mp3" />
+			          </object>
+			          <!-- Sorry your browser does not support the audio on this site. -->
+			    </audio>
+			    <div id="player_fallback"></div>
+				<script>
+			      if (document.createElement('audio').canPlayType) {
+			        if (!document.createElement('audio').canPlayType('audio/mpeg') &&
+			            !document.createElement('audio').canPlayType('audio/ogg')) {
+			          swfobject.embedSWF("audio/player_mp3_mini.swf",
+			                             "default_player_fallback", "200", "20", "9.0.0", "",
+			                             {"mp3":"audio/Atonement.mp3&amp;autoplay=1"},
+			                             {"bgcolor":"#000000"}
+			                            );
+			          swfobject.embedSWF("audio/player_mp3_mini.swf",
+			                             "custom_player_fallback", "200", "20", "9.0.0", "",
+			                             {"mp3":"audio/Atonement.mp3&amp;autoplay=1"},
+			                             {"bgcolor":"#000000"}
+			                            );
+			          document.getElementById('audio_with_controls').style.display = 'none';
+			        } else {
+			          // HTML5 audio + mp3 support
+			          document.getElementById('player').style.display = 'block';
+			        }
+			      }
+			    </script>
+			</div>
+		</div>
+		<br />
+	</nav>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.1.min.js"><\/script>')</script> 
+    <!-- BigVideo Dependencies -->
+    <script src="js/libs/jquery-ui-1.8.22.custom.min.js"></script>
+    <script src="js/libs/jquery.imagesloaded.min.js"></script>
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+    <!-- BigVideo -->
+    <script src="js/bigvideo.js"></script>
+    <!-- Load Video -->
+    <script>
+	   $(function() {
+            var BV = new $.BigVideo();
+			BV.init();
+            if (Modernizr.touch) {
+                BV.show('images/bg/fallback.jpg');
+            } else {
+                BV.show('video/kilto-take.mp4',{ambient:true});
+            }
+	    });
+    </script>
+    <!-- Plugins -->
+    <script src="js/plugins.js"></script>
+    <!--[if (lt IE 9) & (!IEMobile)]>
+	    <script src="js/libs/imgsizer-min.js"></script>
+	<![endif]-->
+	<!-- Scripts -->
+    <script src="js/scripts.js"></script>
+    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+         mathiasbynens.be/notes/async-analytics-snippet -->
+    <script>
+    /*
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script')); 
+    */
+    </script>  
+</body>
+</html>

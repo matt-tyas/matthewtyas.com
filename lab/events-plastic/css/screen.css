@@ -1,0 +1,442 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    screen.css
+    --------------
+    Event Plastics
+\*------------------------------------*/
+
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+       -o-box-sizing: border-box;
+          box-sizing: border-box; 
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+figure,
+hr {
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+strong, b, mark {
+  font-weight: bold;
+  font-style: inherit; }
+
+em, i, cite, q, address, dfn, var {
+  font-style: italic;
+  font-weight: inherit; }
+
+abbr[title], dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted; }
+
+ins {
+  border-bottom: 1px solid; }
+
+a, u, ins {
+  text-decoration: none; }
+
+del, s {
+  text-decoration: line-through; }
+
+img {
+  border: none;
+  font-style: italic; }
+
+input,
+select, option, optgroup,
+textarea {
+  font: inherit; }
+
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer; }
+
+.text-input:active,
+.text-input:focus,
+textarea:active,
+textarea:focus {
+  cursor: text;
+  outline: none; }
+
+/*------------------------------------*\
+    $CLEARFIX
+\*------------------------------------*/
+
+.cf {
+  zoom: 1; }
+  .cf:before, .cf:after {
+    content: "";
+    display: table; }
+  .cf:after {
+    clear: both; }
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+
+html {
+  font: 1em/1.5 serif;
+  overflow-y: scroll; }
+  
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}  
+  
+body.bg {
+  	background: #000 url(../images/bg.jpg) repeat-x;
+}
+
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+ 
+h1, .h1 {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.33333; }
+
+h2, .h2 {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.6; }
+
+h3, .h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1; }
+
+h4, .h4 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2; }
+
+h5, .h5 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+h6, .h6 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429; }
+
+/*------------------------------------*\
+    $PARAGRAPHS
+\*------------------------------------*/
+
+p {
+	font-size: 12px;
+	line-height: 1.71429;
+	color: #828282;
+}
+
+p strong {
+	color: #000;
+}
+
+/*------------------------------------*\
+    $SMALLPRINT
+\*------------------------------------*/
+
+.smallprint {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  line-height: 1;
+}
+
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+
+a { 
+	color: #00803c; 
+	-webkit-transition: all .1s ease-in;  
+	   -moz-transition: all .1s ease-in;  
+	        transition: all .1s ease-in;  
+	}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: underline; }
+
+.current a {
+  cursor: text;
+  text-decoration: underline; }
+
+/*------------------------------------*\
+    $LISTS
+\*------------------------------------*/
+/**
+ * Remove vertical spacing from nested lists.
+ */
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/*------------------------------------*\
+    $NAV
+\*------------------------------------*/
+
+.nav {
+  list-style: none;
+  margin-left: 0; }
+
+.nav > li,
+.nav > li > a {
+  display: inline-block;
+  *display: inline;
+  float: left;
+  zoom: 1; }
+
+/**
+ * `.stacked` extends `.nav` and throws the list into vertical mode, e.g.:
+ */
+.nav--stacked > li {
+  display: list-item; }
+
+.nav--stacked > li > a {
+  display: block; }
+
+/**
+ * `.banner-nav` extends `.nav` and centres the list, e.g.:
+ */
+.nav--banner {
+  text-align: center; }
+  
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+
+.wrap {
+	overflow: hidden;
+	width: 1000px;
+	margin: 1em auto;
+	background: #fff;
+}
+
+/* Header */
+  
+header[role=banner] {
+	overflow: hidden;
+	width: auto;
+	height: auto;
+	padding: 20px 0;
+	margin: 0px 30px 0px 30px;
+	
+}
+
+header[role=banner] .brand {
+	display: block;
+	overflow: hidden;
+	float: left;
+	width: 209px;
+	height: 104px;
+	margin-bottom: 20px;
+	background: url(../images/brand.png) no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+nav {
+	clear: both;
+	overflow: hidden;
+	margin: 0px;
+	border-top: 1px solid #00803c;
+	border-bottom: 1px solid #00803c;
+	font-size: 12px;
+}
+
+nav a {
+	padding: 10px;
+}
+
+.current,
+nav a:hover {
+	background: #00803c;
+	color: #fff;
+	text-decoration: none;
+}
+
+.search {
+	/* nothing here yet */
+}
+
+/* Main */
+
+div[role=main] {
+	padding: 0px 0 20px 0px;
+	margin: 0px 30px;
+	overflow: hidden;
+}
+
+div[role=main] h2 {
+	color: #00803c;
+	font-weight: lighter;
+	font-size: 18px;
+	margin-bottom: 18px;
+}
+
+div[role=main] p {
+	margin-bottom: 18px;
+}
+
+.content {
+	width: 620px;
+	float: left;
+}
+
+aside {
+	width: 220px;
+	float: right;
+}
+
+.leader {
+	width: 940px;
+	height: 313px;
+	background: url(../images/leader.jpg) no-repeat;
+}
+
+.intro {
+	overflow: hidden;
+	position: relative;
+	top: 230px;
+	left: 0px;
+	width: 824px;
+	height: auto;
+	background: url(../images/intro-bg.png) repeat-x;
+}
+
+.intro h2 {
+	overflow: hidden;
+	display: block;
+	float: left;
+	width: 498px;
+	height: 60px;
+	background: url(../images/yeoc.png) no-repeat;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+.intro p {
+	float: right;
+	width: 320px;
+	padding: 10px 5px;
+	color: #fff;
+}
+
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+
+.b {
+	margin-top: 20px;
+	border-top: 1px solid #828282;
+}
+
+.grid {
+	overflow: hidden;
+	padding: 20px 0;
+    border-bottom: 1px solid #828282;
+  }
+  
+.cta {
+	float: left;
+	width: 240px;
+	height: auto;
+	padding: 0 20px 0 0;
+}
+
+.cta.last {
+	width: 220px;
+	padding-right: 0;
+}
+
+.cta img {
+	width: 220px;
+	height: 162px;
+}
+
+aside h3,
+.cta h3 {
+	padding: .75em 0;
+	border-bottom: 1px solid #828282;
+    border-top: 1px solid #828282;
+}
+
+aside p,
+.cta p {
+	padding: .75em 0;
+}
+
+.info-1 {
+	float: left;
+	width: 50%;
+	padding: 0 10px 0 0;
+}
+
+.info-2 {
+	float: left;
+	width: 50%;
+	padding: 0 0 0 10px;
+}
+
+.info-1 h4,
+.info-2 h4 {
+	font-size: 12px;
+	line-height: 1.71429;
+	margin-bottom: 10px;
+}
+
+/* footer */
+
+footer[role=contentinfo] {
+	overflow: hidden;
+	height: auto;
+	padding: 20px 0;
+	margin: 0px 30px 0px 30px;
+	background: url(../images/brand-foot.png);
+	background-repeat: no-repeat;
+	background-position: 42% 20%;
+}
+
+.contact {
+	width: 50%;
+	float: right;
+}
+
+.address,
+.social {
+	float: left;
+	width: 50%;
+	padding-left: 10px;
+}
+
+
+footer[role=contentinfo] .social a {
+	display: block;
+}

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://matthewtyas.com/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.6" -->
+<!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
+<!-- generated-on="August 6, 2013 9:09 am" -->
+<!-- Debug: Total comment count: 2 -->
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
+		<loc>http://matthewtyas.com/</loc>
+		<lastmod>2013-08-04T12:28:37+00:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+<!-- Debug: Start Postings -->
+<!-- Debug: Priority report of postID 901: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/i-have-a-record-out-soon/</loc>
+		<lastmod>2013-08-04T12:48:38+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://matthewtyas.com/about/</loc>
+		<lastmod>2013-08-04T12:30:18+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 326: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/sliding-jquery-contact-form/</loc>
+		<lastmod>2013-07-29T15:37:19+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 414: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/manchesters-finest/</loc>
+		<lastmod>2013-05-28T16:15:31+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 719: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/pub-crawl-app/</loc>
+		<lastmod>2013-05-28T12:46:30+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 883: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/wireframing/</loc>
+		<lastmod>2013-05-28T12:42:03+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 874: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/safelyback/</loc>
+		<lastmod>2013-05-28T12:00:15+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 854: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/for-staff/</loc>
+		<lastmod>2013-04-10T16:44:26+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 846: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/research-innovation/</loc>
+		<lastmod>2013-04-10T16:43:49+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 826: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/rsp-application-map/</loc>
+		<lastmod>2013-01-29T09:34:14+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 809: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/leeds-university-hr/</loc>
+		<lastmod>2013-01-28T19:53:02+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 788: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/html-5-background-video-with-image-fallback-image-for-touch/</loc>
+		<lastmod>2013-01-16T12:29:55+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 763: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/ux-work/</loc>
+		<lastmod>2013-01-09T16:21:45+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 648: Comments: 1 of 2 = 0.5 points -->
+	<url>
+		<loc>http://matthewtyas.com/volunteering/</loc>
+		<lastmod>2013-01-09T08:03:09+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+<!-- Debug: Priority report of postID 82: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/manchesters-finest-mobile-app/</loc>
+		<lastmod>2012-12-14T13:49:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 739: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/the-leeds-network/</loc>
+		<lastmod>2012-12-11T20:40:52+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 84: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/leeds-university-websolutions/</loc>
+		<lastmod>2012-12-11T20:28:21+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 500: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/keeping-pace-vs-web-guidelines/</loc>
+		<lastmod>2012-10-25T14:44:31+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 31: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/costumes-by-wendy/</loc>
+		<lastmod>2012-10-24T17:49:33+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 80: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/vertex-media/</loc>
+		<lastmod>2012-10-24T17:48:48+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://matthewtyas.com/contact/</loc>
+		<lastmod>2012-10-14T15:11:20+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 494: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/sunday-mixtape/</loc>
+		<lastmod>2012-09-05T21:53:34+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 559: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/js-fiddling-a-round-up-of-recent-experments/</loc>
+		<lastmod>2012-07-26T09:25:32+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 488: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/the-count-feat-bredsnak/</loc>
+		<lastmod>2012-04-13T09:09:06+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 480: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/first-piece-in-five-years/</loc>
+		<lastmod>2012-03-26T06:55:26+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 457: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/ie8-and-modenizr-bug/</loc>
+		<lastmod>2012-03-15T14:07:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 455: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/new-track-under-the-bed/</loc>
+		<lastmod>2012-03-13T18:52:54+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 450: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/pro-tip-1/</loc>
+		<lastmod>2012-03-08T21:57:51+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 407: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/things-i-couldnt-do-without-1/</loc>
+		<lastmod>2012-03-08T19:02:34+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://matthewtyas.com/out-of-my-head/</loc>
+		<lastmod>2012-01-25T13:32:35+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: Priority report of postID 338: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/the-terrapimp-mixtape/</loc>
+		<lastmod>2012-01-25T12:08:12+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 348: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/dunns-river/</loc>
+		<lastmod>2012-01-25T11:48:47+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 361: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/the-original-finest-note/</loc>
+		<lastmod>2012-01-18T14:10:29+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 298: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/manchesters-finest-review-of-the-year/</loc>
+		<lastmod>2012-01-12T08:57:33+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 290: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/50s-christmas/</loc>
+		<lastmod>2012-01-09T20:58:23+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 167: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/easy-time-travel/</loc>
+		<lastmod>2012-01-03T16:34:41+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 249: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/my-face-wrapping-paper/</loc>
+		<lastmod>2012-01-03T14:17:27+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 157: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/christmas-pies/</loc>
+		<lastmod>2011-12-31T12:27:55+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 237: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/advent-cats/</loc>
+		<lastmod>2011-12-30T23:23:11+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 225: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/ducks-by-doog/</loc>
+		<lastmod>2011-12-29T18:46:39+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 141: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/website-to-do-list/</loc>
+		<lastmod>2011-12-28T09:11:17+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+<!-- Debug: Priority report of postID 120: Comments: 0 of 2 = 0 points -->
+	<url>
+		<loc>http://matthewtyas.com/almost-a-new-home/</loc>
+		<lastmod>2011-12-26T17:06:25+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.2</priority>
+	</url>
+	<url>
+		<loc>http://matthewtyas.com/services/</loc>
+		<lastmod>2011-12-15T11:45:41+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+	<url>
+		<loc>http://matthewtyas.com/work/</loc>
+		<lastmod>2011-12-15T10:16:05+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.6</priority>
+	</url>
+<!-- Debug: End Postings -->
+<!-- Debug: Start Custom Pages -->
+<!-- Debug: End Custom Pages -->
+<!-- Debug: Start additional URLs -->
+<!-- Debug: End additional URLs -->
+</urlset>

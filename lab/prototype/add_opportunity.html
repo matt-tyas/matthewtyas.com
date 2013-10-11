@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Leeds for Life 4 | Prototype</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico">
+		
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<link rel='stylesheet' href='sass/lfl4.css'>
+		<script src='js/modernizr-2.6.2.min.js'></script>
+		<meta http-equiv="cleartype" content="on">
+	</head>
+	<body>
+<div class="lfl-banner">
+
+	<div class="wrapper">
+
+		<h1 class="two-line-brevier"><a href="index.html">LEEDS for LIFE</a></h1>    
+		
+		<div role="navigation" class="nav nav--rev">
+		
+				<!-- Dashboard - logged in -->
+				<a class="" href="dashboard.html">Dashboard</a>
+				<!-- Log in -->
+				<!-- <a class="float--right" href="#">Log in</a> -->
+		
+			    <!-- Mobile nav toggle -->
+				<a class="mobile-nav__target" href="#">Menu</a>
+				   
+				<!-- Unlogged in access -->
+				<ul class="nav float--left nav--padding nav--mobile-links animated">
+					<li><a href="opportunities.html">Opportunities</a></li>
+					<li><a href="the_foundation.html">Apply for funding</a></li>
+					<li><a href="case_studies.html">Case studies</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+	
+		</div>	    
+
+	
+	</div>	
+			
+</div>  
+<div role="main" class="wrapper">
+<h2>Reflect on your opportunity</h2>
+
+<ol class="nav  breadcrumb">
+       <li><a href="opportunities.html">Opportunities</a></li>
+       <li><a href="#">Reflect on your opportunity</a></li>
+</ol>
+
+<div class="add-to-timeline">
+	
+	<h3>Knowledge Safe Spaces Ambassadors</h3>
+	
+	<a class="slider__target" href="#">View opportunity details</a>
+	<div class="opportunity-details">
+	
+	<p>We are looking for a small team of volunteers to assist us in the expansion of the Safe Spaces campaign as coordinated by Knowledge.</p>
+		
+<img class="opportunity-detail__image  img--right  img--short" src="images/opportunities/company-logo-placeholder.png" alt="image" />
+
+<p>You will be involved in the recruitment of city centre business into the scheme, as well as the maintenance of existing relationships. You will also have the opportunity to come up with and develop promotional activities to ensure that students are aware of the scheme and how they can stay safe in Leeds after dark.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus condimentum commodo. Etiam tempor tristique dui, eget adipiscing lacus posuere non. Aenean adipiscing libero et neque bibendum varius. Morbi consequat mauris quis neque pretium eu euismod eros egestas. Morbi at neque sit amet ante tempor tincidunt id at erat. Pellentesque mollis gravida massa, eu cursus tellus suscipit vitae. Donec a dui urna. Sed vel velit felis, a scelerisque enim. Aenean lacus nisl, rhoncus eu mattis ac, condimentum in lectus.</p>
+
+<h4>Organisation</h4>
+
+<p>Leeds University Union</p>
+
+<h4>How to Apply</h4>
+
+<p>An application form should be downloaded and returned to <a class="icon-text--rev" href="mailto:H.Goddard@leeds.ac.uk">Hannah Goddard<span class="i  i--mail  icon-text__icon"></span></a>, stating where the vacancy was seen.</p>
+
+<h4>Training</h4>
+	
+<p>You will be given an induction into community volunteering more broadly. You will also receive a more specific induction into the Safe Space scheme and your role within it.
+
+<h4>Expenses Paid</h4>
+
+<p>As per LUU's Community Volunteering policy
+
+<h4>Degree Disciplines</h4>
+
+<p>Any</p>
+
+<h4>Leeds for Life Skills</h4>
+
+<ul class="nav nav--stacked">
+	<li><a href="#">Volunteering</a></li>
+	<li><a href="#">Community</a></li>
+	<li><a href="#">Societies</a></li>
+</ul>
+
+<h4>Attachements</h4>
+
+<ul class="nav nav--stacked">
+	<li><a class="icon-text" href="#"><span class="i  i--file  i--half  icon-text__icon"></span>Application-form.doc</a></li>
+	<li><a class="icon-text" href="#"><span class="i  i--file  i--half  icon-text__icon"></span>Notes.doc</a></li>
+</ul>
+	</div>
+	
+    <form>
+    
+	    <ul class="block-list">
+	    	<li>
+	    		<label>Description</label>
+	    		<textarea></textarea>
+	    	</li>
+	    	
+	    	<li>
+	    		<label>Skills I will have the opportunity to gain/enhance/practise</label>
+	    		<textarea></textarea>
+	    	</li>
+	    </ul>
+	    
+	    <p>You are not required to reflect on your opportunity now but we will reminded you to complete your reflection in the near future. If you do not want to complete your reflection now please save and add your opportunity to your timeline.</p>
+	    
+	    <input class="submit-btn" type="submit" value="Save & add to timeline">
+    
+    </form>
+    
+</div>
+</div>
+<div role="contentinfo"></div>
+</body>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/script.js'></script>
+</html>

@@ -1,0 +1,3371 @@
+@charset "UTF-8";
+/**
+ * Setup
+ */
+/*------------------------------------*\
+    $VARS
+\*------------------------------------*/
+/**
+ * Set up project-specific variables here which are then used throughout your
+ * build. These variables are automatically picked up by inuit.css so you should
+ * never need to modify any framework code.
+ */
+/**
+ * Do you want all elements to adopt `box-sizing:border-box;` as per
+ * paulirish.com/2012/box-sizing-border-box-ftw ?
+ */
+/**
+ * Base stuff
+ */
+/**
+ * How big would you like round corners to be by default?
+ */
+/**
+ * Responsiveness?
+ */
+/**
+ * Tell inuit.css when breakpoints start.
+ */
+/**
+ * Font-sizes (in pixels). Refer to relevant sections for their implementations.
+ * Names for many of the historically popular fonts:
+ * http://en.wikipedia.org/wiki/Point_(typography)#Traditional_point-size_names
+ */
+/**
+ * English quote marks?
+ */
+/**
+ * If you want English quotes then please do not edit these; they’re only here
+ * because Sass needs them.
+ */
+/**
+ * If you need non-English quotes, please alter the following values accordingly:
+ */
+/**
+ * Brand stuff
+ */
+/**
+ * inuit.css will work these next ones out for you.
+ *
+ * Assign our `$base-line-height` to a new spacing var for more transparency.
+ */
+/**
+ * Imports
+ */
+/* normalize.css v2.1.0 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+head,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+ * Create a fully formed type style (sizing and vertical rhythm) by passing in a
+ * single value, e.g.:
+ * 
+   `@include font-size(10px);`
+ * 
+ * Thanks to @redclov3r for the `line-height` Sass:
+ * twitter.com/redclov3r/status/250301539321798657
+ */
+/* 
+ * Fonts
+ */
+/**
+ * Create vendor-prefixed CSS in one go, e.g.
+ * 
+   `@include vendor(border-radius, 4px);`
+ * 
+ */
+/**
+ * Create CSS keyframe animations for all vendors in one go, e.g.:
+ * 
+   .foo{
+       @include vendor(animation, shrink 3s);
+   }
+   
+   @include keyframe(shrink){
+       from{
+           font-size:5em;
+       }
+   }
+ * 
+ * Courtesy of @integralist: twitter.com/integralist/status/260484115315437569
+ */
+/**
+ * Force overly long spans of text to truncate, e.g.:
+ * 
+   `@include truncate(100%);`
+ * 
+ * Where `$truncation-boundary` is a united measurement.
+ */
+/**
+ * CSS arrows!!! But... before you read on, you might want to grab a coffee...
+ * 
+ * This mixin creates a CSS arrow on a given element. We can have the arrow
+ * appear in one of 12 locations, thus:
+ * 
+ *       01    02    03
+ *    +------------------+
+ * 12 |                  | 04
+ *    |                  |
+ * 11 |                  | 05
+ *    |                  |
+ * 10 |                  | 06
+ *    +------------------+
+ *       09    08    07
+ * 
+ * You pass this position in along with a desired arrow color and optional
+ * border color, for example:
+ * 
+ * `@include arrow(top, left, red)`
+ * 
+ * for just a single, red arrow, or:
+ * 
+ * `@include arrow(bottom, center, red, black)`
+ * 
+ * which will create a red triangle with a black border which sits at the bottom
+ * center of the element. Call the mixin thus: 
+ * 
+   .foo{
+       background-color:#BADA55;
+       border:1px solid #ACE;
+       @include arrow(top, left, #BADA55, #ACE);
+   }
+ * 
+ */
+/**
+ * Media query mixin.
+ *
+ * It’s not great practice to define solid breakpoints up-front, preferring to
+ * modify your design when it needs it, rather than assuming you’ll want a
+ * change at ‘mobile’. However, as inuit.css is required to take a hands off
+ * approach to design decisions, this is the closest we can get to baked-in
+ * responsiveness. It’s flexible enough to allow you to set your own breakpoints
+ * but solid enough to be frameworkified.
+ * 
+ * We define some broad breakpoints in our vars file that are picked up here
+ * for use in a simple media query mixin. Our options are:
+ *
+ * palm
+ * lap
+ * lap-and-up
+ * portable
+ * desk
+ * 
+ * Not using a media query will, naturally, serve styles to all devices.
+ * 
+ * `@include media-query(palm){ [styles here] }`
+ * 
+ * We work out your end points for you:
+ */
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+/**
+ * A more considered reset; more of a restart... 
+ * As per: csswizardry.com/2011/10/reset-restarted
+ */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * The usual...
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Give a help cursor to elements that give extra info on `:hover`.
+ */
+abbr[title], dfn[title] {
+  cursor: help; }
+
+/**
+ * Remove underlines from potentially troublesome elements.
+ */
+a, u, ins {
+  text-decoration: none; }
+
+/**
+ * Apply faux underline via `border-bottom`.
+ */
+ins {
+  border-bottom: 1px solid; }
+
+/**
+ * So that `alt` text is visually offset if images don’t load.
+ */
+img {
+  font-style: italic; }
+
+/**
+ * Give form elements some cursor interactions...
+ */
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer; }
+
+.text-input:active,
+.text-input:focus,
+textarea:active,
+textarea:focus {
+  cursor: text;
+  outline: none; }
+
+/* Helper Classes ======================================== */
+/*
+ * Greybox style for prototypes
+ */
+div[role=contentinfo], .nav--tabs, .lfl-banner, .search-filter, .add-to-timeline__submit {
+  background: #bfbfbf; }
+
+/*
+ * An accessible image replacement method using pseudo-elements and generated-content. This method works with images and/or CSS off, with semi-transparent images, doesn’t hide text from screen-readers or search engines, and provides fallback for IE 6 and IE 7.
+ * http://nicolasgallagher.com/css-image-replacement-with-pseudo-elements
+ */
+/*
+ * Hide from both screenreaders and browsers: 
+ * h5bp.com/u
+ */
+/*
+ * Hide on portable devices: 
+ * h5bp.com/u
+ */
+@media only screen and (max-width: 799px) {
+  .hide--portable {
+    display: none !important;
+    visibility: hidden; } }
+/**
+ * A series of helper classes to use arbitrarily. Only use a helper class if an
+ * element/component doesn’t already have a class to which you could apply this
+ * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
+ * that ruleset as opposed to adding the `.float--left` class to the markup.
+ *
+ * A lot of these classes carry `!important` as you will always want them to win
+ * out over other selectors.
+ */
+.float--right {
+  float: right!important; }
+
+.float--left, .body-item {
+  float: left !important; }
+
+.text--left {
+  text-align: left !important; }
+
+.text--center {
+  text-align: center!important; }
+
+.text--right {
+  text-align: right !important; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* 
+ * userselect(VALUE); (all, element, none, text)
+ */
+/* 
+ * Micro clearfix, as per: nicolasgallagher.com/micro-clearfix-hack Extend the clearfix class with Sass to avoid the `.cf` class appearing over and over in your markup.
+ */
+.wrapper, .alert, .form-wizard, .list_row, .lfl-banner, .secondary-nav, .search-filter, .student-meta, .student-meta__body, div[role='banner'] > div, .nav--inline-block__body, .student-filter, .grid-view, .grid-view__aside, .student-settings, .appointments {
+  zoom: 1; }
+  .wrapper:before, .alert:before, .form-wizard:before, .list_row:before, .lfl-banner:before, .secondary-nav:before, .search-filter:before, .student-meta:before, .student-meta__body:before, div[role='banner'] > div:before, .nav--inline-block__body:before, .student-filter:before, .grid-view:before, .grid-view__aside:before, .student-settings:before, .appointments:before, .wrapper:after, .alert:after, .form-wizard:after, .list_row:after, .lfl-banner:after, .secondary-nav:after, .search-filter:after, .student-meta:after, .student-meta__body:after, div[role='banner'] > div:after, .nav--inline-block__body:after, .student-filter:after, .grid-view:after, .grid-view__aside:after, .student-settings:after, .appointments:after {
+    content: " ";
+    display: table;
+    clear: both; }
+
+@media only screen and (max-width: 799px) {
+  /* Toggle selected < 800px */
+  .on {
+    display: block;
+    background: #e6e6e6; } }
+/*------------------------------------*\
+    $IMAGES
+\*------------------------------------*/
+/**
+ * Demo: jsfiddle.net/inuitcss/yMtur
+ */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/**
+ * Image placement variations.
+ */
+.img--right {
+  float: right;
+  margin-bottom: 24px;
+  margin-left: 24px; }
+
+.img--left {
+  float: left;
+  margin-right: 24px;
+  margin-bottom: 24px; }
+
+.img--center {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 24px;
+  margin-left: auto; }
+
+/**
+ * Keep your images on your baseline.
+ * 
+ * Please note, these will not work too nicely with fluid images and will
+ * distort when resized below a certain width. Use with caution.
+ */
+.img--short {
+  height: 120px; }
+
+.img--medium {
+  height: 240px; }
+
+.img--tall {
+  height: 360px; }
+
+/**
+ * Images in `figure` elements.
+ */
+figure > img {
+  display: block; }
+
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+/**
+ * Fluid and nestable grid system, e.g.:
+ * 
+   <div class=gw>
+       
+       <div class="g  one-third">
+           <p>One third grid</p>
+       </div>
+       
+       <div class="g  two-thirds">
+           <p>Two thirds grid</p>
+       </div>
+       
+       <div class="g  one-half">
+           <p>One half grid</p>
+       </div>
+       
+       <div class="g  one-quarter">
+           <p>One quarter grid</p>
+       </div>
+       
+       <div class="g  one-quarter">
+           <p>One quarter grid</p>
+       </div>
+       
+   </div>
+ * 
+ * Demo: jsfiddle.net/inuitcss/CLYUC
+ * 
+ */
+/**
+ * Grid wrapper
+ * 
+ * Shorthand and verbose
+ */
+.gw,
+.grid-wrapper {
+  /**
+   * Negative margin to negate the padding on the first grid child. 
+   */
+  margin-left: -24px;
+  /**
+   * The following declarations allow us to use the `.gw` class on lists.
+   */
+  list-style: none;
+  margin-bottom: 0; }
+
+/**
+ * Reverse grid order
+ * 
+   <div class="gw  gw--rev">
+       
+       <div class="g  one-third">
+           <p>Appears on the right</p>
+       </div>
+       
+       <div class="g  two-thirds">
+           <p>Appears on the left</p>
+       </div>
+       
+   </div>
+ * 
+ */
+.gw--rev > .g, .gw--rev > .form-wizard__item, .list_row .gw--rev > .list-body, .list_row .gw--rev > .list-aside, .list_rows--meta .gw--rev > .list-body, .list_rows--meta .gw--rev > .list-aside,
+.list_rows--meta .gw--rev > .list-meta, .list_rows--actions .gw--rev > .list-body, .list_rows--actions .gw--rev > .list-aside,
+.list_rows--actions .gw--rev > .list-meta,
+.list_rows--actions .gw--rev > .list-actions, .gw--rev > .search-filter__filters__selection, .gw--rev > .grid-view__block, .gw--rev > .student-settings__body,
+.gw--rev > .student-settings__actions, .gw--rev > .appointments__today,
+.gw--rev > .appointments__tomorrow, .gw--rev > .appointments-week__day,
+.grid-wrapper--rev > .grid {
+  float: right; }
+
+/**
+ * Very infrequently occuring grid wrappers as children of grid wrappers.
+ */
+.gw > .gw,
+.grid-wrapper > .grid-wrapper {
+  margin-left: 0; }
+
+/**
+ * Grid
+ * 
+ * Shorthand and verbose
+ */
+.g, .form-wizard__item, .list_row .list-body, .list_row .list-aside, .list_rows--meta .list-body, .list_rows--meta .list-aside,
+.list_rows--meta .list-meta, .list_rows--actions .list-body, .list_rows--actions .list-aside,
+.list_rows--actions .list-meta,
+.list_rows--actions .list-actions, .search-filter__filters__selection, .grid-view--list .grid-view__block, .grid-view__block, .student-settings__body,
+.student-settings__actions, .appointments__today,
+.appointments__tomorrow, .appointments-week__day,
+.grid {
+  float: left;
+  padding-left: 24px; }
+
+/*------------------------------------*\
+    $WIDTHS
+\*------------------------------------*/
+/**
+ * Sizes in human readable format. These are used in conjunction with other
+ * objects and abstractions found in inuit.css, most commonly the grid system
+ * and faux flexbox.
+ *
+ * We have a mixin to generate our widths and their breakpoint-specific
+ * variations.
+ */
+/**
+* Whole
+*/
+.one-whole, .search-filter__input, .search-filter__selection, .search-filter__btn, .search-filter__filters__selection select, .grid-view--list .grid-view__block {
+  width: 100%; }
+
+/**
+* Halves
+*/
+.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths, .list_row .list-body, .list_row .list-aside, .student-settings__body,
+.student-settings__actions, .appointments__today,
+.appointments__tomorrow {
+  width: 50%; }
+
+/**
+* Thirds
+*/
+.one-third, .two-sixths, .four-twelfths, .grid-view__block, .appointments-week__day {
+  width: 33.333%; }
+
+.two-thirds, .four-sixths, .eight-twelfths {
+  width: 66.666%; }
+
+/**
+* Quarters
+*/
+.one-quarter, .two-eighths, .three-twelfths, .search-filter__filters__selection {
+  width: 25%; }
+
+.three-quarters, .six-eighths, .nine-twelfths {
+  width: 75%; }
+
+/**
+* Fifths
+*/
+.one-fifth, .two-tenths, .list_rows--meta .list-aside,
+.list_rows--meta .list-meta, .list_rows--actions .list-aside,
+.list_rows--actions .list-meta,
+.list_rows--actions .list-actions {
+  width: 20%; }
+
+.two-fifths, .four-tenths, .list_rows--actions .list-body {
+  width: 40%; }
+
+.three-fifths, .six-tenths, .list_rows--meta .list-body {
+  width: 60%; }
+
+.four-fifths, .eight-tenths, .calendar__outlook, .body-item {
+  width: 80%; }
+
+/**
+* Sixths
+*/
+.one-sixth, .two-twelfths, .form-wizard__item {
+  width: 16.666%; }
+
+.five-sixths, .ten-twelfths {
+  width: 83.333%; }
+
+/**
+* Eighths
+*/
+.one-eighth, .calendar th, .calendar td {
+  width: 12.5%; }
+
+.three-eighths {
+  width: 37.5%; }
+
+.five-eighths {
+  width: 62.5%; }
+
+.seven-eighths {
+  width: 87.5%; }
+
+/**
+* Tenths
+*/
+.one-tenth {
+  width: 10%; }
+
+.three-tenths {
+  width: 30%; }
+
+.seven-tenths {
+  width: 70%; }
+
+.nine-tenths {
+  width: 90%; }
+
+/**
+* Twelfths
+*/
+.one-twelfth {
+  width: 8.333%; }
+
+.five-twelfths {
+  width: 41.666%; }
+
+.seven-twelfths {
+  width: 58.333%; }
+
+.eleven-twelfths {
+  width: 91.666%; }
+
+/**
+ * If you have set `$responsive` to ‘true’ in `_vars.scss` then you now have
+ * access to these classes. You can define at which breakpoing you’d like an
+ * element to be a certain size, e.g.:
+ *
+ * `<div class="g  one-quarter  lap-one-half  palm-one-whole"> ... </div>`
+ *
+ * This would create a `div` that, at ‘desktop’ sizes, takes up a quarter of the
+ * horizontal space, a half of that space at ‘tablet’ sizes, and goes full width
+ * at ‘mobile’ sizes.
+ *
+ * Demo: jsfiddle.net/inuitcss/WS4Ge
+ *
+ */
+@media only screen and (max-width: 480px) {
+  /**
+  * Whole
+  */
+  .palm-one-whole {
+    width: 100%; }
+
+  /**
+  * Halves
+  */
+  .palm-one-half, .palm-two-quarters, .palm-three-sixths, .palm-four-eighths, .palm-five-tenths, .palm-six-twelfths {
+    width: 50%; }
+
+  /**
+  * Thirds
+  */
+  .palm-one-third, .palm-two-sixths, .palm-four-twelfths {
+    width: 33.333%; }
+
+  .palm-two-thirds, .palm-four-sixths, .palm-eight-twelfths {
+    width: 66.666%; }
+
+  /**
+  * Quarters
+  */
+  .palm-one-quarter, .palm-two-eighths, .palm-three-twelfths {
+    width: 25%; }
+
+  .palm-three-quarters, .palm-six-eighths, .palm-nine-twelfths {
+    width: 75%; }
+
+  /**
+  * Fifths
+  */
+  .palm-one-fifth, .palm-two-tenths {
+    width: 20%; }
+
+  .palm-two-fifths, .palm-four-tenths {
+    width: 40%; }
+
+  .palm-three-fifths, .palm-six-tenths {
+    width: 60%; }
+
+  .palm-four-fifths, .palm-eight-tenths {
+    width: 80%; }
+
+  /**
+  * Sixths
+  */
+  .palm-one-sixth, .palm-two-twelfths {
+    width: 16.666%; }
+
+  .palm-five-sixths, .palm-ten-twelfths {
+    width: 83.333%; }
+
+  /**
+  * Eighths
+  */
+  .palm-one-eighth {
+    width: 12.5%; }
+
+  .palm-three-eighths {
+    width: 37.5%; }
+
+  .palm-five-eighths {
+    width: 62.5%; }
+
+  .palm-seven-eighths {
+    width: 87.5%; }
+
+  /**
+  * Tenths
+  */
+  .palm-one-tenth {
+    width: 10%; }
+
+  .palm-three-tenths {
+    width: 30%; }
+
+  .palm-seven-tenths {
+    width: 70%; }
+
+  .palm-nine-tenths {
+    width: 90%; }
+
+  /**
+  * Twelfths
+  */
+  .palm-one-twelfth {
+    width: 8.333%; }
+
+  .palm-five-twelfths {
+    width: 41.666%; }
+
+  .palm-seven-twelfths {
+    width: 58.333%; }
+
+  .palm-eleven-twelfths {
+    width: 91.666%; } }
+@media only screen and (min-width: 481px) and (max-width: 799px) {
+  /**
+  * Whole
+  */
+  .lap-one-whole {
+    width: 100%; }
+
+  /**
+  * Halves
+  */
+  .lap-one-half, .lap-two-quarters, .lap-three-sixths, .lap-four-eighths, .lap-five-tenths, .lap-six-twelfths {
+    width: 50%; }
+
+  /**
+  * Thirds
+  */
+  .lap-one-third, .lap-two-sixths, .lap-four-twelfths {
+    width: 33.333%; }
+
+  .lap-two-thirds, .lap-four-sixths, .lap-eight-twelfths {
+    width: 66.666%; }
+
+  /**
+  * Quarters
+  */
+  .lap-one-quarter, .lap-two-eighths, .lap-three-twelfths {
+    width: 25%; }
+
+  .lap-three-quarters, .lap-six-eighths, .lap-nine-twelfths {
+    width: 75%; }
+
+  /**
+  * Fifths
+  */
+  .lap-one-fifth, .lap-two-tenths {
+    width: 20%; }
+
+  .lap-two-fifths, .lap-four-tenths {
+    width: 40%; }
+
+  .lap-three-fifths, .lap-six-tenths {
+    width: 60%; }
+
+  .lap-four-fifths, .lap-eight-tenths {
+    width: 80%; }
+
+  /**
+  * Sixths
+  */
+  .lap-one-sixth, .lap-two-twelfths {
+    width: 16.666%; }
+
+  .lap-five-sixths, .lap-ten-twelfths {
+    width: 83.333%; }
+
+  /**
+  * Eighths
+  */
+  .lap-one-eighth {
+    width: 12.5%; }
+
+  .lap-three-eighths {
+    width: 37.5%; }
+
+  .lap-five-eighths {
+    width: 62.5%; }
+
+  .lap-seven-eighths {
+    width: 87.5%; }
+
+  /**
+  * Tenths
+  */
+  .lap-one-tenth {
+    width: 10%; }
+
+  .lap-three-tenths {
+    width: 30%; }
+
+  .lap-seven-tenths {
+    width: 70%; }
+
+  .lap-nine-tenths {
+    width: 90%; }
+
+  /**
+  * Twelfths
+  */
+  .lap-one-twelfth {
+    width: 8.333%; }
+
+  .lap-five-twelfths {
+    width: 41.666%; }
+
+  .lap-seven-twelfths {
+    width: 58.333%; }
+
+  .lap-eleven-twelfths {
+    width: 91.666%; } }
+@media only screen and (max-width: 799px) {
+  /**
+  * Whole
+  */
+  .portable-one-whole, .form-wizard__item, .list_row .list-body, .list_row .list-aside, .list_rows--meta .list-body, .list_rows--meta .list-aside,
+  .list_rows--meta .list-meta, .list_rows--actions .list-body, .list_rows--actions .list-aside,
+  .list_rows--actions .list-meta,
+  .list_rows--actions .list-actions, .search-filter__filters__selection, .calendar th, .calendar td, .calendar__outlook, .grid-view__block, .student-settings__body,
+  .student-settings__actions, .appointments__today,
+  .appointments__tomorrow, .appointments-week__day {
+    width: 100%; }
+
+  /**
+  * Halves
+  */
+  .portable-one-half, .portable-two-quarters, .portable-three-sixths, .portable-four-eighths, .portable-five-tenths, .portable-six-twelfths {
+    width: 50%; }
+
+  /**
+  * Thirds
+  */
+  .portable-one-third, .portable-two-sixths, .portable-four-twelfths {
+    width: 33.333%; }
+
+  .portable-two-thirds, .portable-four-sixths, .portable-eight-twelfths {
+    width: 66.666%; }
+
+  /**
+  * Quarters
+  */
+  .portable-one-quarter, .portable-two-eighths, .portable-three-twelfths {
+    width: 25%; }
+
+  .portable-three-quarters, .portable-six-eighths, .portable-nine-twelfths {
+    width: 75%; }
+
+  /**
+  * Fifths
+  */
+  .portable-one-fifth, .portable-two-tenths {
+    width: 20%; }
+
+  .portable-two-fifths, .portable-four-tenths {
+    width: 40%; }
+
+  .portable-three-fifths, .portable-six-tenths {
+    width: 60%; }
+
+  .portable-four-fifths, .portable-eight-tenths {
+    width: 80%; }
+
+  /**
+  * Sixths
+  */
+  .portable-one-sixth, .portable-two-twelfths {
+    width: 16.666%; }
+
+  .portable-five-sixths, .portable-ten-twelfths {
+    width: 83.333%; }
+
+  /**
+  * Eighths
+  */
+  .portable-one-eighth {
+    width: 12.5%; }
+
+  .portable-three-eighths {
+    width: 37.5%; }
+
+  .portable-five-eighths {
+    width: 62.5%; }
+
+  .portable-seven-eighths {
+    width: 87.5%; }
+
+  /**
+  * Tenths
+  */
+  .portable-one-tenth {
+    width: 10%; }
+
+  .portable-three-tenths {
+    width: 30%; }
+
+  .portable-seven-tenths {
+    width: 70%; }
+
+  .portable-nine-tenths {
+    width: 90%; }
+
+  /**
+  * Twelfths
+  */
+  .portable-one-twelfth {
+    width: 8.333%; }
+
+  .portable-five-twelfths {
+    width: 41.666%; }
+
+  .portable-seven-twelfths {
+    width: 58.333%; }
+
+  .portable-eleven-twelfths {
+    width: 91.666%; } }
+@media only screen and (min-width: 800px) {
+  /**
+  * Whole
+  */
+  .desk-one-whole {
+    width: 100%; }
+
+  /**
+  * Halves
+  */
+  .desk-one-half, .desk-two-quarters, .desk-three-sixths, .desk-four-eighths, .desk-five-tenths, .desk-six-twelfths {
+    width: 50%; }
+
+  /**
+  * Thirds
+  */
+  .desk-one-third, .desk-two-sixths, .desk-four-twelfths {
+    width: 33.333%; }
+
+  .desk-two-thirds, .desk-four-sixths, .desk-eight-twelfths {
+    width: 66.666%; }
+
+  /**
+  * Quarters
+  */
+  .desk-one-quarter, .desk-two-eighths, .desk-three-twelfths {
+    width: 25%; }
+
+  .desk-three-quarters, .desk-six-eighths, .desk-nine-twelfths {
+    width: 75%; }
+
+  /**
+  * Fifths
+  */
+  .desk-one-fifth, .desk-two-tenths {
+    width: 20%; }
+
+  .desk-two-fifths, .desk-four-tenths {
+    width: 40%; }
+
+  .desk-three-fifths, .desk-six-tenths {
+    width: 60%; }
+
+  .desk-four-fifths, .desk-eight-tenths {
+    width: 80%; }
+
+  /**
+  * Sixths
+  */
+  .desk-one-sixth, .desk-two-twelfths {
+    width: 16.666%; }
+
+  .desk-five-sixths, .desk-ten-twelfths {
+    width: 83.333%; }
+
+  /**
+  * Eighths
+  */
+  .desk-one-eighth {
+    width: 12.5%; }
+
+  .desk-three-eighths {
+    width: 37.5%; }
+
+  .desk-five-eighths {
+    width: 62.5%; }
+
+  .desk-seven-eighths {
+    width: 87.5%; }
+
+  /**
+  * Tenths
+  */
+  .desk-one-tenth {
+    width: 10%; }
+
+  .desk-three-tenths {
+    width: 30%; }
+
+  .desk-seven-tenths {
+    width: 70%; }
+
+  .desk-nine-tenths {
+    width: 90%; }
+
+  /**
+  * Twelfths
+  */
+  .desk-one-twelfth {
+    width: 8.333%; }
+
+  .desk-five-twelfths {
+    width: 41.666%; }
+
+  .desk-seven-twelfths {
+    width: 58.333%; }
+
+  .desk-eleven-twelfths {
+    width: 91.666%; } }
+/* endif */
+/* Links ================================================= */
+/*
+ * Say no to negative hovers, as per: csswizardry.com/2011/05/on-negative-hovers
+ * Sometimes, particularly on larger projects, it is useful to scope link
+ * styling only to anchors which have `href` attributes.
+ */
+a:link {
+  text-decoration: none;
+  	/*
+   	 * Remove Chrome’s heavy-handed glow.
+   	 */ }
+  a:link:hover, a:link:active, a:link:focus {
+    text-decoration: underline;
+    color: gray; }
+  a:link:active {
+    outline: none; }
+  a:link:visited {
+    color: #4d4d4d; }
+  a:link:focus {
+    outline: thin dotted;
+    color: #333333; }
+
+/*------------------------------------*\
+    $LISTS
+\*------------------------------------*/
+/**
+ * Remove vertical spacing from nested lists.
+ */
+li > ul,
+li > ol {
+  margin-bottom: 0; }
+
+/**
+ * Have a numbered `ul` without the semantics implied by using an `ol`.
+ */
+/*ul*/
+.numbered-list {
+  list-style-type: decimal; }
+
+/*------------------------------------*\
+    $MAIN
+\*------------------------------------*/
+html {
+  font: 1em/1.5 serif;
+  overflow-y: scroll;
+  min-height: 100%; }
+
+.wrapper {
+  max-width: 960px;
+  margin: auto; }
+
+div[role="main"] {
+  margin: 0 auto 24px auto;
+  padding: 12px;
+  background: white; }
+
+body {
+  background: #eee; }
+
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+/**
+ * As per: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ * 
+ * When we define a heading we also define a corresponding class to go with it.
+ * This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded
+ * heading hierarchy.
+ */
+h1, .double-great-primer {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.33333; }
+
+h2, .five-line-nonpareil {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 1.6; }
+
+h3, .two-line-pica {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1; }
+
+h4, .paragon {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2; }
+
+h5, .two-line-brevier {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
+
+h6, .english {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429; }
+
+/**
+ * Heading groups and generic any-heading class.
+ * To target any heading of any level simply apply a class of `.hN`, e.g.:
+ * 
+   <hgroup>
+       <h1 class=hN>inuit.css</h1>
+       <h2 class=hN>Best. Framework. Ever!</h2>
+   </hgroup>
+ * 
+ */
+hgroup .hN {
+  margin-bottom: 0; }
+
+/**
+ * A series of classes for setting massive type; for use in heroes, mastheads,
+ * promos, etc.
+ */
+.inch {
+  font-size: 72px;
+  font-size: 4.5rem;
+  line-height: 1; }
+
+.canon {
+  font-size: 48px;
+  font-size: 3rem;
+  line-height: 1; }
+
+/*------------------------------------*\
+    $QUOTES
+\*------------------------------------*/
+/**
+ * If English quotes are set in `_vars.scss`, define them here.
+ */
+/**
+ * Big up @boblet: html5doctor.com/blockquote-q-cite
+ */
+/**
+ * Inline quotes.
+ */
+q {
+  quotes: "‘" "’" "“" "”"; }
+  q:before {
+    content: "‘";
+    content: open-quote; }
+  q:after {
+    content: "’";
+    content: close-quote; }
+  q q:before {
+    content: "“";
+    content: open-quote; }
+  q q:after {
+    content: "”";
+    content: close-quote; }
+
+blockquote {
+  quotes: "“" "”"; }
+  blockquote p:before {
+    content: "“";
+    content: open-quote; }
+  blockquote p:after {
+    content: "";
+    content: no-close-quote; }
+  blockquote p:last-of-type:after {
+    content: "”";
+    content: close-quote; }
+  blockquote q:before {
+    content: "‘";
+    content: open-quote; }
+  blockquote q:after {
+    content: "’";
+    content: close-quote; }
+
+/**
+ * 
+   <blockquote>
+       <p>Insanity: doing the same thing over and over again and expecting
+       different results.</p>
+       <b class=source>Albert Einstein</b>
+   </blockquote>
+ * 
+ */
+blockquote {
+  /**
+   * .4em is roughly equal to the width of the opening “ that we wish to hang.
+   */
+  text-indent: -0.41em; }
+  blockquote p:last-of-type {
+    margin-bottom: 0; }
+
+.source {
+  display: block;
+  text-indent: 0; }
+  .source:before {
+    content: "—"; }
+
+/*------------------------------------*\
+    $SHARED
+\*------------------------------------*/
+/**
+ * Where `margin-bottom` is concerned, this value will be the same as the
+ * base line-height. This allows us to keep a consistent vertical rhythm.
+ * As per: csswizardry.com/2012/06/single-direction-margin-declarations
+ */
+/**
+ * Base elements
+ */
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p, address,
+table,
+fieldset, figure,
+pre,
+.accordion,
+.lfl-banner,
+.secondary-nav,
+.slide-panel,
+.student-filter,
+.student-settings,
+.appointments__today,
+.appointments__tomorrow,
+.timeline__entry,
+.timeline-header,
+.export-timeline,
+.add-to-timeline__form,
+.booking-form input,
+.booking-form select,
+.media,
+.island,
+.islet {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+  .islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
+  ul, .islet ol, .islet dl, .islet
+  blockquote, .islet p, .islet address, .islet
+  table, .islet
+  fieldset, .islet figure, .islet
+  pre, .islet
+  .accordion, .islet
+  .lfl-banner, .islet
+  .secondary-nav, .islet
+  .slide-panel, .islet
+  .student-filter, .islet
+  .student-settings, .islet
+  .appointments__today,
+  .islet .appointments__tomorrow, .islet
+  .timeline__entry, .islet
+  .timeline-header, .islet
+  .export-timeline, .islet
+  .add-to-timeline__form, .islet .booking-form input, .booking-form .islet input, .islet .booking-form select, .booking-form .islet select, .islet
+  .media, .islet
+  .island, .islet
+  .islet {
+    margin-bottom: 12px;
+    margin-bottom: 0.75rem; }
+
+/**
+ * Doubled up `margin-bottom` helper class.
+ */
+.landmark {
+  margin-bottom: 48px;
+  margin-bottom: 3rem; }
+
+/**
+ * `hr` elements only take up a few pixels, so we need to give them special
+ * treatment regarding vertical rhythm.
+ */
+hr {
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem; }
+
+/**
+ * Where `margin-left` is concerned we want to try and indent certain elements
+ * by a consistent amount. Define that amount once, here.
+ */
+ul, ol, dd {
+  margin-left: 48px;
+  margin-left: 3rem; }
+
+/* Tables ================================================ */
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 24px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: white; }
+  table caption {
+    margin-bottom: 12px;
+    text-align: left;
+    font-weight: bold; }
+  table th, table td {
+    padding: 8px;
+    vertical-align: top;
+    text-align: left; }
+  table th {
+    font-weight: bold;
+    background: #bfbfbf; }
+  table thead th {
+    vertical-align: bottom; }
+  table colgroup + thead tr:first-child th,
+  table colgroup + thead tr:first-child td,
+  table thead:first-child tr:first-child th,
+  table thead:first-child tr:first-child td {
+    border-top: 0; }
+  table tbody tr:hover td,
+  table tbody tr:hover th {
+    background-color: #f2f2f2; }
+  table tr:nth-of-type(even) {
+    background-color: #e6e6e6; }
+
+/* Condensed */
+.table--condensed th, .table--condensed td {
+  padding: 4px 5px; }
+
+/* Bordered */
+.table--bordered {
+  border: 1px solid #e6e6e6;
+  border-left: 0;
+  border-top: 0;
+  border-collapse: separate;
+  *border-collapse: collapsed; }
+  .table--bordered th, .table--bordered td {
+    border-left: 1px solid white; }
+    .table--bordered th:first-child, .table--bordered td:first-child {
+      border-left: 0; }
+  .table--bordered thead:first-child tr:first-child th,
+  .table--bordered tbody:first-child tr:first-child th,
+  .table--bordered tbody:first-child tr:first-child td {
+    border-top: 0; }
+
+/* Foundation v2.1.4 http://foundation.zurb.com */
+table th, td {
+  word-wrap: break-word; }
+
+table th {
+  font-weight: bold; }
+
+table td, table th {
+  padding: 9px 10px;
+  text-align: left; }
+
+@media only screen and (max-width: 799px) {
+  .responsive {
+    margin-bottom: 0; }
+
+  .pinned {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+    overflow: hidden;
+    overflow-x: scroll;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    width: 35%; }
+
+  .pinned table {
+    border-right: none;
+    border-left: none; }
+
+  .pinned table th, .pinned table td {
+    white-space: nowrap; }
+
+  .pinned td:last-child {
+    border-bottom: 0; }
+
+  .table-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-right: 1px solid #cccccc; }
+
+  .table-wrapper div.scrollable table {
+    margin-left: 35%; }
+
+  .table-wrapper div.scrollable {
+    overflow: scroll;
+    overflow-y: hidden; }
+
+  table.responsive td, table.responsive th {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden; }
+
+  table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td {
+    display: none; } }
+/* Page-Head ================================================= */
+/* 
+ * Fonts
+ */
+@font-face {
+  font-family: 'UoLRegular';
+  src: url("/fonts/uol-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/uol-regular-webfont.woff") format("woff"), url("/fonts/uol-regular-webfont.ttf") format("truetype"), url("/fonts/uol-regular-webfont.svg#UoLRegular") format("svg"); }
+
+@font-face {
+  font-family: 'UoLRegular26';
+  src: url("/fonts/uol-regular26-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/uol-regular26-webfont.woff") format("woff"), url("/fonts/uol-regular26-webfont.ttf") format("truetype"), url("/fonts/uol-regular26-webfont.svg#UoLRegular") format("svg"); }
+
+@font-face {
+  font-family: 'leeds-for-life-icons';
+  src: url("../fonts/leeds-for-life-icons.eot");
+  src: url("../fonts/leeds-for-life-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/leeds-for-life-icons.woff") format("woff"), url("../fonts/leeds-for-life-icons.ttf") format("truetype"), url("../fonts/leeds-for-life-icons.svg#leeds-for-life-icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Forms ================================================= */
+form fieldset {
+  margin-bottom: 24px;
+  padding: 0;
+  border: 0; }
+  form fieldset legend {
+    width: 100%;
+    padding: 0 0 6px 0;
+    margin-bottom: 12px;
+    border-bottom: 1px dotted #bfbfbf;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.2; }
+  form fieldset fieldset.attendance label {
+    display: block;
+    padding: 6px 0 6px 0;
+    border: 0;
+    background: none; }
+  form fieldset fieldset {
+    margin-bottom: 12px; }
+    form fieldset fieldset span {
+      padding-right: 12px; }
+    form fieldset fieldset label {
+      display: inline;
+      padding: 6px;
+      background: #e6e6e6;
+      border: 1px solid #bfbfbf; }
+    form fieldset fieldset legend {
+      padding: 0;
+      border-bottom: none;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: bold; }
+form label {
+  display: block;
+  padding-bottom: 12px;
+  font-weight: bold; }
+form textarea {
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 12px; }
+form input {
+  margin-bottom: 12px; }
+form .form-helper {
+  margin-bottom: 12px; }
+form .form-help-text {
+  display: none;
+  padding: 12px;
+  background: #e6e6e6; }
+form .small-text {
+  /*display: none;*/
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429; }
+
+@media only screen and (max-width: 799px) {
+  form fieldset fieldset.attendance div {
+    display: block; }
+  form fieldset fieldset.attendance label {
+    float: none;
+    width: 100%; }
+  form fieldset fieldset.attendance label:nth-of-type(even) {
+    margin-left: 0%; }
+  form fieldset fieldset label {
+    display: block;
+    float: left;
+    width: 48.75%;
+    padding: 12px 12px 0 12px; }
+    form fieldset fieldset label:nth-of-type(even) {
+      margin-left: 2.5%; }
+  form fieldset fieldset legend {
+    padding: 0;
+    border-bottom: none;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: bold; } }
+/* Accordion ============================================= */
+.accordion__target {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 12px;
+  border-bottom: 1px solid white;
+  background: #e6e6e6;
+  cursor: pointer;
+  line-height: 1.5;
+  font-family: serif;
+  /* this can be removed when a global font is set */ }
+  .accordion__target:after {
+    float: right;
+    content: "\271a"; }
+  .accordion__target h5 {
+    margin-bottom: 0;
+    float: left; }
+  .accordion__target:last-child {
+    border-bottom: none; }
+  .accordion__target.on, .accordion__target:hover, .accordion__target:focus {
+    background-color: #bfbfbf; }
+  .accordion__target.is-pressed {
+    line-height: 1.5;
+    font-family: serif;
+    /* this can be removed when a global font is set */
+    background: #e6e6e6; }
+    .accordion__target.is-pressed:after {
+      /*content: "\23bc";*/
+      content: "\23bc"; }
+
+.accordion__content {
+  display: none;
+  position: relative;
+  margin: 0; }
+  .accordion__content.is-open {
+    display: block; }
+  .accordion__content div {
+    overflow-x: auto;
+    overflow-y: hidden; }
+
+.no-js .accordion__content {
+  display: block; }
+
+/* Dashboard alerts ================================================= */
+.alerts__header {
+  display: inline-block;
+  margin-bottom: 12px; }
+
+.all-alerts {
+  float: right;
+  margin-bottom: 8px; }
+
+.alert {
+  position: relative;
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #e6e6e6; }
+  .alert p, .alert h1, .alert h2, .alert h3, .alert h4, .alert h5, .alert h6 {
+    margin-left: 36px;
+    margin-bottom: 0; }
+
+.alert--success {
+  background-color: green; }
+  .alert--success:before {
+    content: "\2713"; }
+
+.alert--error {
+  background-color: red; }
+  .alert--error:before {
+    content: "\292c"; }
+
+/*.close_pane {
+	display: block;
+	float: right;
+	width: $half-spacing-unit;
+	height: $half-spacing-unit;
+	background-image: url(/images/icons/cancel.svg);
+	background-size:$half-spacing-unit $half-spacing-unit;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}*/
+/*------------------------------------*\
+    $BLOCK-LIST
+\*------------------------------------*/
+/**
+ * Create big blocky lists of content, e.g.:
+ * 
+   <ul class=block-list>
+      <li>Foo</li>
+      <li>Bar</li>
+      <li>Baz</li>
+      <li><a href=# class=block-list__link>Foo Bar Baz</a></li>
+   </ul>
+ * 
+ * Extend this object in your theme stylesheet.
+ * 
+ * Demo: jsfiddle.net/inuitcss/hR57q
+ * 
+ */
+.block-list {
+  list-style: none;
+  margin-left: 0; }
+
+.block-list--padding > li {
+  padding: 12px; }
+
+.block-list--inline > li,
+.block-list--inline > li > a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  padding: 12px; }
+  @media only screen and (max-width: 799px) {
+    .block-list--inline > li,
+    .block-list--inline > li > a {
+      display: block; } }
+
+/*------------------------------------*\
+    $BRAND
+\*------------------------------------*/
+/**
+ * `.brand` is a quick and simple way to apply your brand face and/or color to
+ * any element using a handy helper class.
+ */
+.brand {
+  font-family: sans-serif!important;
+  color: #2f2f29!important; }
+
+.brand-face {
+  font-family: sans-serif!important; }
+
+.brand-color,
+.brand-colour {
+  color: #2f2f29!important; }
+
+/*------------------------------------*\
+    $BREADCRUMB
+\*------------------------------------*/
+/**
+ * Simple breadcrumb styling to apply to (ordered) lists. Extends `.nav`, e.g.:
+ * 
+   <ol class="nav  breadcrumb">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>The Board</a></li>
+       <li class=current><a href=#>Directors</a></li>
+   </ol>
+ * 
+ * Demo: jsfiddle.net/inuitcss/rkAY9
+ * 
+ */
+.breadcrumb {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  margin-bottom: 12px !important; }
+  .breadcrumb a {
+    padding: 0; }
+
+.breadcrumb > li + li:before {
+  content: "» "; }
+
+/**
+ * For denoting a path-like structure, GitHub style, e.g.:
+ * 
+   <ol class="nav  breadcrumb--path">
+       <li class=breadcrumb__root><a href=#>inuit.css</a></li>
+       <li><a href=#>inuit.css</a></li>
+       <li><a href=#>partials</a></li>
+       <li class=current><a href=#>objects</a></li>
+   </ol>
+ * 
+ */
+.breadcrumb--path > li + li:before {
+  content: "/ "; }
+
+/**
+ * Assign a delimiter on the fly through a data attribute, e.g.:
+ * 
+   <ol class="nav  breadcrumb">
+       <li><a href=#>Home</a></li>
+       <li data-breadcrumb="|"><a href=#>About</a></li>
+       <li data-breadcrumb="|"><a href=#>The Board</a></li>
+       <li data-breadcrumb="|" class=current><a href=#>Directors</a></li>
+   </ol>
+ * 
+ */
+.breadcrumb > li + li[data-breadcrumb]:before {
+  content: attr(data-breadcrumb) " "; }
+
+/**
+ * Denote the root of the tree.
+ */
+.breadcrumb__root {
+  font-weight: bold; }
+
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+/**
+ * Basic button structural styling. Extend in your theme stylesheet.
+ * 
+ * Demo: jsfiddle.net/inuitcss/RqHcp
+ * 
+ */
+.btn {
+  font: inherit;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+  /**
+   * Set padding in ems so we can change the size of a button by merely
+   * altering its `font-size`.
+   */
+  padding: 0.5em; }
+
+.btn,
+.btn:hover {
+  text-decoration: none; }
+
+/**
+ * Basic button modifiers
+ */
+.btn--sml {
+  font-size: .75em; }
+
+.btn--lrg {
+  font-size: 1.50em; }
+
+.btn--full {
+  display: block;
+  text-align: center;
+  /**
+   * The following is so that `.btn-full` works properly on `input`s as well
+   * as `a`s.
+   */
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%; }
+
+/* Basic button style - improve this later */
+.btn {
+  padding: 0.25em;
+  background: #bfbfbf; }
+
+/* Footer ================================================ */
+div[role=contentinfo] .wrapper {
+  padding: 12px; }
+
+/* Form Wizard ================================================= */
+.form-wizard {
+  margin: 0;
+  list-style: none; }
+  @media only screen and (max-width: 799px) {
+    .form-wizard {
+      margin-bottom: 24px;
+      background: #e6e6e6; } }
+
+.form-wizard__item {
+  text-align: center; }
+  @media only screen and (max-width: 799px) {
+    .form-wizard__item {
+      text-align: left; } }
+  .form-wizard__item > a {
+    padding: 12px 0 12px 12px;
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.71429; }
+    @media only screen and (max-width: 799px) {
+      .form-wizard__item > a {
+        width: 100%;
+        display: inline-block;
+        padding: 6px;
+        line-height: 19.2px;
+        text-decoration: none; } }
+    @media only screen and (max-width: 799px) {
+      .form-wizard__item > a:hover {
+        background: #bfbfbf; } }
+    .form-wizard__item > a:hover .form-wizard__number {
+      background: #e6e6e6; }
+  .form-wizard__item .current .form-wizard__number {
+    background: #bfbfbf; }
+    @media only screen and (max-width: 799px) {
+      .form-wizard__item .current .form-wizard__number {
+        background: #e6e6e6; } }
+  @media only screen and (max-width: 799px) {
+    .form-wizard__item .current {
+      background: #bfbfbf; } }
+
+.form-wizard__number {
+  display: block;
+  width: 48px;
+  margin: 0 auto 6px auto;
+  padding: 12px;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-align: center;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background: #e6e6e6; }
+  @media only screen and (max-width: 799px) {
+    .form-wizard__number {
+      display: inline-block;
+      float: none;
+      width: 28px;
+      margin: 0;
+      padding: 3px;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.5;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      background: #bfbfbf;
+      text-align: centre; } }
+
+/* Icons ================================================= */
+/**
+ * Set up Batch icon font
+ */
+/* Giving an element a class of `.i` will throw it into ‘icon’ mode and will
+ * not add a background, but should be used for icon fonts and is populated
+ * through a `data-icon` attribute and the `:after` pseudo-element, e.g.:
+ * 
+ * <a href=#><i class=i data-icon="&#xF000;"></i> View your favourites<a href=#>
+ * 
+ * <a href=#><i class="i  i--info  i--large"></i>Help<a href=#>
+ * 
+ * Where ‘&#xF000;’ might map to a star in your particular font.
+ * 
+ * Demo: jsfiddle.net/inuitcss/6TKuS
+ * 
+ */
+.i {
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+  /**
+   * So using `.i` on certain elements doesn’t make a visual difference.
+   */
+  font-style: normal;
+  font-weight: normal;
+  /**
+   * So icons added using `.i` sit in the centre of the element.
+   */
+  text-align: center;
+  font-family: leeds-for-life-icons;
+  font-size: 16px;
+  /**
+   * Place the icon in a box the exact same dimensions as the icon itself.
+   */
+  width: 1em;
+  height: 1em; }
+  .i:before {
+    content: attr(data-icon); }
+
+.i--background, .alert--success:before, .alert--error:before, .mobile-nav__target, .timeline__entry h5:before {
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-family: leeds-for-life-icons; }
+
+/**
+ * Icon size modifiers.
+ */
+.i--large, .alert--success:before, .alert--error:before {
+  font-size: 24px; }
+
+.i--huge {
+  font-size: 64px; }
+
+.i--half {
+  font-size: 12px; }
+
+/**
+ * Icon block modifiers.
+ */
+/**
+ * Giveing an element a class of i--block postion the icon to left 
+ * veticaly centred so it sit next to a <p> or othere content
+ * <div><i class="i i--block  i--info  i--large"></i><p>Hello World</p></div>
+ */
+.i--block, .alert--success:before, .alert--error:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -12px; }
+  .i--block ~ a, .alert--success:before ~ a, .alert--error:before ~ a {
+    margin-left: 36px; }
+
+/**
+ * Giveing an element a class of i--block--right postion the icon to right 
+ * veticaly centred so it sit next to a <p> or othere content
+ * <div><i class="i i--block i--block--right  i--info  i--large"></i><p>Hello World</p></div
+ */
+.i--block--right {
+  right: 24px; }
+
+/**
+ * Icon padding in a link
+ */
+/**
+ * For text-links etc that have an icon with them. Sometimes whitespace would
+ * suffice in creating a gap between the icon and text, for example:
+ * 
+   <a href=#>
+       <i class="i  i--info"></i> Help &amp; support
+   </a>
+ * 
+ * However we will sometimes want a larger, explicity set gap:
+   <a href=# class=icon-text>
+       <i class="icon-text__icon  i  i--info></i>Help &amp; support
+   </a>
+ * 
+ * Demo: jsfiddle.net/inuitcss/Q6Lbf
+ * 
+ */
+.icon-text > .icon-text__icon {
+  margin-right: 12px; }
+
+/**
+ * We can also reverse the direction of the margin for icons that appear to the
+ * right of the text content, thus:
+ *
+   <a href=# class=icon-text--rev>
+       Help &amp; support<i class="icon-text__icon  s  s--help"></i>
+   </a>
+ *
+ */
+.icon-text--rev > .icon-text__icon {
+  margin-left: 12px; }
+
+/*
+ * Add to Bin/Delete icon
+ * <a class="delete"><span class=" i  i--bin "></span></a>
+ */
+.delete {
+  float: right;
+  cursor: pointer;
+  margin-right: 6px; }
+
+/**
+ * List of icons
+ */
+.i--info:after {
+  content: "\233d";
+  color: black; }
+
+.i--form:after {
+  content: "\274f";
+  color: black; }
+
+.i--chat:after {
+  content: "\2706";
+  color: black; }
+
+.i--pin:after {
+  content: "\2351";
+  color: black; }
+
+.i--pencil:after {
+  content: "\270e";
+  color: black; }
+
+.i--calendar:after {
+  content: "\2328";
+  color: black; }
+
+.i--funding:after {
+  content: "\2654";
+  color: black; }
+
+.i--star:after {
+  content: "\2605";
+  color: black; }
+
+.i--help:after {
+  content: "\2625";
+  color: black; }
+
+.i--mail:after {
+  content: "\2709";
+  color: black; }
+
+.i--cog:after {
+  content: "\2731";
+  color: black; }
+
+.i--eye:after {
+  content: "\2609";
+  color: black; }
+
+.i--bin:after {
+  content: "\2622";
+  color: black; }
+
+.i--save:after {
+  content: "\2691";
+  color: black; }
+
+.i--submit:after {
+  content: "\2713";
+  color: black; }
+
+.i--map:after {
+  content: "\27a3";
+  color: black; }
+
+.i--file:after {
+  content: "\25a2";
+  color: black; }
+
+.i--link:after {
+  content: "\260d";
+  color: black; }
+
+.i--share:after {
+  content: "\293a";
+  color: black; }
+
+.i--grid:after {
+  content: "\2637";
+  color: black; }
+
+.i--list:after {
+  content: "\2630";
+  color: black; }
+
+.i--list--b:before, .mobile-nav__target:before {
+  content: "\2630";
+  color: black; }
+
+.i--close:after {
+  content: "\292c";
+  color: black; }
+
+.i--close--b:before {
+  content: "\292c";
+  color: black; }
+
+.i--plus:after {
+  content: "\271a";
+  color: black; }
+
+.i--minus:after {
+  content: "\23e4";
+  color: black; }
+
+.i--bookmark:after {
+  content: "\275a";
+  color: black; }
+
+.i--cup:after {
+  content: "\265b";
+  color: black; }
+
+/* Listings ================================================= */
+.list_rows {
+  margin-bottom: 24px; }
+
+.list_row {
+  padding: 12px;
+  border-bottom: 1px solid #bfbfbf; }
+  .list_row:nth-child(odd) {
+    background: #e6e6e6; }
+  .list_row h3 {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5; }
+  .list_row ul {
+    list-style: none;
+    text-align: right; }
+  .list_row p {
+    margin-bottom: 0; }
+
+.list__row__item {
+  margin-bottom: 6px; }
+
+.list-footer h3 {
+  display: inline;
+  margin: 0;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429; }
+.list-footer ul {
+  display: inline;
+  margin: 0;
+  font-size: 0.75em; }
+.list-footer li {
+  display: inline; }
+
+.list-meta ul, .list-aside ul {
+  margin: 0; }
+  @media only screen and (max-width: 799px) {
+    .list-meta ul, .list-aside ul {
+      margin-left: 0;
+      text-align: left; }
+      .list-meta ul li, .list-aside ul li {
+        display: inline;
+        margin-right: 12px; } }
+
+.list-actions ul {
+  text-align: left; }
+  @media only screen and (max-width: 799px) {
+    .list-actions ul {
+      margin-bottom: 0;
+      margin-left: 0; }
+      .list-actions ul li {
+        display: inline;
+        margin-right: 12px; } }
+
+/*  Default Listing Module */
+/*
+ * Listing abstraction
+ * Use this module when you want a listing with one main block of content and a small aside block
+ * e.g.:
+ * 
+	<div class=" list_rows ">
+		<div class=" list_row ">
+			<div class=" gw ">
+				<div class=" list__row__item  list-body ">
+					<h3>
+						<a href="opportunity_detail.html" rel="bookmark">CEO at A1 Technologies Ltd</a>
+					</h3>
+					<p>Works in Manufacturing / Processing | Sector: Manufacturing / Processing Course: English Literature | Graduated: 1973</p>
+					<p>
+						<a class=" email " href="#">You can ask me a question by email</a>
+					</p>
+				</div>
+				<div class=" list__row__item  list-aside ">
+					<ul>
+						<li>
+							<a href="#">Email 1/3</a>
+						</li>
+						<li>
+							<span>ID: 1234</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+ * 
+ */
+/*  Meta Listing Module */
+/*
+ * Listing abstraction
+ * Use this module when you want a listing with one main block of content and a small aside block and a small meta block
+ * e.g.:
+ * 
+	<div class=" list_rows--meta ">
+		<div class=" list_row ">
+			<div class="gw">
+				<div class=" list__row__item  list-body ">
+					<h3>
+						<a href="opportunity_detail.html">Knowledge Safe Spaces Ambassadors</a>
+					</h3>
+					<p>We are looking for a small team of volunteers to assist us in the expansion of the Safe Spaces campaign as coordinated by Knowledge.</p>
+					<div class=" list__row__item  list-footer ">
+						<h3>Leeds for Life skills:</h3>
+						<ul>
+							<li>
+								<a href="#" rel="bookmark">Commercial awareness</a>,</li>
+							<li>
+								<a href="#" rel="bookmark">Team working</a>,</li>
+							<li>
+								<a href="#" rel="bookmark">Planning &amp; organisation</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class=" list__row__item  list-aside ">
+				<a href="#"><span class="i  i--map">Leeds</span></a>
+			</div>
+			<div class=" list__row__item  list-meta ">
+				<ul>
+					<li>Saved Places: 6</li>
+					<li>Duration: ongoing</li>
+					<li>PAID</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+ * 
+ */
+/*  Actions Listing Module */
+/*
+ * Listing abstraction
+ * Use this module when you want a listing with one main block of content and a small aside block, a small meta block and a small block of action
+ * e.g.:
+ * 
+	<div class="list_rows--actions">
+		<div class="list_row">
+			<div class="gw">
+				<div class="list__row__item list-body">
+					<h3>
+						<a href="#">Knowledge Safe Spaces Ambassadors</a>
+					</h3>
+					<p>We are looking for a small team of volunteers to assist us in the expansion of the Safe Spaces campaign as coordinated by Knowledge.</p>
+					<div class=" list__row__item  list-footer ">
+						<h3>Leeds for Life skills:</h3>
+						<ul>
+							<li>
+								<a href="#" rel="bookmark">Commercial awareness</a>,</li>
+							<li>
+								<a href="#" rel="bookmark">Team working</a>,</li>
+							<li>
+								<a href="#" rel="bookmark">Planning &amp; organisation</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class=" list__row__item  list-aside ">
+					<a href="#"><span class="i  i--map">Leeds</span></a>
+				</div>
+				<div class=" list__row__item  list-meta ">
+					<ul>
+						<li>Saved Places: 6</li>
+						<li>Duration: ongoing</li>
+						<li>PAID</li>
+					</ul>
+				</div>
+				<div class="list__row_item list-actions">
+					<ul>
+						<li>
+							<a class="icon-text" href="#" role="button"><span class="i  i--submit  icon-text__icon">Apply</span></a>
+						</li>
+						<li>
+							<a class="icon-text" href="#" role="button"><span class="i  i--bin  icon-text__icon"></span>Remove</a>
+						</li>
+						<li>
+							<a class="icon-text" href="#" role="button"><span class="i  i--pencil  icon-text__icon"></span>Add notes</a>
+						</li>
+						<li>
+							<a class="icon-text" href="#" role="button"><span class="i  i--save  icon-text__icon"></span>Complete</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+ * 
+ */
+/*------------------------------------*\
+    $NAV
+\*------------------------------------*/
+/**
+ * Nav abstraction as per: csswizardry.com/2011/09/the-nav-abstraction
+ * When used on an `ol` or `ul`, this class throws the list into horizontal mode
+ * e.g.:
+ * 
+   <ul class=nav>
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ * 
+ * Demo: jsfiddle.net/inuitcss/Vnph4
+ * 
+ */
+.nav {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0; }
+  .nav > a {
+    padding: 12px; }
+  .nav > li,
+  .nav > li > a {
+    display: inline-block;
+    *display: inline;
+    zoom: 1; }
+
+.nav--rev {
+  float: right; }
+  @media only screen and (max-width: 799px) {
+    .nav--rev {
+      float: none; } }
+  .nav--rev > a {
+    float: right; }
+    @media only screen and (max-width: 799px) {
+      .nav--rev > a {
+        float: right; } }
+
+/**
+ * `.nav--stacked` extends `.nav` and throws the list into vertical mode, e.g.:
+ * 
+   <ul class="nav  nav--stacked">
+       <li><a href=#>Home</a></li>
+       <li><a href=#>About</a></li>
+       <li><a href=#>Portfolio</a></li>
+       <li><a href=#>Contact</a></li>
+   </ul>
+ * 
+ */
+.nav--stacked > li {
+  display: list-item; }
+  .nav--stacked > li > a {
+    display: block; }
+
+/**
+ * `.nav--padding` extends `.nav` and add paddding to achors in the list
+ */
+.nav--padding a {
+  padding: 12px; }
+
+/**
+ * `.nav--tabs` extends `.nav` and add tabs styles
+ */
+.nav--tabs {
+  margin-bottom: 12px; }
+  .nav--tabs a {
+    border-right: solid 1px white; }
+
+.current a {
+  cursor: text;
+  text-decoration: underline; }
+
+/* Global site navigation ================================================= */
+.lfl-banner h1 {
+  float: left;
+  padding: 12px;
+  margin-bottom: 0; }
+
+/* Mobile site navigation ================================================= */
+.nav__mobile-btn {
+  display: inline;
+  float: left; }
+
+@media only screen and (max-width: 799px) {
+  .nav--mobile-links {
+    display: none;
+    right: 0;
+    z-index: 3;
+    width: 100%;
+    padding: 0;
+    background: #e6e6e6; }
+    .nav--mobile-links li {
+      display: block;
+      float: none; } }
+.nav--mobile-links.is-open {
+  display: block; }
+
+/* Not shown > 800px */
+.mobile-nav__target {
+  display: none !important;
+  line-height: 1.5;
+  font-family: serif;
+  /* this can be removed when a global font is set */ }
+  .mobile-nav__target.is-pressed {
+    /*@extend .i--background;
+    @extend .i--close--b;*/
+    /* line-height: 1.5; */
+    /* font-family: serif;  this can be removed when a global font is set */
+    background: #e6e6e6; }
+  @media only screen and (max-width: 799px) {
+    .mobile-nav__target {
+      display: block !important; } }
+
+/* Secondary site navigation ================================================= */
+.secondary-nav {
+  position: relative;
+  background: #e6e6e6; }
+  @media only screen and (max-width: 799px) {
+    .secondary-nav .nav__mobile-btn {
+      width: 100%; } }
+  .secondary-nav > a {
+    padding: 12px; }
+
+/* Opportunities ================================================= */
+.network-stats {
+  padding: 12px;
+  background: #f2f2f2; }
+  .network-stats li {
+    margin-bottom: 6px; }
+    .network-stats li b {
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 1.2;
+      display: inline; }
+
+/*
+ * Opportunity detail 
+ */
+.opportunity-detail p:first-of-type {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-bottom: 24px; }
+
+.opportunity-detail__image {
+  padding: 6px;
+  border: 1px solid #e6e6e6; }
+
+.opportunity-detail__meta {
+  margin-bottom: 24px;
+  padding: 6px 0;
+  border-top: 1px dotted #bfbfbf;
+  border-bottom: 1px dotted #bfbfbf; }
+  .opportunity-detail__meta li {
+    padding: 0 12px; }
+  .opportunity-detail__meta li:first-of-type {
+    padding-left: 0; }
+
+/* Search ================================================= */
+.search-filter {
+  margin-bottom: 24px;
+  padding: 12px; }
+  .search-filter fieldset {
+    padding: 0;
+    margin: 0; }
+
+.search-filter__input {
+  padding: 3px; }
+
+.search-filter__filters {
+  display: none;
+  clear: both;
+  padding-top: 12px; }
+
+.search-filters__filters is-collapsed {
+  margin-bottom: 12px;
+  padding-right: 12px; }
+
+.search-filter__filters__selection--radio-btns {
+  margin-top: 24px; }
+  .search-filter__filters__selection--radio-btns label {
+    display: inline; }
+
+/* Sliding panel ============================================= */
+.slider__target {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  line-height: 1.5;
+  font-family: serif;
+  /* this can be removed when a global font is set */ }
+  .slider__target:after {
+    content: "\271a"; }
+  .slider__target:last-child {
+    border-bottom: none; }
+  .slider__target.is-pressed {
+    line-height: 1.5;
+    font-family: serif;
+    /* this can be removed when a global font is set */ }
+    .slider__target.is-pressed:after {
+      content: "\23e4"; }
+
+.slider__content {
+  display: none;
+  position: relative;
+  overflow: hidden;
+  margin: 0; }
+  .slider__content.is-open {
+    display: block; }
+
+/*------------------------------------*\
+    $SPRITE
+\*------------------------------------*/
+/**
+ * Giving an element a class of `.s` will throw it into ‘sprite’ mode and apply
+ * a background image e.g.:
+ * 
+   <a class="s  s--question-mark">More info&hellip;</a>
+ * 
+ * Demo: jsfiddle.net/inuitcss/6TKuS
+ * 
+ */
+.s {
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+  /**
+   * So using `.i` on certain elements doesn’t make a visual difference.
+   */
+  font-style: normal;
+  font-weight: normal;
+  /**
+   * So icons added using `.i` sit in the centre of the element.
+   */
+  text-align: center;
+  background-image: url(/path/to/your/sprite.png);
+  /**
+   * The typical size of most icons. Override in your theme stylesheet.
+   */
+  width: 16px;
+  height: 16px;
+  top: -1px;
+  /*
+   * H5BP method image replacement:
+   * github.com/h5bp/html5-boilerplate/commit/adecc5da035d6d76b77e3fa95c6abde841073da2
+   */
+  overflow: hidden;
+  *text-indent: -9999px; }
+  .s:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%; }
+
+/* Student Metadata ================================================= */
+.student-meta__header {
+  display: inline-block;
+  margin-bottom: 12px; }
+
+.student-meta__body {
+  margin-bottom: 12px;
+  padding: 12px;
+  background: #e6e6e6; }
+
+.student-meta__overview {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px dotted #bfbfbf; }
+
+.avatar {
+  border: 6px solid white; }
+
+div[role='banner'] {
+  font-family: 'BlissPro-extrabold';
+  font-weight: normal;
+  text-transform: uppercase;
+  background: #3f3f3f; }
+  div[role='banner'] > div {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    /*
+     * Values = 17px optical spacing (guidelines).
+     */
+    padding: 9px 0.75em 13px 0.75em; }
+  div[role='banner'] a {
+    float: right;
+    color: white;
+    color: rgba(255, 255, 255, 0.95); }
+    div[role='banner'] a:hover {
+      text-decoration: none; }
+  div[role='banner'] .uol-glyph {
+    display: block;
+    height: 32px;
+    font-family: 'UoLRegular';
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: never;
+    font-size: 32px;
+    margin-bottom: 4px;
+    text-align: right; }
+    div[role='banner'] .uol-glyph::before, div[role='banner'] .uol-glyph:before {
+      content: '\f200';
+      position: relative; }
+  @media only screen and (max-width: 799px) {
+    div[role='banner'] > div {
+      /*
+       * Values = 17px optical spacing (guidelines).
+       */
+      padding: 7px 0.75em 6px 0; }
+    div[role='banner'] .uol-glyph {
+      display: inline;
+      height: 26px;
+      font-family: 'UoLRegular26';
+      font-weight: normal;
+      -webkit-font-smoothing: antialiased;
+      font-smooth: never;
+      font-size: 26px; }
+      div[role='banner'] .uol-glyph::before, div[role='banner'] .uol-glyph:before {
+        content: '\f000';
+        position: relative; }
+    div[role='banner'] span {
+      display: none; } }
+
+/* Navigation ============================================ */
+/*
+ * Nav abstraction
+ * When used on an `ol` or `ul`, this class throws the list into vertical mode
+ * e.g.:
+ * 
+   <ul class=" nav--inline-block ">
+	   	<li>
+	   		<a href="#" rel="home">Home</a>
+	   	</li>
+	   	<li>
+	   		<a href="#" rel="me">About</a>
+	   	</li>
+	   	<li>
+	   		<a href="#" rel="bookmark">Portfolio</a>
+	   	</li>
+	   	<li>
+	   		<a href="#" rel="bookmark">Contact</a>
+	   	</li>
+	</ul>
+ * 
+ */
+.nav--inline-block {
+  overflow: hidden;
+  margin-bottom: 24px;
+  background: #f2f2f2; }
+
+.nav--inline-block__header {
+  margin-bottom: 0;
+  padding: 12px; }
+
+.nav--inline-block__body {
+  padding: 6px 12px;
+  border-bottom: 1px dotted #bfbfbf;
+  /* Need to create a class for this */ }
+  .nav--inline-block__body:first-of-type {
+    border-top: 1px dotted #bfbfbf; }
+  .nav--inline-block__body ul {
+    margin: 0;
+    list-style-type: none; }
+  .nav--inline-block__body h4 {
+    margin: 0;
+    font-size: 1em;
+    font-weight: normal; }
+  .nav--inline-block__body p {
+    margin: 0; }
+
+.nav--inline-block__btn {
+  display: block;
+  margin: 12px;
+  text-align: center; }
+
+.body-item {
+  display: inline; }
+
+.body-action {
+  text-align: right; }
+
+/* Tooltip ================================================= */
+.tooltip {
+  display: none;
+  padding: 12px;
+  border: solid 1px white;
+  background-color: #404040;
+  color: white; }
+  .tooltip ul {
+    list-style-type: none;
+    margin: 0; }
+  .tooltip label {
+    display: inline;
+    font-weight: normal; }
+  .tooltip input[type=checkbox], .tooltip input[type=radio] {
+    margin-right: 12px; }
+
+.css_tooltip span {
+  z-index: 10;
+  display: none;
+  padding: 6px; }
+.css_tooltip:hover span {
+  display: inline;
+  position: absolute;
+  left: 80px;
+  top: -30px;
+  border: 1px solid #bfbfbf;
+  background: #e6e6e6; }
+
+.calendar th {
+  text-align: left; }
+.calendar th, .calendar td {
+  display: table-cell;
+  padding: 6px;
+  border: 1px solid #bfbfbf;
+  vertical-align: top; }
+  .calendar th h3, .calendar td h3 {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.71429; }
+  @media only screen and (max-width: 799px) {
+    .calendar th, .calendar td {
+      display: none; } }
+.calendar tbody tr:hover td,
+.calendar tbody tr:hover th {
+  background: inherit; }
+.calendar td {
+  height: 96px; }
+  @media only screen and (max-width: 799px) {
+    .calendar td {
+      height: auto; } }
+@media only screen and (max-width: 799px) {
+  .calendar tr {
+    display: block; }
+    .calendar tr:nth-of-type(even) {
+      background-color: white; }
+    .calendar tr td:nth-of-type(1n) .calendar__day:before {
+      content: 'Monday'; }
+    .calendar tr td:nth-of-type(2n) .calendar__day:before {
+      content: 'Tueday'; }
+    .calendar tr td:nth-of-type(3n) .calendar__day:before {
+      content: 'Wednesday'; }
+    .calendar tr td:nth-of-type(4n) .calendar__day:before {
+      content: 'Thursday'; }
+    .calendar tr td:nth-of-type(5n) .calendar__day:before {
+      content: 'Friday'; }
+    .calendar tr td:nth-of-type(6n) .calendar__day:before {
+      content: 'Saturday'; }
+    .calendar tr td:nth-of-type(7n) .calendar__day:before {
+      content: 'Sunday'; } }
+
+.month {
+  display: inline;
+  margin-right: 6px; }
+
+.calendar__suffix {
+  display: none; }
+  @media only screen and (max-width: 799px) {
+    .calendar__suffix {
+      display: inline-block; } }
+
+.calendar__day {
+  display: block;
+  float: right;
+  margin: 0;
+  font-weight: normal; }
+  @media only screen and (max-width: 799px) {
+    .calendar__day {
+      display: inline-block;
+      float: none;
+      font-weight: bold; } }
+  .calendar__day:before {
+    display: none; }
+    @media only screen and (max-width: 799px) {
+      .calendar__day:before {
+        display: inline-block;
+        padding-right: 6px; } }
+
+.calendar__prev-month .calendar__day,
+.calendar__next-month .calendar__day {
+  color: #bfbfbf; }
+
+.calendar__event__details {
+  display: block;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2; }
+  @media only screen and (max-width: 799px) {
+    .calendar__event__details {
+      display: inline;
+      margin-left: 6px; } }
+
+.calendar__outlook {
+  color: gray;
+  background-color: #bfbfbf;
+  margin: 6px 0;
+  padding: 6px;
+  border-radius: 6px; }
+
+@media only screen and (max-width: 799px) {
+  .calendar .calendar__event {
+    display: block;
+    border: none;
+    padding: 0;
+    margin-bottom: 12px; }
+  .calendar .calendar__prev-month,
+  .calendar .calendar__next-month {
+    display: none; } }
+/* fancyBox v2.1.3 fancyapps.com | fancyapps.com/fancybox/#license */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  vertical-align: top; }
+
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8020; }
+
+.fancybox-skin {
+  position: relative;
+  background: #f9f9f9;
+  color: #444;
+  text-shadow: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+.fancybox-opened {
+  z-index: 8030; }
+
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); }
+
+.fancybox-outer, .fancybox-inner {
+  position: relative; }
+
+.fancybox-inner {
+  overflow: hidden !important; }
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+  background-image: url("/images/overlay/fancybox_sprite.png"); }
+
+.fancybox-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 8040; }
+
+/* Overlay helper */
+.fancybox-lock {
+  overflow: hidden; }
+
+.fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  background: url("/images/overlay/fancybox_overlay.png"); }
+
+.fancybox-overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+
+.fancybox-lock .fancybox-overlay {
+  overflow: auto;
+  overflow-y: scroll; }
+
+.helpers {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  max-width: 250px;
+  padding: 12px;
+  background: #fbfe76;
+  opacity: 0.95; }
+
+/* Tutor student filters ================================================= */
+.student-filter {
+  padding: 12px;
+  background-color: #e6e6e6; }
+
+.student-filter__select {
+  margin-right: 24px; }
+
+.student-filter__search {
+  float: right;
+  margin-right: 24px; }
+
+.student-filter__veiws {
+  float: right; }
+  .student-filter__veiws a {
+    margin-right: 6px; }
+    .student-filter__veiws a:last-child {
+      margin-right: 0; }
+  .student-filter__veiws .i {
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    border: 1px solid gray; }
+
+/* Tutor student metadata ================================================= */
+.grid-view--list .grid-view__heading, .grid-view--list .grid-view__body, .grid-view--list .grid-view__aside {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-right: 24px;
+  display: inline-block; }
+
+.grid-view__block {
+  background-color: #e6e6e6;
+  padding: 12px;
+  border: 6px solid white; }
+
+.grid-view__aside {
+  padding-bottom: 24px; }
+
+/* Student Edit Profile ================================================= */
+.student-settings {
+  padding: 12px;
+  background-color: #e6e6e6; }
+  .student-settings label {
+    display: inline; }
+  .student-settings input[type=checkbox] {
+    margin-right: 6px; }
+
+.appointments__today li:nth-of-type(odd) {
+  background: white; }
+
+.appointments__today__wrapper {
+  background-color: #e6e6e6;
+  padding: 12px; }
+
+.appointments__tomorrow li:nth-of-type(odd),
+.appointments-week__day li:nth-of-type(odd) {
+  background: #e6e6e6; }
+
+/* Timeline ================================================= */
+.timeline {
+  /*overflow: hidden;*/
+  position: relative;
+  padding: 0 12px;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #f0f0f0), color-stop(49.59%, #f0f0ee), color-stop(49.6%, #bfbfbf), color-stop(49.9%, #bfbfbf), color-stop(50%, #f0f0f0));
+  background-image: -webkit-linear-gradient(left, #f0f0f0 0%, #f0f0ee 49.59%, #bfbfbf 49.6%, #bfbfbf 49.9%, #f0f0f0 50%);
+  background-image: -moz-linear-gradient(left, #f0f0f0 0%, #f0f0ee 49.59%, #bfbfbf 49.6%, #bfbfbf 49.9%, #f0f0f0 50%);
+  background-image: -o-linear-gradient(left, #f0f0f0 0%, #f0f0ee 49.59%, #bfbfbf 49.6%, #bfbfbf 49.9%, #f0f0f0 50%);
+  background-image: linear, left, #f0f0f0 0%, #f0f0ee 49.59%, #bfbfbf 49.6%, #bfbfbf 49.9%, #f0f0f0 50%; }
+  @media only screen and (max-width: 799px) {
+    .timeline {
+      padding-left: 0;
+      background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #bfbfbf), color-stop(0.9%, #bfbfbf), color-stop(1%, #f0f0f0));
+      background-image: -webkit-linear-gradient(left, #bfbfbf 0%, #bfbfbf 0.9%, #f0f0f0 1%);
+      background-image: -moz-linear-gradient(left, #bfbfbf 0%, #bfbfbf 0.9%, #f0f0f0 1%);
+      background-image: -o-linear-gradient(left, #bfbfbf 0%, #bfbfbf 0.9%, #f0f0f0 1%);
+      background-image: linear, left, #bfbfbf 0%, #bfbfbf 0.9%, #f0f0f0 1%; } }
+  .timeline ul {
+    overflow: hidden;
+    margin: 0; }
+
+.timeline__heading {
+  clear: both;
+  max-width: 8em;
+  margin: 0 auto;
+  padding: 6px 0;
+  text-align: center;
+  background: #f0f0f0; }
+  .timeline__heading:last-child {
+    padding-bottom: 0.75em;
+    border-bottom: 1px dashed #bfbfbf; }
+
+.timeline__entry--right {
+  float: right;
+  margin-top: 24px; }
+  .timeline__entry--right:before {
+    left: -12px;
+    content: "◀"; }
+
+.timeline__entry--left {
+  float: left;
+  clear: both; }
+  .timeline__entry--left:before {
+    right: -12px;
+    content: "▶"; }
+    @media only screen and (max-width: 799px) {
+      .timeline__entry--left:before {
+        left: -12px;
+        content: "◀"; } }
+
+.timeline__entry {
+  position: relative;
+  width: 48%;
+  padding: 12px;
+  list-style-type: none;
+  background: #d9d9d9; }
+  .timeline__entry:before {
+    position: absolute;
+    top: 12px;
+    z-index: 1;
+    color: #d9d9d9; }
+  .timeline__entry p {
+    margin-bottom: 12px; }
+  .timeline__entry h5 {
+    margin-bottom: 12px;
+    display: inline; }
+    .timeline__entry h5:before {
+      padding-right: 12px; }
+  @media only screen and (max-width: 799px) {
+    .timeline__entry {
+      float: left;
+      width: 95%;
+      margin-left: 18px; } }
+
+.timeline__entry--date {
+  padding: 0;
+  opacity: .6;
+  background: none; }
+  .timeline__entry--date:before {
+    content: none; }
+  .timeline__entry--date h5 {
+    padding-bottom: 6px;
+    margin-bottom: 0;
+    border-bottom: 1px dotted gray;
+    display: block; }
+
+.timeline__entry--date--right {
+  text-align: right; }
+  @media only screen and (max-width: 799px) {
+    .timeline__entry--date--right {
+      text-align: left; } }
+
+.timeline__entry--career h5:before {
+  content: "\274f"; }
+
+.timeline__entry--tutorial h5:before {
+  content: "\274f"; }
+
+.timeline__entry--bookmark h5:before {
+  content: "\275a"; }
+
+.timeline__entry--opportunity h5:before {
+  content: "\2605"; }
+
+.timeline__entry--grades h5:before {
+  content: "\265b"; }
+
+.timeline__entry--tutorial-meeting h5:before {
+  content: "\2706"; }
+
+.timeline__entry--booking h5:before {
+  content: "\2328"; }
+
+.timeline__entry--note h5:before {
+  content: "\2750"; }
+
+.timeline__entry__header {
+  overflow: hidden; }
+
+.timeline__entry__time {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-style: italic; }
+
+.timeline__entry__description {
+  margin-bottom: 6px; }
+
+.timeline__second-year,
+.timeline__third-year {
+  opacity: .5; }
+
+.timeline__entry__tools {
+  float: right; }
+  .timeline__entry__tools a {
+    margin-right: 6px;
+    background-color: #e6e6e6;
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    border: 1px solid gray; }
+    .timeline__entry__tools a:last-child {
+      margin-right: 0; }
+    .timeline__entry__tools a:hover {
+      background-color: #bfbfbf;
+      border: 1px solid #404040;
+      text-decoration: none; }
+
+.edit-entry {
+  display: none; }
+  .edit-entry textarea {
+    width: 100%; }
+
+/* Timeline Head ================================================= */
+#add-to-timeline, #add-success, #export-timeline, #export-success {
+  display: none; }
+
+.export-timeline, .add-to-timeline__form {
+  padding: 12px;
+  border: 1px solid black; }
+
+.add-to-timeline__submit {
+  border: none;
+  padding: 12px; }
+  .add-to-timeline__submit label {
+    display: inline;
+    padding-left: 24px; }
+  .add-to-timeline__submit input {
+    margin-bottom: 0; }
+
+.add-to-timeline__btn {
+  float: right; }
+
+.booking-form input, .booking-form select {
+  margin-right: 12px; }

@@ -1,0 +1,63 @@
+header .nav a,header #sidebar1 ul a,#sidebar1 header ul a,a#tools {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+.overview a,.btn {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+ul.thumbnails li a span.zoom-icon:before {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+ul#portfolio-filter li a {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+.flex-control-paging li a {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+input[type=submit] {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+#inner-content-work #main article {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+a#tools {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+.widget_archive li a {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+#searchform input[type=text],#searchsubmit {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+#searchsubmit {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+#searchform input[type=text]:active,#searchform input[type=text]:focus {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+.download-cv {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+#going-up {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+.twitter-stream p,.tweet {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+}a.button,button,input[type="button"],input[type=reset] {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+input[type=submit] {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+button:disabled,input[type=button]:disabled,input[type=submit]:disabled,input[type=reset]:disabled,a.button:disabled,a.button.disabled {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+.bones_page_navi li a {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+.bones_page_navi li.bpn-current {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}
+.bones_page_navi li.bpn-next-link a,.bones_page_navi li.bpn-prev-link a {
+behavior: url(http://matthewtyas.com/wp-content/plugins/wp-pie/pie/PIE.htc);
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata></metadata>
+<defs>
+<font id="uol_26regular" horiz-adv-x="2048" >
+<font-face units-per-em="2048" ascent="1638" descent="-410" />
+<missing-glyph horiz-adv-x="500" />
+<glyph />
+<glyph />
+<glyph horiz-adv-x="682" />
+<glyph unicode="&#xd;" horiz-adv-x="738" />
+<glyph unicode="&#xe000;" horiz-adv-x="615" d="M0 0z" />
+<glyph unicode="&#xf000;" d="M0 0v2048h2048v-2048h-158v551h-157v-551h-79v630h-394v-630h-78v551h-158v-551h-1024zM1024 630h158v79h551v-79h157v79h-78v473h-79v315h-551v-315h-79v-473h-79v-79zM1182 788v315h157v-79h-79v-236h-78zM1182 1575h551l-79 79h-394zM1260 1182v78h394v-78h-394z M1260 1339v79h79v-79h-79zM1260 1733h394l-197 157zM1339 315v236h236v-236h-236zM1376 788v315h158v-79h-79v-236h-79zM1418 394h79v79h-79v-79zM1418 1339v79h79v-79h-79zM1575 788v315h158v-79h-79v-236h-79zM1575 1339v79h79v-79h-79z" />
+</font>
+</defs></svg> 

@@ -1,0 +1,34 @@
+/* MIXINS
+---------------------------------------------------------- */
+
+// Clearfix
+
+@mixin clearfix {
+*zoom : 1;
+&:before,
+&:after {
+display: table;
+content : ""; }
+&:after {
+clear : both; } }
+
+.clearfix {
+@include clearfix; }
+
+// For image replacement
+
+@mixin hide-text() {
+text-indent : 100%;
+white-space : nowrap;
+overflow : hidden; }
+
+// Hide from visual and speaking browsers
+
+@mixin hidden() {
+display : none !important;
+visibility : hidden; }
+
+// Hide but maintain layout 
+
+@mixin invisible() {
+visibility : hidden; }

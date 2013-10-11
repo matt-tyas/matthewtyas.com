@@ -1,0 +1,263 @@
+/* Slide out contact form styles
+   ----------------------------- */
+   
+/*	Quick Reset
+	-----------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, fig caption, group, 
+menu, footer, header, nab, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, fig caption, group,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset, img {
+  border: 0;
+}
+address, caption, cite, den, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+caption, th {
+  text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before, q:after {
+  content: '';
+}
+abbr, acronym {
+  border: 0;
+}
+
+.sample-content {
+	margin: 200px auto;
+	width: 900px;
+	height: 800px;
+}
+
+h1 {
+	font-size: 24px;
+}
+
+
+
+/* Only the below styles needed
+   ---------------------------- */
+   
+/* Background Overlay
+   ------------------ */
+
+.overlay {
+    background:transparent url(../img/overlay.png) repeat top left;
+    position:fixed;
+    display:none;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    height: 100%; /* makes it work in IE8 */
+    width: 100%;
+    z-index:500;
+}
+
+/* Contact Form
+   ------------ */
+
+#slideout {
+	position:absolute;
+	top: 10%;
+	left: -300px;
+	z-index:1000;
+	background: url(../img/letter-stripes.png) top repeat-x;
+}
+
+#contact-tab {
+	float:left;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+#contact-tab a {
+	display: block;
+	height:129px;
+    width:35px;
+	background: url(../img/tab.png) no-repeat transparent;
+}
+
+#contact-tab a.active {
+	background-position: -35px 0px;
+}
+ 
+#slidecontent {
+    float:left;
+    width: 300px;
+	height:704px;
+	margin: 4px 0px;
+	background: url(../img/letter-stripes.png) bottom repeat-x #e7e7e7;
+	-webkit-box-shadow: -6px 7px 5px rgba(0,0,0,0.24);
+       -moz-box-shadow: -6px 7px 5px rgba(0,0,0,0.24);
+            box-shadow: -6px 7px 5px rgba(0,0,0,0.24);
+}
+
+#slidecontent form {
+	display:block;
+	width:300px;
+	height:696px;
+	background: url(../img/paper.png) repeat #e7e7e7;
+}
+
+#slidecontent form fieldset {
+	display:block;
+	width:255px;
+	height:546px;
+	margin: 5px;
+	padding: 140px 5px 0px 15px;
+	background: url(../img/postmark.png) no-repeat top right;
+	font-family: sans-serif;
+}
+
+#slidecontent form fieldset p {
+	margin-bottom: 20px;
+	line-height: 1.3em;
+	color: #515151;
+}
+
+#slidecontent form fieldset input {
+	width: 255px;
+	margin-bottom: 1.5em;
+	font-size: 14px;
+}
+
+#slidecontent form fieldset textarea {
+	width: 255px;
+	height: 150px;
+	margin-bottom: 1.5em;
+}
+
+#slidecontent form fieldset label {
+	display: block;
+	width: 100%;
+	margin-bottom: 3px;
+	color: #515151;
+}
+
+/* Nice button
+   ----------- */
+
+#slidecontent form fieldset input#submit {
+	display: inline-block;
+	width: 100px;
+    margin: 0 auto 20px auto;
+    padding: 5px 15px 6px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    color: rgb(255,255,255);    
+    border: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border-bottom-color: rgb(204,51,102);
+    background-color: rgb(204,51,102); /* fallback */
+    background: -moz-linear-gradient(
+                    center top,
+                    rgb(254,77,136) 20%,
+                    rgb(204,51,102) 100%
+                );
+    background: -webkit-gradient(
+                    linear,
+                    left top,
+                    left bottom,
+                    color-stop(.2, rgb(254,77,136)),
+                    color-stop(1, rgb(204,51,102))
+                );
+    
+    filter: progid:DXImageTransform.Microsoft.gradient (startColorStr='#fe4d88',EndColorStr='#cc3366');     
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (startColorStr='#fe4d88',EndColorStr='#cc3366)";      
+    -moz-box-shadow: inset 0 1px 0 rgba(204,51,102,0.6), /* glossy highlight */
+                        inset 1px 0 0 rgba(204,51,102,0.4), /* left shadow */
+                        inset -1px 0 0 rgba(204,51,102,0.5), /* right shadow */
+                        inset 0 -1px 0 rgba(204,51,102,0.6), /* bottom shadow */
+                        inset 0 2px 0 rgba(255,255,255,.3), /* diffuse highlight */
+                        inset 0 0 4px rgba(255,255,255,.3), /* rimlight */
+                        0 1px 2px rgba(0,0,0,.29); /* drop shadow */                                    
+    -webkit-box-shadow: inset 0 1px 0 rgba(204,51,102,0.6), /* glossy highlight */
+                        inset 1px 0 0 rgba(204,51,102,0.4), /* left shadow */
+                        inset -1px 0 0 rgba(204,51,102,0.5), /* right shadow */
+                        inset 0 -1px 0 rgba(204,51,102,0.6), /* bottom shadow */
+                        inset 0 2px 0 rgba(255,255,255,.3), /* diffuse highlight */
+                        inset 0 0 4px rgba(255,255,255,.3), /* rimlight */
+                        0 1px 2px rgba(0,0,0,.29); /* drop shadow */                          
+    box-shadow: inset 0 1px 0 rgba(204,51,102,0.6), /* glossy highlight */
+                inset 1px 0 0 rgba(204,51,102,0.4), /* left shadow */
+                inset -1px 0 0 rgba(204,51,102,0.5), /* right shadow */
+                inset 0 -1px 0 rgba(204,51,102,0.6), /* bottom shadow */
+                inset 0 2px 0 rgba(255,255,255,.3), /* diffuse highlight */
+                inset 0 0 4px rgba(255,255,255,.3), /* rimlight */
+                0 1px 2px rgba(0,0,0,.29); /* drop shadow */
+}
+
+#slidecontent form fieldset input#submit:hover {
+    background: rgb(174,42,86); /* fallback */
+    background: -moz-linear-gradient(
+                    center top,
+                    rgb(216,53,108) 20%,
+                    rgb(174,42,86) 100%
+                );
+    background: -webkit-gradient(
+                    linear,
+                    left top,
+                    left bottom,
+                    color-stop(.2, rgb(216,53,108)),
+                    color-stop(1, rgb(174,42,86))
+                );
+                
+    filter: progid:DXImageTransform.Microsoft.gradient (startColorStr='#d8356c',EndColorStr='#ae2a56');     
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (startColorStr='#d8356c',EndColorStr='#ae2a56)";
+}
+#slidecontent form fieldset input#submit:active {
+    padding-top: 6px;
+    padding-bottom: 5px;
+    -moz-box-shadow: inset 0 1px 0 rgba(174,42,86,0.5), /* top shadow */
+                        inset 1px 0 0 rgba(174,42,86,0.3), /* left shadow */
+                        inset -1px 0 0 rgba(174,42,86,0.4), /* right shadow */
+                        inset 0 -1px 0 rgba(174,42,86,0.5), /* bottom shadow */
+                        inset 0 1px 5px rgba(174,42,86,0.3), /* inset shadow */
+                        0 1px 0 rgba(255,255,255, 0.3); /* drop highlight*/
+    -webkit-box-shadow: inset 0 1px 0 rgba(10,10,10,0.5), /* top shadow */
+                        inset 1px 0 0 rgba(10,10,10,0.3), /* left shadow */
+                        inset -1px 0 0 rgba(10,10,10,0.4), /* right shadow */
+                        inset 0 -1px 0 rgba(10,10,10,0.5), /* bottom shadow */
+                        inset 0 1px 5px rgba(0,0,0,0.3), /* inset shadow */
+                        0 1px 0 rgba(255,255,255, 0.3); /* drop highlight*/
+    box-shadow: inset 0 1px 0 rgba(174,42,86,0.5), /* top shadow */
+                inset 1px 0 0 rgba(174,42,86,0.3), /* left shadow */
+                inset -1px 0 0 rgba(174,42,86,0.4), /* right shadow */
+                inset 0 -1px 0 rgba(174,42,86,0.5), /* bottom shadow */
+                inset 0 1px 5px rgba(0,0,0,0.3), /* inset shadow */
+                0 1px 0 rgba(255,255,255, 0.3); /* drop highlight*/
+                
+    filter: progid:DXImageTransform.Microsoft.gradient (startColorStr='#d8356c',EndColorStr='#ae2a56');     
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (startColorStr='#d8356c',EndColorStr='#ae2a56)";
+}

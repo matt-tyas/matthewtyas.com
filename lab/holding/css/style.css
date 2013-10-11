@@ -1,0 +1,1094 @@
+/*	Matthewtyas.com - Holding Page
+	------------------------------  */
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset, img {
+  border: 0;
+}
+address, caption, cite, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+caption, th {
+  text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before, q:after {
+  content: '';
+}
+abbr, acronym {
+  border: 0;
+}
+
+/*  Colour Reference
+    ------------------	
+	Dark Blue (headings & links) = rgb(23,47,65); / #172f41
+*/
+
+/*  Fonts Reference
+    ------------------	
+	No web fonts yet
+	font-family:"Georgia, Cambria, Times, " Times New Roman; - at standard weight
+*/
+
+/*  HTML 5 Elephants
+    ------------------	*/
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
+	display:block;
+}
+
+audio[controls],canvas,video {
+	display:inline-block;
+	display:inline;
+	zoom:1;
+}
+
+.clearfix {
+	zoom:1;
+}
+
+.clearfix:before,.clearfix:after {
+	content:"\0020";
+	display:block;
+	height:0;
+	overflow:hidden;
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+/*  Base
+    ----  */
+
+html {
+	overflow-y:scroll;
+	/*background:#ffffff;
+	background:#ffffff url(../img/grid/grid.png) repeat-y 50% 0;*/
+	font-size:62.5%;
+}
+
+body {
+	margin:0 auto;
+	padding:0;
+	width:100%;
+	font-size:16px;
+	font-size:1.6rem;
+	font-family:"Georgia, Cambria, Times, " Times New Roman;
+	color:#282828;
+	background:#ffffff url(../img/bg/exclusive-paper.png);
+}
+
+
+button,input,select,textarea {
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#404040;
+}
+
+/*  Typography
+    ----------  */
+
+h1,h2,h3,h4,h5,h6,p {
+	color: rgb(23,47,65);
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-size: 24px;
+    line-height: 2em;
+    margin-bottom: 0.625em;
+    margin-top: -1em;
+    padding-top: 0.375em;
+}
+
+h2 {
+    font-size: 2rem;
+    font-size: 20px;
+    line-height: 1.2em;
+    margin-bottom: 1.2em;
+    margin-top: -1px;
+    padding-bottom: 1px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-size: 18px;
+    line-height: 1.33333em;
+    margin-bottom: 1.33333em;
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+h5 {
+    font-size: 1.6rem;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+h6 {
+    font-size: 1.3rem;
+    font-size: 13px;
+    line-height: 1.84615em;
+    margin-bottom: 1.84615em;
+}
+
+p {
+    font-size: 1.6rem;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/*  Lists
+    -----  */
+
+ul,ol {
+	margin:0 0 1.5em -24px;
+	padding:0 0 0 24px;
+}
+
+li ul,li ol {
+	margin:0;
+	font-size:16px;
+	font-size:1.6rem;
+}
+
+dl,dd {
+	margin-bottom:1.5em;
+}
+
+dt {
+	font-weight:normal;
+}
+
+/*  Links
+    -----  */
+
+a {
+	color:rgb(23,47,65);
+	font-style: italic;
+	text-decoration: none;
+	font-size: 1.1em;
+	-webkit-transition: color  150ms ease-in;
+	   -moz-transition: color  150ms ease-in;
+		 -o-transition: color  150ms ease-in;
+}
+
+a:visited {
+	color:rgb(23,47,65);
+}
+
+a:hover {
+	color:rgb(23,47,65);
+	text-decoration: underline;
+}
+
+a:focus {
+	outline:thin dotted;
+	color:rgb(23,47,65);
+}
+
+a:hover,a:active {
+	outline:0;
+}
+
+/*  Formatting
+    ----------  */
+
+blockquote {
+	margin:0 0 1.5em -24px;
+	padding-left:24px;
+	border-left:1px solid #bfbfbf;
+	font-style:italic;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content:'';
+	content:none;
+}
+
+abbr[title] {
+	border-bottom:1px dotted;
+	cursor:help;
+}
+
+b,strong {
+	font-weight:bold;
+}
+
+dfn {
+	font-style:italic;
+}
+
+hr {
+	display:block;
+	margin:1em 0;
+	padding:0;
+	height:1px;
+	border:0;
+	border-top:1px solid #bfbfbf;
+}
+
+ins {
+	background-color:#c3d9e6;
+	color:#000000;
+	text-decoration:none;
+}
+
+mark {
+	background-color:#c3d9e6;
+	color:#000000;
+	font-style:italic;
+	font-weight:bold;
+}
+
+pre,code,kbd,samp {
+	font-family:Monaco,Courier New,monospace;
+	font-size:14px;
+	font-size:1.4rem;
+	line-height:1.5em;
+}
+
+pre {
+	white-space:pre;
+	white-space:pre-wrap;
+	word-wrap:break-word;
+}
+
+q {
+	quotes:none;
+}
+
+q:before,q:after {
+	content:"";
+	content:none;
+}
+
+small {
+	font-size:14px;
+	font-size:1.4rem;
+}
+
+sub,sup {
+	font-size:12px;
+	font-size:1.2rem;
+	line-height:0;
+	position:relative;
+	vertical-align:baseline;
+}
+
+sup {
+	top:-.5em;
+}
+
+sub {
+	bottom:-.25em;
+}
+
+
+figure {
+	margin-bottom:1.5em;
+}
+
+figure img,figure object,figure embed {
+	margin-bottom:.75em;
+	max-width:100%;
+}
+
+figcaption {
+	display:block;
+	font-weight:normal;
+}
+
+img {
+	border:0;
+}
+
+svg:not(:root) {
+	overflow:hidden;
+}
+
+/*  Tables    
+	------  */
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	margin-bottom:1.5em;
+	width:100%;
+	font-size:14px;
+	font-size:1.4rem;
+}
+
+th,td,caption {
+	padding:.1875em 10px .1875em 5px;
+}
+
+tfoot {
+	font-style:italic;
+}
+
+caption {
+	background-color:transparent;
+}
+
+tbody tr:nth-child(odd) td {
+	background-color:#c3d9e6;
+}
+
+/*  Forms    
+	-----  */
+
+form {
+	margin:0;
+}
+
+fieldset {
+	margin-bottom:1.5em;
+	padding:0;
+	border-width:0;
+}
+
+legend {
+	margin-left:-7px;
+	padding:0;
+	border-width:0;
+}
+
+label {
+	font-weight:normal;
+	cursor:pointer;
+}
+
+button,input,select,textarea {
+	font-size:12px;
+	font-size:1.2rem;
+	margin:0;
+	vertical-align:baseline;
+	vertical-align:middle;
+}
+
+button,input {
+	line-height:normal;
+	overflow:visible;
+}
+
+button,input[type=button],input[type=reset],input[type=submit] {
+	cursor:pointer;
+}
+
+input[type=checkbox],input[type=radio] {
+	box-sizing:border-box;
+}
+
+input[type=search] {
+	box-sizing:content-box;
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+	padding:0;
+	border:0;
+}
+
+textarea {
+	overflow:auto;
+	vertical-align:top;
+}
+
+html {
+	-webkit-overflow-scrolling:touch;
+	-webkit-tap-highlight-color:#c3d9e6;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+}
+
+/*  Selection Colours    
+	-----------------  */
+
+::-webkit-selection {
+	background:rgb(45,75,95);
+	color:white;
+	text-shadow:none;
+}
+
+::-moz-selection {
+	background:rgb(45,75,95);
+	color:white;
+	text-shadow:none;
+}
+
+::selection {
+	background:rgb(45,75,95);
+	color:white;
+	text-shadow:none;
+}
+
+button,input[type=button],input[type=reset],input[type=submit] {
+	-webkit-appearance:button;
+}
+
+::-webkit-input-placeholder {
+	font-size:14px;
+	font-size:1.4rem;
+}
+
+input:-moz-placeholder {
+	font-size:14px;
+	font-size:1.4rem;
+}
+
+.ie7 img,.iem7 img {
+	-ms-interpolation-mode:bicubic;
+}
+
+input[type=checkbox],input[type=radio] {
+	box-sizing:border-box;
+}
+
+input[type=search] {
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+	padding:0;
+	border:0;
+}
+
+/*p {
+	-webkit-hyphens:auto;
+	-webkit-hyphenate-character:\2010;
+	-webkit-hyphenate-limit-after:1;
+	-webkit-hyphenate-limit-before:3;
+	-moz-hyphens:auto;
+}*/
+
+.ir {
+	display:block;
+	overflow:hidden;
+	background-repeat:no-repeat;
+	text-align:left;
+	text-indent:-999em;
+	direction:ltr;
+}
+
+.ir br {
+	display:none;
+}
+
+.hidden {
+	display:none;
+	visibility:hidden;
+}
+
+.visuallyhidden {
+	position:absolute;
+	margin:-1px;
+	padding:0;
+	height:1px;
+	width:1px;
+	overflow:hidden;
+	border:0;
+	clip:rect(0000);
+}
+
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus {
+	position:static;
+	margin:0;
+	height:auto;
+	width:auto;
+	overflow:visible;
+	clip:auto;
+}
+
+.invisible {
+	visibility:hidden;
+}
+
+/*  Layout    
+	------  */
+
+header {
+	width: 100%;
+	min-width: 100%;
+	height: 288px;
+	background: url(../img/bg/blue-header.gif) repeat-x #2d4b5f;
+}
+
+header h1 {
+	width: 234px;
+	height: 307px;
+	display: block;
+	margin-top: 0em;
+	text-indent: -9999em;
+	background: url(../img/brand-sprite.png) no-repeat;
+	margin: 0 auto;
+}
+
+header h1:hover {
+	background-position: -233px 0px;
+}
+
+header h1 a {
+	display: block;
+	height: 307px;
+}
+
+.content {
+	width: 620px;
+	margin: 2em auto;
+	padding: 0.8em 0 0 0;
+}
+
+div[role="main"] {
+	text-align: center;
+}
+
+div[role="main"] h2 {
+	margin-bottom: 0.5em;
+}
+
+div[role="main"] h2 span {
+	display: block;
+	line-height: 1em;
+    margin-bottom: 0.6em;
+    font-weight: lighter;
+    text-shadow: 0px 1px 0px #fff;
+}
+
+div[role="main"] h2 span:nth-of-type(1) {
+	font-size: 3.2rem;
+	font-size: 32px;
+	letter-spacing: 0.05em;
+}
+
+div[role="main"] h2 span:nth-of-type(2) {
+	font-style: italic;
+	margin-bottom: 1.2em;
+	letter-spacing: 0em;
+	font-size: 2rem;
+	font-size: 20px;
+}
+
+div[role="main"] h2 span:nth-of-type(3) {
+	display: inline-block;
+	font-size: 3.2rem;
+	font-size: 32px;
+	letter-spacing: 0.05em;
+	margin-bottom: 0.6em;
+	}
+
+div[role="main"] h2 span:nth-of-type(3) span {
+	font-style: italic;
+	letter-spacing: 0em;
+	display: inline;
+	font-size: 2rem;
+	font-size: 20px;
+}
+
+div[role="main"] h2 span:nth-of-type(3) span.and {
+	border-top: 0px;
+}
+
+div[role="main"] h2 span:nth-of-type(4) {
+	font-style: italic;
+	margin-bottom: 1.2em;
+}
+
+div[role="main"] h2 span:nth-of-type(5) {
+	font-size: 4.4rem;
+	font-size: 44px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+div[role="main"] h2 span:last-of-type {
+	text-align:center;
+    border-top: 1px solid rgb(45,75,95);
+    margin-bottom: 0px;
+}
+
+div[role="main"] h2 span:last-of-type span {
+    display:inline-block;
+    position:relative;
+    top:-10px;
+    background:#fff url(../img/bg/exclusive-paper.png); 
+    font-size: 2.2rem;
+    font-size: 22px;
+	border: 0px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 0px 10px;
+}
+
+/* Social Rollovers
+   ----------------  */
+    
+div[role="main"] div.fb-like {
+	width:75px;
+	position: relative;
+	top: -4px;
+	left: 0px;
+	right: 0px;
+}
+
+/*.fb_iframe_widget iframe {
+	width: 50px !important;
+}*/
+
+iframe.twitter-share-button {
+	margin-right: 2px;
+}
+	
+div[role="main"] div {
+	width: 240px;
+	margin: 0 auto;
+}
+	
+div[role="main"] ul {
+	list-style-type: none;
+	text-indent: -9999em;
+	overflow: hidden;
+	height:  34px;
+	margin: 0 auto 10px auto;
+	text-align: center;
+}
+
+div[role="main"] ul li {
+	float: left;
+	display: inline;
+	margin: 0px 5px 0px 0px;
+}
+
+div[role="main"] ul li a {
+	background: url(../img/social-sprite.png) no-repeat;
+	display: block;
+	width: 33px;
+	height: 33px;
+	position: relative;
+}
+
+div[role="main"] ul li:nth-of-type(1) a { /* Facebook */
+	background-position: 2px 0px;
+	width: 34px;
+}
+
+div[role="main"] ul li:nth-of-type(2) a { /* Twitter */
+	background-position: -32px 0px;
+}
+
+div[role="main"] ul li:nth-of-type(3) a { /* LinkedIn */
+	background-position: -64px 0px;
+	width: 33px;
+}
+
+div[role="main"] ul li:nth-of-type(4) a { /* Soundcloud */
+	background-position: -97px 0px;
+	width: 33px;
+}
+
+div[role="main"] ul li:nth-of-type(5) a { /* Google Plus */
+	background-position: -129px 0px;
+	width: 34px;
+}
+
+/* 
+Can't use background position-y :-/
+http://christophzillgens.com/en/articles/no-official-background-position-x-and-y-in-css
+http://snook.ca/archives/html_and_css/background-position-x-y 
+Anyway fairly poorly implemented rollovers to be fair so bums to it… 
+*/
+
+div[role="main"] ul li:nth-of-type(1) a:hover { /* Facebook */
+	background-position: 2px -32px;
+	height: 36px;
+	bottom: 2px;
+}
+
+div[role="main"] ul li:nth-of-type(2) a:hover { /* Twitter */
+	background-position: -32px -32px;
+	height: 36px;
+	bottom: 2px;
+}
+
+div[role="main"] ul li:nth-of-type(3) a:hover { /* LinkedIn */
+	background-position: -64px -32px;
+	height: 36px;
+	bottom: 2px;
+}
+
+div[role="main"] ul li:nth-of-type(4) a:hover { /* Soundcloud */
+	background-position: -97px -32px;
+	height: 36px;
+	bottom: 2px;
+}
+
+div[role="main"] ul li:nth-of-type(5) a:hover { /* Google Plus */
+	background-position: -129px -32px;
+	height: 36px;
+	bottom: 2px;
+}
+
+/* Launch Sections 
+   ---------------  */
+		
+section h3 {
+	margin-top: 30px;
+	position: relative;
+	text-align: center;
+    text-transform: uppercase;
+	z-index: 1;    
+}
+
+section h3 span:before {
+	border-top: 1px solid rgb(45,75,95);
+	content:"";
+	margin: 0 auto;
+	position: absolute;
+    top: 10px; left: 0; right: 0; bottom: 0;
+	width: 95%;
+	z-index: -1;
+}
+
+section h3 span { 
+	background:#fff url(../img/bg/exclusive-paper.png);  
+	padding: 0 10px;
+}
+	
+div[role="main"] p {
+	width: 90%;
+	margin: 0 auto 1.5em auto;
+}
+
+section {
+	width:48%;
+	float: left;
+	text-align: center;
+}
+
+section:first-of-type {
+	margin: 0 2% 0 0;
+}
+
+section:last-of-type {
+	margin: 0 0 0 2%;
+}
+
+section p {
+	margin-bottom: 0.75em;
+}
+
+section p,
+section a {
+	text-align: center;
+}
+
+/* Tasty CSS 3 Buttons 
+   -------------------  */
+
+section a {
+
+	behavior: url(css/PIE.htc); /* CSS 3 for IE */
+
+    display: inline-block;
+    margin: 0 auto 1.6em auto;
+    padding: 6px 15px 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    color: rgb(255,255,255);    
+    border: none;
+    -moz-border-radius: 1000px;
+    -webkit-border-radius: 1000px;
+    border-radius: 1000px;
+    border-bottom-color: rgb(23,47,65);
+    background: rgb(23,47,65); /* fallback */
+    background: rgb(23,47,65); /* fallback */
+    background: -moz-linear-gradient(
+                    center top,
+                    rgb(73,114,142) 20%,
+                    rgb(23,47,65) 100%
+                );
+    background: -webkit-gradient(
+                    linear,
+                    left top,
+                    left bottom,
+                    color-stop(.2, rgb(73,114,142)),
+                    color-stop(1, rgb(23,47,65))
+                );
+            
+    -moz-box-shadow: inset 0 1px 0 rgba(23,47,65,0.6), /* glossy highlight */
+                        inset 1px 0 0 rgba(23,47,65,0.4), /* left shadow */
+                        inset -1px 0 0 rgba(23,47,65,0.5), /* right shadow */
+                        inset 0 -1px 0 rgba(23,47,65,0.6), /* bottom shadow */
+                        inset 0 2px 0 rgba(255,255,255,.3), /* diffuse highlight */
+                        inset 0 0 4px rgba(255,255,255,.3), /* rimlight */
+                        0 1px 2px rgba(0,0,0,.29); /* drop shadow */                                    
+    -webkit-box-shadow: inset 0 1px 0 rgba(23,47,65,0.6), /* glossy highlight */
+                        inset 1px 0 0 rgba(23,47,652,0.4), /* left shadow */
+                        inset -1px 0 0 rgba(23,47,65,0.5), /* right shadow */
+                        inset 0 -1px 0 rgba(23,47,65,0.6), /* bottom shadow */
+                        inset 0 2px 0 rgba(255,255,255,.3), /* diffuse highlight */
+                        inset 0 0 4px rgba(255,255,255,.3), /* rimlight */
+                        0 1px 2px rgba(0,0,0,.29); /* drop shadow */                          
+    box-shadow: inset 0 1px 0 rgba(23,47,65,0.6), /* glossy highlight */
+                inset 1px 0 0 rgba(23,47,65,0.4), /* left shadow */
+                inset -1px 0 0 rgba(23,47,65,0.5), /* right shadow */
+                inset 0 -1px 0 rgba(23,47,65,0.6), /* bottom shadow */
+                inset 0 2px 0 rgba(255,255,255,.3), /* diffuse highlight */
+                inset 0 0 4px rgba(255,255,255,.3), /* rimlight */
+                0 1px 2px rgba(0,0,0,.29); /* drop shadow */
+}
+
+section a:hover {
+	behavior: url(css/PIE.htc); /* CSS 3 for IE */
+	text-decoration: none;
+	color: white;
+    background: rgb(73,114,142); /* fallback */
+    background: -moz-linear-gradient(
+                    center top,
+                    rgb(100,146,177) 20%,
+                    rgb(66,101,125) 100%
+                );
+    background: -webkit-gradient(
+                    linear,
+                    left top,
+                    left bottom,
+                    color-stop(.2, rgb(100,146,177)),
+                    color-stop(1, rgb(66,101,125))
+                );
+}
+
+
+section a:active {
+	behavior: url(css/PIE.htc); /* CSS 3 for IE */
+	text-decoration: none;
+	color: white;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    -moz-box-shadow: inset 0 1px 0 rgba(174,42,86,0.5), /* top shadow */
+                        inset 1px 0 0 rgba(23,47,65,0.3), /* left shadow */
+                        inset -1px 0 0 rgba(23,47,65,0.4), /* right shadow */
+                        inset 0 -1px 0 rgba(23,47,65,0.5), /* bottom shadow */
+                        inset 0 1px 5px rgba(23,47,65,0.3), /* inset shadow */
+                        0 1px 0 rgba(255,255,255, 0.3); /* drop highlight*/
+    -webkit-box-shadow: inset 0 1px 0 rgba(10,10,10,0.5), /* top shadow */
+                        inset 1px 0 0 rgba(10,10,10,0.3), /* left shadow */
+                        inset -1px 0 0 rgba(10,10,10,0.4), /* right shadow */
+                        inset 0 -1px 0 rgba(10,10,10,0.5), /* bottom shadow */
+                        inset 0 1px 5px rgba(0,0,0,0.3), /* inset shadow */
+                        0 1px 0 rgba(255,255,255, 0.3); /* drop highlight*/
+    box-shadow: inset 0 1px 0 rgba(23,47,65,0.5), /* top shadow */
+                inset 1px 0 0 rgba(23,47,65,0.3), /* left shadow */
+                inset -1px 0 0 rgba(23,47,65,0.4), /* right shadow */
+                inset 0 -1px 0 rgba(23,47,65,0.5), /* bottom shadow */
+                inset 0 1px 5px rgba(0,0,0,0.3), /* inset shadow */
+                0 1px 0 rgba(255,255,255, 0.3); /* drop highlight*/
+}
+
+section a:visited {
+	color: white;
+}
+
+/* Footer 
+   ------  */
+   
+footer {
+	border-top: 1px solid rgb(45,75,95);
+	width: 620px;
+	margin: 0 auto 2em auto;
+	padding: 0.8em 0 0 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+footer p {
+	font-size: 1.1rem;
+	font-size: 11px;
+}
+
+/*  Media Queries
+    -------------  */
+    
+/*  Transition between queries
+    --------------------------  */
+    
+body, img { 
+    	    transition: all .2s linear; 
+         -o-transition: all .2s linear; 
+       -moz-transition: all .2s linear; 
+    -webkit-transition: all .2s linear;
+}
+
+/*  Tablets
+    -------  */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+
+}
+
+/*  Smart Phone Landscape 
+    ---------------------  */
+    
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	.content {
+		width: 90%;
+	}
+	
+	footer {
+		width: 90%;
+	}
+
+	/*div[role="main"] h2 span:last-of-type span { 
+		background:none; 
+		width: 90%;
+		padding-bottom: 5px;
+	}
+	
+	div[role="main"] h2 span:last-of-type:before {
+	    border-top: none;
+	}*/
+	
+}
+
+/*  Smart Phone Portrait 
+    --------------------  */
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	
+	.content {
+		width: 90%;
+	}
+	
+	footer {
+		width: 90%;
+	}
+	
+	div[role="main"] h2 span:nth-of-type(4) {
+		margin-bottom: 1.4em;
+	}
+	
+/*	div[role="main"] h2 span:last-of-type span { 
+		background:none; 
+		width: 90%;
+	}
+	
+	div[role="main"] h2 span:last-of-type:before {
+	    border-top: none;
+	} */
+	
+	section {
+		width:100%;
+		float: none;
+		text-align: center;
+	}
+
+	section:first-of-type {
+		margin: 0 0% 0 0;
+	}
+
+	section:last-of-type {
+		margin: 0 0 0 0%;
+	}
+
+}
+
+/*  Print
+    -----  */
+ 
+@media print {
+
+  * { 
+  	background: transparent !important; 
+  	color: black !important; 
+  	text-shadow: none !important; 
+  	filter:none !important; 
+  	-ms-filter: none !important; 
+  	}
+  	
+  	/* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited { 
+  	color: #444 !important; 
+  	text-decoration: underline; 
+  }
+  
+  a[href]:after { 
+  	content: " (" attr(href) ")"; 
+  }
+  
+  abbr[title]:after { 
+  	content: " (" attr(title) ")"; 
+  	}
+  	
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { 
+  	content: ""; 
+  }  /* Don't show links for images, or javascript/internal links */
+  
+  pre, blockquote { 
+  	border: 1px solid #999; 
+  	page-break-inside: avoid; 
+  	}
+  	
+  thead { 
+  	display: table-header-group; 
+  	}  /* css-discuss.incutio.com/wiki/Printing_Tables */
+  	
+  tr, img { 
+  	page-break-inside: avoid; 
+  }
+  
+  img { 
+  	max-width: 100% !important; 
+  	}
+  	
+  @page { 
+  	margin: 0.5cm; 
+  	}
+  	
+  p, h2, h3 { 
+  	orphans: 3; 
+  	widows: 3; 
+  	}
+  	
+  h2, h3 { 
+  	page-break-after: avoid; 
+  	}
+  	
+}

@@ -1,0 +1,630 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Font-Awesome-More';
+  src: url("http://www.kiltotake.com/fonts/Font-Awesome-More.eot");
+  src: url("http://www.kiltotake.com/fonts/Font-Awesome-More.eot?#iefix") format("embedded-opentype"), url("http://www.kiltotake.com/fonts/Font-Awesome-More.svg#Font-Awesome-More") format("svg"), url("http://www.kiltotake.com/fonts/Font-Awesome-More.woff") format("woff"), url("http://www.kiltotake.com/fonts/Font-Awesome-More.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/*------------------------------------*\
+    Screen.CSS
+\*------------------------------------*/
+/**
+ *
+ * sass --watch your-project.scss:your-project.min.css --style compressed
+ *
+ * Here we set up some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
+/*------------------------------------*\
+    $VARS
+\*------------------------------------*/
+/**
+ * Set up project-specific variables here which are then used throughout your
+ * build. These variables are automatically picked up by inuit.css so you should
+ * never need to modify any framework code.
+ */
+/*------------------------------------*\
+    INUIT.CSS
+\*------------------------------------*/
+/* inuitcss.com -- @inuitcss -- @csswizardry */
+/**
+ * inuit.css acts as a base stylesheet which you should extend with your own
+ * theme stylesheet.
+ *
+ * inuit.css aims to do the heavy lifting; sorting objects and abstractions,
+ * design patterns and fiddly bits of CSS, whilst leaving as much design as
+ * possible to you. inuit.css is the scaffolding to your decorator.
+ * 
+ * This stylesheet is heavily documented and contains lots of comments, please
+ * take care to read and refer to them as you build. For further support please
+ * tweet at @inuitcss.
+ *
+ * Owing to the amount of comments please only ever use `inuit.min.css` in
+ * production. This file is purely a dev document.
+ * 
+ * The table of contents below maps to section titles of the same name, to jump
+ * to any section simply run a find for $[SECTION-TITLE].
+ *
+ * Most objects and abstractions come with a chunk of markup that you should be
+ * able to paste into any view to quickly see how the CSS works in conjunction
+ * with the correct HTML.
+ *
+ * LICENSE
+ *
+ * Copyright 2012 Harry Roberts
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ * http://apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * 
+ * Thank you for choosing inuit.css. May your floats remain cleared.
+ */
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * CONTENTS............You’re reading it!
+ * WARNING.............Here be dragons!
+ * IMPORTS.............Begin importing the sections below
+ * 
+ * MIXINS..............Super-simple Sass stuff
+ * RESET...............Set some defaults
+ * CLEARFIX............
+ * SHARED..............Shared declarations
+ * 
+ * MAIN................High-level elements like `html`, `body`, etc.
+ * HEADINGS............Double-stranded heading hierarchy
+ * PARAGRAPHS..........
+ * SMALLPRINT..........Smaller text elements like `small`
+ * QUOTES..............
+ * CODE................
+ * LINKS...............
+ * LISTS...............
+ * IMAGES..............
+ * TABLES..............
+ * FORMS...............
+ * 
+ * GRIDS...............Fluid, proportional and nestable grids
+ * FLEXBOX.............Crudely emulate flexbox
+ * COLUMNS.............CSS3 columns
+ * NAV.................A simple abstraction to put a list in horizontal nav mode
+ * PAGINATION..........Very stripped back, basic paginator
+ * MEDIA...............Media object
+ * ISLAND..............Boxed off content
+ * BLOCK-LIST..........Blocky lists of content
+ * MATRIX..............Gridded lists
+ * SPLIT...............A simple split-in-two object
+ * THIS-OR-THIS........Options object
+ * COMPLEX-LINK........
+ * FLYOUT..............Flyout-on-hover object
+ * SPRITE..............Generic spriting element
+ * ICON-TEXT...........Icon and text couplings
+ * BUTTONS.............
+ * LOZENGES............Basic lozenge styles
+ * 
+ * BRAND...............Helper class to apply brand treatment to elements
+ * HELPER..............A series of helper classes to use arbitrarily
+ */
+/*------------------------------------*\
+    $WARNING
+\*------------------------------------*/
+/*
+ * inuit.css, being an OO framework, works in keeping with the open/closed
+ * principle. The variables you set previously are now being used throughout
+ * inuit.css to style everything we need for a base. Any custom styles SHOULD
+ * NOT be added or modified in inuit.css directly, but added via your theme
+ * stylesheet as per the open/closed principle:
+ * 
+ * csswizardry.com/2012/06/the-open-closed-principle-applied-to-css
+ * 
+ * Try not to edit any CSS beyond this point; if you find you need to do so
+ * it is a failing of the framework so please tweet at @inuitcss.
+ */
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/**
+ * Generic utility styles etc.
+ */
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+ * Create a fully formed type style (sizing and vertical rhythm) by passing in a
+ * single value, e.g.:
+ *
+   `@include font-size(10);`
+ *
+ * Thanks to @redclov3r for the `line-height` Sass:
+ * twitter.com/redclov3r/status/250301539321798657
+ */
+/**
+ * Create vendor-prefixed CSS in one go, e.g.
+ *
+   `@include vendor(box-sizing, border-box);`
+ *
+ */
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+/**
+ * A more considered reset; more of a restart... 
+ * As per: csswizardry.com/2011/10/reset-restarted
+ */
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+figure,
+hr {
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+strong, b, mark {
+  font-weight: bold;
+  font-style: inherit; }
+
+em, i, cite, q, address, dfn, var {
+  font-style: italic;
+  font-weight: inherit; }
+
+abbr[title], dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted; }
+
+ins {
+  border-bottom: 1px solid; }
+
+a, u, ins {
+  text-decoration: none; }
+
+del, s {
+  text-decoration: line-through; }
+
+img {
+  border: none;
+  font-style: italic; }
+
+input,
+select, option, optgroup,
+textarea {
+  font: inherit; }
+
+/**
+ * Give form elements some cursor interactions...
+ */
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer; }
+
+.text-input:active,
+.text-input:focus,
+textarea:active,
+textarea:focus {
+  cursor: text;
+  outline: none; }
+
+/*------------------------------------*\
+    $CLEARFIX
+\*------------------------------------*/
+/**
+ * Micro clearfix, as per: nicolasgallagher.com/micro-clearfix-hack
+ * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
+ * and over in your markup.
+ */
+.cf {
+  zoom: 1; }
+  .cf:before, .cf:after {
+    content: "";
+    display: table; }
+  .cf:after {
+    clear: both; }
+
+/*------------------------------------*\
+    $SHARED
+\*------------------------------------*/
+/**
+ * Where `margin-bottom` is concerned, this value will be the same as the
+ * base line-height. This allows us to keep a consistent vertical rhythm.
+ * As per: csswizardry.com/2012/06/single-direction-margin-declarations
+ */
+/**
+ * Base elements
+ */
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p, address,
+table,
+fieldset, figure,
+pre,
+hr,
+.sass-margin-bottom,
+.media,
+.island,
+.islet {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+  .islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
+  ul, .islet ol, .islet dl, .islet
+  blockquote, .islet p, .islet address, .islet
+  table, .islet
+  fieldset, .islet figure, .islet
+  pre, .islet
+  hr, .islet
+  .sass-margin-bottom, .islet
+  .media, .islet
+  .island, .islet
+  .islet {
+    margin-bottom: 12px;
+    margin-bottom: 0.75rem; }
+
+/**
+ * Doubled up `margin-bottom` helper class.
+ */
+.landmark {
+  margin-bottom: 48px;
+  margin-bottom: 3rem; }
+
+/**
+ * Where `margin-left` is concerned we want to try and indent certain elements
+ * by a consistent amount. Define that amount once, here.
+ */
+ul, ol, dd {
+  margin-left: 48px;
+  margin-left: 3rem; }
+
+/**
+ * Base styles; unclassed HTML elements etc.
+ */
+ /*
+@import "partials/base/main";
+@import "partials/base/headings";
+@import "partials/base/paragraphs";
+@import "partials/base/smallprint";
+@import "partials/base/quotes";
+@import "partials/base/code";
+@import "partials/base/links";
+@import "partials/base/images";
+@import "partials/base/lists";
+@import "partials/base/tables";
+@import "partials/base/forms";
+*/
+/**
+ * Objects and abstractions
+ */
+ /*
+@import "partials/objects/grids";
+@import "partials/objects/flexbox";
+@import "partials/objects/columns";
+@import "partials/objects/nav";
+@import "partials/objects/pagination";
+@import "partials/objects/media";
+@import "partials/objects/island";
+@import "partials/objects/block-list";
+@import "partials/objects/matrix";
+@import "partials/objects/split";
+@import "partials/objects/this-or-this";
+@import "partials/objects/complex-link";
+@import "partials/objects/flyout";
+@import "partials/objects/sprite";
+@import "partials/objects/icon-text";
+@import "partials/objects/buttons";
+@import "partials/objects/lozenges";
+*/
+/**
+ * Style trumps; helper and brand classes
+ */
+ /*
+@import "partials/generic/brand";
+@import "partials/generic/helper";
+*/
+/* apply a natural box layout model to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'Font-Awesome-More';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  speak: none;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased; }
+
+a [class^="icon-"],
+a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit; }
+
+.icon-youtube-sign:before {
+  content: "\f504"; }
+
+.icon-twitter:before {
+  content: "\f099"; }
+
+.icon-facebook:before {
+  content: "\f09a"; }
+
+.icon-soundcloud:before {
+  content: "\f51c"; }
+
+.icon-chevron-right:before {
+  content: "\f054"; }
+
+/* Site position */
+.main {
+  position: relative;
+  margin: 1em auto -200px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  width: 100%; }
+
+.nav-wrap {
+  height: 200px;
+  position: relative;
+  width: 100%;
+  margin: 1em auto;
+  text-align: center; }
+
+.nav-wrap a {
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+.nav {
+  list-style: none; }
+
+ul.nav {
+  margin-left: 0em; }
+
+.nav > li,
+.nav > li > a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1; }
+
+.main-nav a {
+  padding: .5em;
+  margin-right: .01em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3); }
+  .main-nav a:hover {
+    color: #000;
+    background-color: white;
+    background-color: #fff; }
+  .main-nav a .current {
+    color: #000;
+    background-color: white;
+    background-color: #fff; }
+
+.ie8 .nav-menu a,
+.ie8 .page-content {
+  background-image: url("../images/bg/trans.png");
+  background-repeat: repeat; }
+
+.ie8 .nav-menu a:hover,
+.ie8 .nav-menu a .current {
+  color: #000;
+  background-color: #fff;
+  background-image: none; }
+
+.social-nav a {
+  color: #fff;
+  font-size: 2em;
+  display: block;
+  margin-right: .5em; }
+  .social-nav a i {
+    display: block;
+    font-size: 32px; }
+  .social-nav a:hover {
+    color: #000; }
+
+.icon-alone {
+  display: inline-block;
+  /* Fix for clickability issue in WebKit */ }
+
+.screen-reader-text {
+  /* Reusable, toolbox kind of class */
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+.table-main,
+.table {
+  display: table;
+  /* Allow the centering to work */
+  margin: 0 auto; }
+
+.single {
+  float: left;
+  margin-left: 3em;
+  margin-top: -7em;
+  width: 250px; }
+  .single img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .single img:hover {
+      -webkit-transform: scale(2.2) translate(20px, -20px);
+      -moz-transform: scale(2.2) translate(20px, -20px);
+      -o-transform: scale(2.2) translate(20px, -20px);
+      transform: scale(2.2) translate(20px, -20px); }
+  .single p {
+    color: #fff;
+    float: left;
+    padding-left: 10px;
+    padding-top: 60px; }
+
+.audio-player {
+  float: right;
+  margin-right: 1em;
+  margin-top: -3em; }
+
+#play-btn {
+  color: #fff; }
+
+#big-video-wrap {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0; }
+
+#big-video-image {
+  width: 100% !important;
+  height: auto !important;
+  top: 0px !important;
+  left: 0px !important; }
+
+/* Typography */
+h1 {
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: .5em;
+  margin-top: 0.5em; }
+
+.ie7 .assistive-text,
+.ie7 .screen-reader-text {
+  color: transparent;
+  text-transform: capitalize;
+  text-indent: -9999px; }
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    letter-spacing: .4em; } }
+@media only screen and (max-width: 800px) {
+  h1 {
+    letter-spacing: .3em; } }
+@media only screen and (max-width: 700px) {
+  h1 {
+    letter-spacing: .2em;
+    padding-left: .1em; }
+
+  .main {
+    min-height: 2em;
+    margin: 1em auto 0px; }
+
+  .table-main {
+    display: block;
+    margin: 1.5em; }
+
+  .nav.main-nav > li,
+  .nav.main-nav > li > a {
+    display: block;
+    *display: block;
+    zoom: 1; }
+
+  #play-btn,
+  .main-nav a {
+    overflow: hidden;
+    margin-right: 0;
+    margin-bottom: 1em;
+    border: 2px solid #fff; }
+
+  .main-nav a:after {
+    font-family: 'Font-Awesome-More';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    speak: none;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    text-decoration: inherit;
+    content: "\f054";
+    float: right;
+    margin-top: 3px; }
+
+  .main-nav a span {
+    float: left; }
+
+  .social-nav {
+    margin-bottom: 0; }
+
+  .single {
+    display: block;
+    width: 320px;
+    float: none;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto; }
+    .single img {
+      float: none;
+      width: auto;
+      height: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1.5em;
+      -webkit-transition: none;
+      -moz-transition: none;
+      -o-transition: none;
+      transition: none; }
+      .single img:hover {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        transform: none; }
+    .single p {
+      display: block;
+      float: none;
+      padding-left: 0;
+      padding-top: 0;
+      color: #fff;
+      text-align: center; }
+
+  #play-btn {
+    display: block;
+    padding: .5em; }
+
+  .audio-player {
+    display: block;
+    float: none;
+    margin: 1.5em; }
+
+  audio {
+    width: 100%; } }

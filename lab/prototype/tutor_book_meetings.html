@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Leeds for Life 4 | Prototype</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico">
+		
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<link rel='stylesheet' href='sass/lfl4.css'>
+		<script src='js/modernizr-2.6.2.min.js'></script>
+		<meta http-equiv="cleartype" content="on">
+	</head>
+	<body>
+<div class="lfl-banner">
+
+	<div class="wrapper">
+
+		<h1 class="two-line-brevier"><a href="index.html">LEEDS for LIFE</a></h1>    
+		
+		<div role="navigation" class="nav nav--rev">
+		
+				<!-- Dashboard - logged in -->
+				<a class="" href="dashboard.html">Dashboard</a>
+				<!-- Log in -->
+				<!-- <a class="float--right" href="#">Log in</a> -->
+		
+			    <!-- Mobile nav toggle -->
+				<a class="mobile-nav__target" href="#">Menu</a>
+				   
+				<!-- Unlogged in access -->
+				<ul class="nav float--left nav--padding nav--mobile-links animated">
+					<li><a href="opportunities.html">Opportunities</a></li>
+					<li><a href="the_foundation.html">Apply for funding</a></li>
+					<li><a href="case_studies.html">Case studies</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+	
+		</div>	    
+
+	
+	</div>	
+			
+</div>  
+<div role="main" class="wrapper">
+<div class="secondary-nav">	
+	<a class="mobile-nav__target" href="#">Menu</a>
+		<ul class=" nav nav--padding nav--mobile-links ">
+			<li><a href="tutor_dashboard.html">Students</a></li>
+			<li><a href="tutor_upcoming_appointments.html">Upcoming Appointments</a></li>
+			<li class='current'><a class='current' href="tutor_book_meetings.html">Set up Meetings</a></li>
+		</ul>				
+	<a href="#help"><span class="i  i--block  i--block--right  i--help  i--large"></span></a>				   	    
+</div>
+<h2>Set up Meetings</h2> 
+
+<form class="booking-form">
+
+	<input type="date"/>
+	
+	<select>
+		<option value="">Meeting Lengths</option>
+		<option value="10min">10 mins</option>
+		<option value="15min">15 mins</option>
+		<option value="20min">20 mins</option>
+		<option value="30min">30 mins</option>
+		<option value="1hr">1 hr</option>
+  	</select>
+	
+	From
+	
+	<select>
+		<option value="">Hr</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+		<option value="17">17</option>
+  	</select>
+  
+  	<select>
+		<option value="">Min</option>
+		<option value="9">:00</option>
+		<option value="10">:05</option>
+		<option value="10">:10</option>
+		<option value="11">:15</option>
+		<option value="12">:20</option>
+		<option value="12">:25</option>
+		<option value="13">:30</option>
+		<option value="13">:35</option>
+		<option value="14">:40</option>
+		<option value="15">:45</option>
+		<option value="16">:50</option>
+		<option value="16">:55</option>
+  	</select>
+  	
+  	To
+  	
+  	<select>
+		<option value="">Hr</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+		<option value="11">11</option>
+		<option value="12">12</option>
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+		<option value="17">17</option>
+  	</select>
+  
+   <select>
+		<option value="">Min</option>
+		<option value="9">:00</option>
+		<option value="10">:05</option>
+		<option value="10">:10</option>
+		<option value="11">:15</option>
+		<option value="12">:20</option>
+		<option value="12">:25</option>
+		<option value="13">:30</option>
+		<option value="13">:35</option>
+		<option value="14">:40</option>
+		<option value="15">:45</option>
+		<option value="16">:50</option>
+		<option value="16">:55</option>
+  	</select>
+  	
+  		
+  	<!--<select>
+		<option value="Dontrepeat">Don't repeat</option>
+		<option value="2weeks">for 2 weeks</option>
+		<option value="3weeks">for 3 weeks</option>
+		<option value="4weeks">for 4 weeks</option>
+		<option value="Everyweek">Every week</option>
+  	</select> -->
+  	
+  	<input type="text" placeholder="location"/>
+  	
+  	<input type="submit" value="Add">
+
+</form>
+<h2 class="month">January 2012</h2>
+
+<select>
+	<option value="1">January</option>
+	<option value="2">February</option>
+	<option value="3">March</option>
+	<option value="4">April</option>
+	<option value="5">May</option>
+	<option value="6">June</option>
+	<option value="7">July</option>
+	<option value="8">August</option>
+	<option value="9">September</option>
+	<option value="10">October</option>
+	<option value="11">November</option>
+	<option value="12">December</option> 
+</select> 
+
+
+	<table class="calendar">
+		<thead>
+			<tr>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+				<th>Saturday</th>
+				<th>Sunday</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="calendar__prev-month">
+					<h3 class="calendar__day"><span class="calendar__number">26<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td class="calendar__prev-month">
+					<h3 class="calendar__day"><span class="calendar__number">27<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td class="calendar__prev-month">
+					<h3 class="calendar__day"><span class="calendar__number">28<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td class="calendar__prev-month">
+					<h3 class="calendar__day"><span class="calendar__number">29<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td class="calendar__prev-month">
+					<h3 class="calendar__day"><span class="calendar__number">30<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td class="calendar__prev-month">
+					<h3 class="calendar__day"><span class="calendar__number">31<span class="calendar__suffix">st</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">1<span class="calendar__suffix">st</span></span></h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="calendar__event">
+					<h3 class="calendar__day"><span class="calendar__number">2<span class="calendar__suffix">nd</span></span></h3>
+					<ul class="block-list">
+						<li class="calendar__outlook">11:00-11:30</li>
+						<li class="calendar__outlook">12:00-13:00</li>
+						<li class="calendar__outlook">14:00-16:00</li>
+					</ul>
+				</td>
+				<td class="calendar__event">
+					<h3 class="calendar__day"><span class="calendar__number">3<span class="calendar__suffix">rd</span></span></h3>
+					<ul class="block-list">
+						<li>
+						<a class="fancybox booking-toggle" href="#inline1">09:00-12:00<span class="calendar__event__details">(6 apps 30 mins each)</span></a>
+						
+						<div id="inline1" style="display:none;"> 
+						    <h3>Booking Slots</h3>
+						    <p>Dec 4th 09:00 - 12:00 at EC10.01 in 30min slots</p>
+						    <ul class="block-list">
+						    	<li>09:00 Booked by <a href="#">Simon Badger</a><a class="delete"><span class=" i  i--bin"></span></a></li>
+						    	<li>09:30 Open<a class="delete"><span class=" i  i--bin "></span></a></li>
+						    	<li>10:00 Open<a class="delete"><span class=" i  i--bin "></span></a></li>
+						    	<li>10:30 Booked by <a href="#">John Smith</a><a class="delete"><span class=" i  i--bin "></span></a></li>
+						    	<li>11:00 Booked by <a href="#">kit Badger</a><a class="delete"><span class=" i  i--bin "></span></a></li>
+						    	<li>11:30 Open<a class="delete"><span class=" i  i--bin "></span></a></li>
+						    </ul>
+						    <a href="" class="btn">Cancel all</a>
+						</div>
+
+						
+						</li>
+						<li><a class="fancybox booking-toggle" href="#inline1">13:00-17:00<span class="calendar__event__details">(8 apps 30 mins each)</span></a></li>
+					</ul>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">4<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">5<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">6<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">7<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">8<span class="calendar__suffix">th</span></span></h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="calendar__event">
+					<h3 class="calendar__day"><span class="calendar__number">9<span class="calendar__suffix">th</span></span></h3>
+					<ul class="block-list">
+						<li><a class="fancybox booking-toggle" href="#inline1">09:00-10:00<span class="calendar__event__details">(4 apps 15 mins each)</span></a></li>
+						<li><a class="fancybox booking-toggle" href="#inline1">11:00-12:00<span class="calendar__event__details">(4 apps 15 mins each)</span></a></li>
+						<li><a class="fancybox booking-toggle" href="#inline1">13:00-14:30<span class="calendar__event__details">(6 apps 15 mins each)</span></a></li>
+						<li><a class="fancybox booking-toggle" href="#inline1">15:30-17:00<span class="calendar__event__details">(6 apps 15 mins each)</span></a></li>
+					</ul>
+				</td>
+				<td class="calendar__event">
+					<h3 class="calendar__day"><span class="calendar__number">10<span class="calendar__suffix">th</span></span></h3>
+					<ul class="block-list">
+						<li class="calendar__outlook">10:00-12:00</li>
+						<li class="calendar__outlook">13:00-14:00</li>
+					</ul>
+
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">11<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td class="calendar__event">
+					<h3 class="calendar__day"><span class="calendar__number">12<span class="calendar__suffix">th</span></span></h3>
+					<ul class="block-list">
+						<li class="calendar__outlook">9:00-10:30</li>
+						<li class="calendar__outlook">13:00-15:00</li>
+					</ul>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">13<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">14<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">15<span class="calendar__suffix">th</span></span></h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="calendar__event">
+					<h3 class="calendar__day"><span class="calendar__number">16<span class="calendar__suffix">th</span></span></h3>
+					<ul class="block-list">
+						<li class="calendar__outlook">11:00-11:30</li>
+						<li class="calendar__outlook">12:00-13:00</li>
+						<li class="calendar__outlook">14:00-16:00</li>
+					</ul>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">17<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td class="calendar__event">
+					<h3 class="calendar__day"><span class="calendar__number">18<span class="calendar__suffix">th</span></span></h3>
+					<ul class="block-list">
+						<li class="calendar__outlook">9:00-10:30</li>
+						<li class="calendar__outlook">13:00-15:00</li>
+					</ul>
+				</td>
+				<td class="calendar__event">
+					<h3 class="calendar__day"><span class="calendar__number">19<span class="calendar__suffix">th</span></span></h3>
+					<ul class="block-list">
+						<li><a class="fancybox booking-toggle" href="#inline1">09:00-12:00<span class="calendar__event__details">(6 apps 30 mins each)</span></a></li>
+						<li><a class="fancybox booking-toggle" href="#inline1">13:00-17:00<span class="calendar__event__details">(8 apps 30 mins each)</span></a></li>
+					</ul>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">20<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td class="calendar__event">
+					<h3 class="calendar__day"><span class="calendar__number">21<span class="calendar__suffix">st</span></span></h3>
+					<ul class="block-list">
+						<li class="calendar__outlook">11:00-11:30</li>
+						<li class="calendar__outlook">12:00-13:00</li>
+						<li class="calendar__outlook">14:00-16:00</li>
+					</ul>
+				</td>
+				<td class="calendar__event">
+					<h3 class="calendar__day"><span class="calendar__number">22<span class="calendar__suffix">nd</span></span></h3>
+					<ul class="block-list">
+						<li class="calendar__outlook">11:00-11:30</li>
+						<li class="calendar__outlook">12:00-13:00</li>
+						<li class="calendar__outlook">14:00-16:00</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">23<span class="calendar__suffix">rd</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">24<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">25<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">26<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">27<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">28<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td class="calendar__event">
+					<h3 class="calendar__day"><span class="calendar__number">29<span class="calendar__suffix">th</span></span></h3>
+					<ul class="block-list">
+						<li><a class="fancybox booking-toggle" href="#inline1">10:00-13:00<span class="calendar__event__details">(12 apps 15 mins each)</span></a></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">30<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td>
+					<h3 class="calendar__day"><span class="calendar__number">31<span class="calendar__suffix">st</span></span></h3>
+				</td>
+				<td class="calendar__next-month">
+					<h3 class="calendar__day"><span class="calendar__number">1<span class="calendar__suffix">st</span></span></h3>
+				</td>
+				<td class="calendar__next-month">
+					<h3 class="calendar__day"><span class="calendar__number">2<span class="calendar__suffix">nd</span></span></h3>
+				</td>
+				<td class="calendar__next-month">
+					<h3 class="calendar__day"><span class="calendar__number">3<span class="calendar__suffix">rd</span></span></h3>
+				</td>
+				<td class="calendar__next-month">
+					<h3 class="calendar__day"><span class="calendar__number">4<span class="calendar__suffix">th</span></span></h3>
+				</td>
+				<td class="calendar__next-month">
+					<h3 class="calendar__day"><span class="calendar__number">5<span class="calendar__suffix">th</span></span></h3>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	
+
+</div>
+<div role="contentinfo"></div>
+</body>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/script.js'></script>
+</html>

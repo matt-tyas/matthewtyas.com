@@ -1,0 +1,519 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Kilto Take
+Theme URI: http://matthewtyas.com
+Author: Matt Tyas
+Author URI: http://matthewtyas.com
+Description: Theme for the band Kilto Take
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Kilto Take
+*/
+/*------------------------------------*\
+    Style.CSS
+\*------------------------------------*/
+/**
+ *
+ * sass --watch your-project.scss:your-project.min.css --style compressed
+ *
+ * Here we set up some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
+
+// Setup
+@import "vars";
+@import "inuit";
+
+/* apply a natural box layout model to all elements */
+* {    
+       -moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	        box-sizing: border-box; 
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: #000;
+	color: #fff;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;  
+}
+
+@font-face {
+  font-family: 'Font-Awesome-More';
+  src: url('fonts/Font-Awesome-More.eot');
+  src: url('fonts/Font-Awesome-More.eot?#iefix') format('embedded-opentype'), 
+       url('fonts/Font-Awesome-More.svg#Font-Awesome-More') format('svg'), 
+       url('fonts/Font-Awesome-More.woff') format('woff'), 
+       url('fonts/Font-Awesome-More.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'Font-Awesome-More';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  speak: none;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+a [class^="icon-"],
+a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+.icon-youtube-sign:before {
+  content: "\f504";
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-soundcloud:before {
+  content: "\f51c";
+}
+.icon-chevron-right:before {
+  content: "\f054";
+}
+/* Site position */
+
+.main {
+	position: relative;
+	margin: 1em auto -250px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	width: 100%;
+}
+
+.nav-wrap {
+	height: 50px;
+	position: relative;
+	width: 100%;
+	margin: 1em auto;
+	z-index: 1000;
+	text-align: center;
+}
+
+.nav-wrap a {
+	@include vendor( transition, all .3s linear );
+}
+
+
+.nav-menu ul,
+.social-nav ul {
+    list-style:none;
+}
+.menu-main-menu-container ul, {
+    margin-left: 0em;
+}
+    .menu-main-menu-container ul > li,
+        .menu-main-menu-container ul > li > a{
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+    }
+    
+.social-nav {
+    margin-left: 0em;
+}
+    .social-nav > li,
+        .social-nav > li > a {
+            display:inline-block;
+           *display:inline;
+            zoom:1;
+    }
+    
+.nav-menu a {
+	padding: .5em;
+	margin-right: .2em;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-transform: uppercase;
+	text-align: left;
+	&:hover {
+		color: #000;
+		background-color: rgba(255, 255, 255, 1);
+		background-color: #fff;
+		text-decoration: none;
+	}
+	.current {
+		color: #000;
+		background-color: rgba(255, 255, 255, 1);
+		background-color: #fff;
+	}
+}
+
+.ie8 .nav-menu a,
+.ie8 .page-content {
+	background-image:url("images/bg/trans.png");
+	background-repeat:repeat;
+}
+
+.ie8 .nav-menu a:hover,
+.ie8 .nav-menu a .current {
+	color:#000;
+	background-color:#fff;
+	background-image:none;
+}
+
+.social-nav a {
+	color: #fff;
+	font-size: 2em;
+	display: block;
+	margin-right: .5em;
+	&:hover {
+		color: #000;
+		text-decoration: none;
+	}
+}
+
+.icon-alone {
+  display: inline-block; /* Fix for clickability issue in WebKit */
+}
+
+.screen-reader-text { /* Reusable, toolbox kind of class */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.table-main,
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+.cta {
+	position: relative;
+	margin-top: 5em;
+}
+
+.single {
+	float: left;
+	margin-left: 3em;
+	margin-top: -7em;
+	width: 200px;
+	img {
+		float: left;
+		width: 100px;
+		height: 100px;
+		-webkit-transition: all .2s ease-in-out;
+		   -moz-transition: all .2s ease-in-out;
+		     -o-transition: all .2s ease-in-out;
+		        transition: all .2s ease-in-out;
+		&:hover { 
+		-webkit-transform: scale(2) translate(20px,-20px);
+		   -moz-transform: scale(2) translate(20px,-20px); 
+		     -o-transform: scale(2) translate(20px,-20px); 
+		        transform: scale(2) translate(20px,-20px); 
+		}
+	}
+	p {
+		color: #fff;
+		float: left;
+		padding-left: 10px;
+		padding-top: 60px;
+	}
+}
+
+.audio-player {
+	float: right;
+	margin-right: 1em;
+	margin-top: -3em;
+}
+
+#play-btn {
+	color: #fff;
+}
+
+#big-video-wrap{
+	overflow:hidden;
+	position:fixed;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+}
+
+#big-video-image {
+	width: 100% !important;
+	height: auto !important;  
+	top: 0px !important;  
+	left: 0px !important;  
+}
+
+/* Page Content */
+
+.page-content {
+	width: 35em;
+	margin: 0 auto -50px auto;
+	padding: 1.5em;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Typography */
+
+h1 {
+	font-size: 5em;
+	text-transform: uppercase;
+	font-weight: lighter;
+	text-align: center;
+	letter-spacing: .5em;
+	margin-top: 0.5em;
+}
+
+h1 a {
+	color: #fff;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+#menu-toggle {
+	display: none;
+}
+
+.assistive-text,
+.screen-reader-text {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.ie7 .assistive-text,
+.ie7 .screen-reader-text {
+  color: transparent;
+  text-transform: capitalize;
+  text-indent: -9999px;
+}
+
+.entry-title {
+	font-size: 2em;
+}
+
+@media only screen and (max-width : 900px) {
+	h1 {
+		letter-spacing: .4em;
+	}
+}
+
+@media only screen and (max-width : 800px) {
+	h1 {
+		letter-spacing: .3em;
+	}
+}
+
+@media only screen and (max-width : 700px) {
+
+	h1 {
+		letter-spacing: .2em;
+		padding-left: .1em;
+		margin-top: 0em;
+	}
+	
+	.main {
+		min-height: 2em;
+		margin: 1em auto 0px;
+	}
+	
+	.table-main {
+		display: block;
+		margin: 1.5em;	
+		/*background-color: rgba(0, 0, 0, 1);	*/
+	}
+	
+	 .menu-main-menu-container ul > li,
+     .menu-main-menu-container ul > li > a {
+            display:block;
+           *display:block;
+            zoom:1;
+    } 
+    
+    .page-content {
+	    margin-bottom: 0;
+    }
+    
+    .nav-menu {
+	    display: none;
+    }
+    
+    #menu-toggle {
+		display: block;
+		overflow: hidden;
+	    margin-right: 0;
+	    margin-bottom: 1em;
+	    padding: .5em;
+	    border: 2px solid #fff;
+	    background-color: rgba(0, 0, 0, 0.3);
+	    text-transform: uppercase;
+	    text-align: left;
+	    	&:hover {
+		    	text-decoration: none;
+	    	}
+	    	&:after {
+		    	font-family: 'Font-Awesome-More';
+				font-weight: normal;
+				font-style: normal;
+				display: inline-block;
+				speak: none;
+				text-decoration: inherit;
+				-webkit-font-smoothing: antialiased;
+			    display: inline-block;
+			    text-decoration: inherit;
+		        content: "\f067";
+		        float: right;
+		        margin-top: 3px;
+	    	}
+	    	
+		}
+		
+	#menu-toggle.open:after {
+		content: "\f068";
+	}
+	
+	.ie8 #menu-toggle {
+		background-image:url("images/bg/trans.png");
+		background-repeat:repeat;
+	}
+	    
+    #play-btn,
+    .nav-menu a {
+    	overflow: hidden;
+	    margin-right: 0;
+	    margin-bottom: 1em;
+	    border: 2px solid #fff;
+	    
+    } 
+    
+	.nav-menu a:after {
+		font-family: 'Font-Awesome-More';
+		font-weight: normal;
+		font-style: normal;
+		display: inline-block;
+		speak: none;
+		text-decoration: inherit;
+		-webkit-font-smoothing: antialiased;
+	    display: inline-block;
+	    text-decoration: inherit;
+        content: "\f054";
+        float: right;
+        margin-top: 3px;
+    }
+    
+    .nav-menu a span {
+	    float: left;
+    }
+    
+    .cta {
+		margin-top: 2em;
+		}
+    
+    .social-nav {
+	    margin-bottom: 0;
+    }
+    
+    .single {
+    	display: block;
+    	width: 320px;
+		float: none;
+		margin-top: 1em;
+		margin-left: auto;
+		margin-right: auto;
+		img {
+			float: none;
+			width: auto;
+			height: 320px;
+			margin-left: auto;
+		    margin-right: auto;
+		    padding: 1.5em;
+			-webkit-transition: none;
+			   -moz-transition: none;
+			     -o-transition: none;
+			        transition: none;
+		&:hover { 
+			-webkit-transform: none;
+			   -moz-transform: none;
+			     -o-transform: none;
+			        transform: none;
+			}	
+		}
+		 
+		p {
+			display: block;
+			float: none;
+			padding-left: 0;
+			padding-top: 0;
+			color: #fff;
+			text-align: center;
+			}
+	}
+	
+	#play-btn {
+		display: block;
+		padding: .5em;
+	}
+	
+	.audio-player {
+		display: block;
+		float: none;
+		margin: 1.5em;
+	}
+	
+	audio {
+		width: 100%;
+	}
+	
+	.page-content {
+		width: 100%;
+		}
+		
+	 .nav-wrap {
+	    height: auto;
+		/*position: absolute;
+		top: 60px;*/
+		width: 100%;
+    }
+	
+}
+
+/*@media only screen and (max-width : 600px) {
+    
+    .nav-wrap {
+		top: 60px;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    
+    .nav-wrap {
+		top: 50px;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    
+    .nav-wrap {
+		top: 50px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    
+    .nav-wrap {
+		top: 40px;
+    }
+}*/
+
+
+
+

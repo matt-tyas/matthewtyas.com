@@ -1,0 +1,20 @@
+/* Use this CSS file if you need to support IE 7 and IE 6. */
+
+.icon-untitled { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x270e;'); font-family: 'Entypo'}
+.icon-untitled-2 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x270d;'); font-family: 'Entypo'}
+.icon-untitled-3 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x260e;'); font-family: 'Entypo'}
+.icon-untitled-4 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x2603;'); font-family: 'Entypo'}
+.icon-untitled-5 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x261e;'); font-family: 'Entypo'}
+.icon-untitled-6 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x272d;'); font-family: 'Entypo'}
+.icon-untitled-7 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x2605;'); font-family: 'Entypo'}
+.icon-untitled-8 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x0029;'); font-family: 'Entypo'}
+.icon-untitled-9 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x260f;'); font-family: 'Entypo'}
+.icon-untitled-10 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x002b;'); font-family: 'Entypo'}
+.icon-untitled-11 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x002c;'); font-family: 'Entypo'}
+.icon-untitled-12 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x002d;'); font-family: 'Entypo'}
+.icon-untitled-13 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x002e;'); font-family: 'Entypo'}
+.icon-untitled-14 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x002f;'); font-family: 'Entypo'}
+.icon-untitled-15 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x0031;'); font-family: 'Entypo'}
+.icon-untitled-16 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x0030;'); font-family: 'Entypo'}
+.icon-untitled-17 { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x0025;'); font-family: 'Entypo'}
+.icon-play { *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = '&#x25ba;'); font-family: 'Entypo'}

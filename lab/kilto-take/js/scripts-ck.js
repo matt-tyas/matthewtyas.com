@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#logo-fittext").fitText(.8,{minFontSize:10,maxFontSize:"75px"});var e=document.getElementById("player");$("#play-btn").click(function(){e.paused?e.play():e.pause();$(this).toggleClass("pause");$(this).text($(this).text()=="AUDIO OFF"?"AUDIO ON":"AUDIO OFF");return!1})});

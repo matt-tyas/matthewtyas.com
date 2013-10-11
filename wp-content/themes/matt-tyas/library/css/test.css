@@ -1,0 +1,10 @@
+h1.test {
+	width: 300px;
+	height: 70px;
+	display: block;
+	float: left;
+	margin: 0em;
+	padding: 0em;
+	text-indent: -9999em;
+	background: url(library/images/logo.png) 85px 20px no-repeat;	
+}

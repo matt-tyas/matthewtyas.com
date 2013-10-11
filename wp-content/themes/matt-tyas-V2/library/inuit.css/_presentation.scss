@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    $PRESENTATION
+\*------------------------------------*/
+/**
+ * Presentational classes used throughout site
+ */
+ 
+%circle {
+	@include vendor( border-radius, 100% );	
+	background-color: $grey-bg;
+	border: 1px solid $grey-bg;
+}
+
+%current {
+	color: #fff;
+	background-color: $dark-blue;
+	border: 1px solid $dark-blue;
+	text-decoration: none;
+}
+
+%btn {
+	display: block;
+	width: auto;
+	margin-top: 1em;
+	padding: 10px 15px;
+	background-color: $grey-bg;
+	border: 1px solid $grey-bg;
+	font-family: $small-face;
+	@include vendor( border-radius, 3px );
+		&:hover {
+			@extend %current;
+		}
+}
+
+%external:before {
+	font-family: 'IcoMoon';
+	font-style: normal;
+	speak: none;
+	padding-right: 5px;
+	font-size: 1.2em;
+	vertical-align: bottom;
+	content: "\e000";
+}

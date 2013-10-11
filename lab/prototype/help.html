@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Leeds for Life 4 | Prototype</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico">
+		
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<link rel='stylesheet' href='sass/lfl4.css'>
+		<script src='js/modernizr-2.6.2.min.js'></script>
+		<meta http-equiv="cleartype" content="on">
+	</head>
+	<body>
+<div class="lfl-banner">
+
+	<div class="wrapper">
+
+		<h1 class="two-line-brevier"><a href="index.html">LEEDS for LIFE</a></h1>    
+		
+		<div role="navigation" class="nav nav--rev">
+		
+				<!-- Dashboard - logged in -->
+				<a class="" href="dashboard.html">Dashboard</a>
+				<!-- Log in -->
+				<!-- <a class="float--right" href="#">Log in</a> -->
+		
+			    <!-- Mobile nav toggle -->
+				<a class="mobile-nav__target" href="#">Menu</a>
+				   
+				<!-- Unlogged in access -->
+				<ul class="nav float--left nav--padding nav--mobile-links animated">
+					<li><a href="opportunities.html">Opportunities</a></li>
+					<li><a href="the_foundation.html">Apply for funding</a></li>
+					<li><a href="case_studies.html">Case studies</a></li>
+					<li class='current'><a class='current' href="help.html">Help</a></li>
+				</ul>
+	
+		</div>	    
+
+	
+	</div>	
+			
+</div>  
+<div role="main" class="wrapper">
+<div class="secondary-nav">
+		<a class="mobile-nav__target" href="#">Menu</a>		
+		<ul class=" nav nav--padding nav--mobile-links ">
+			<li class='current'><a class='current' href="help.html">Leeds for life</a></li>
+			<li><a href="hear.html">Hear</a></li>
+			<li><a href="how_to_use.html">Website</a></li>
+			<li><a href="resources.html">Resources</a></li>
+		</ul>				
+</div>
+
+
+<h2>Leeds for life</h2>
+<h3>Ethos</h3>
+<p>Leeds for Life is about preparing our students for their future. It's about inspiring them to get the most out of their academic and co-curricular experiences and build on their time studying at the University of Leeds. We want our students to be able to recognise the value of everything they have done at university and be at ease articulating this clearly and confidently. </p>
+<p>Effective induction has a vital role to play in smoothing the transition from school to university and helping new students to integrate effectively into our academic community so that they can get the maximum benefit from it. Integrating students into the academic community:  Examples of Good Practice" brings together existing successful practice as a resource for all schools.</p>
+<p>At the heart of Leeds for Life is personal tutoring.  We established the Leeds model for personal tutoring to provide students with structured one to one meetings with their personal tutor. These meetings run throughout their degrees and focus on their professional, academic and wellbeing development, helping them become confident, articulate individuals.  An integral part of these meetings are personal tutoring webforms, which help students prepare for each personal tutorial through a list of reflective prompts. These forms ensure the tutor and student have a clear agenda for the meeting, helping them record the outcomes and plan for the next meeting. The forms are saved to the student's dashboard and can be referenced and updated at any time.</p>
+<p>The form for the final meeting invites the student to reflect on the year and record anything significant which could be useful when developing their CV or when their personal tutor is writing their references.</p>
+
+<h3>Student Ambassadors</h3>
+<p>The <a href="Ambassadors.aspx">Leeds for Life Student Ambassadors</a> work with staff and students to promote Leeds for Life through their own programme of activities and at school-based events, meetings and committees.</p>
+<p>If you would like <a href="Ambassadors.aspx#lauren">Lauren</a>, <a href="Ambassadors.aspx#sophie">Sophie</a>, or <a href="Ambassadors.aspx#catherine">Catherine</a> to come and talk about Leeds for Life to your students or staff please contact them by e-mailing <a href="mailto:lflamb@leeds.ac.uk">lflamb@leeds.ac.uk</a></p>
+
+<h3>Our university values</h3>
+<p>The University has defined a number of values which are there to help guide both staff and students in the way we work, teach and learn.</p>
+
+<p>These values - listed below - should act as signposts to help you navigate through the student experience. Click on the links in the jigsaw to read about the attributes and skills associated with each value.</p>
+
+<p>We want you, as a Leeds graduate, to stand out by your ability to talk confidently about your attributes and skills, and the way in which these have been shaped by your academic experience and co-curricular activities.  To see how the skills you need map onto University of Leeds graduate attributes click here.</p>
+
+<h4>Community</h4>
+
+<p>public service and citizenship, collegiality, teamwork and mutual respect</p>
+
+<ul>
+<li>Responsible awareness of and respect for other perspectives and sensitivities, whether local, national or international and the implications for individual behaviour.</li>
+<li>Engagement with knowledge which is not restricted to traditional boundaries.</li>
+<li>The ability to build rapport with others.</li>
+<li>The ability to work in a collegial way towards a common goal.</li>
+</ul>
+
+<h4>Integrity</h4>
+<p>openness, transparency and honesty</p>
+<ul>
+<li>Honesty and openness and with a sense of academic and social responsibility</li>
+<li>Awareness of ethical considerations and consequences of different approaches.</li>
+<li>The ability to make unbiased judgements.</li>
+</ul>
+
+<h4>Academic excellence</h4>
+<p>knowledge, academic freedom, critical independence, creativity, innovation, world-class performance</p>
+<ul>
+<li>Critical intelligence and the ability to question received ideas.</li>
+<li>The ability to work autonomously, take the initiative and to be self-directed in undertaking tasks.</li>
+<li>The ability to identify and define problems and evaluate the merits of particular solutions.</li>
+<li>Understanding and experience of the research methods used to investigate and establish knowledge, and its boundaries, in a particular discipline.</li>
+<li>To be critically aware of, and informed by, current knowledge, and its possible applications, in a discipline or professional specialism.</li>
+<li>To analyse information, synthesise views, make connections and, where appropriate, propose creative solutions.</li>
+<li>The ability to think flexibly and independently.</li>
+</ul>
+
+<h4>Inclusiveness</h4>
+<p>diversity, equal opportunities and access</p>
+<ul>
+<li>Engagement with society and individuals, acknowledging and managing preconceptions or prejudice.</li>
+<li>To read, present and communicate complex knowledge in a way which is comprehensible and relevant to the needs of others.</li>
+<li>To respond sensitively and appropriately to the needs of different stakeholders and circumstances.</li>
+</ul>
+
+<h4>Professionalism</h4>
+<p>provision of effective and efficient customer-focused services in all aspects of our work (internally and externally)</p>
+<ul>
+<li>Awareness of one's own skills and abilities and confidence in articulating them.</li>
+<li>Self belief and confidence in one's own ability to influence decisions and outcomes.</li>
+<li>Open mindedness when dealing with change.</li>
+<li>The ability to take responsibility and/or provide direction for a team.</li>
+<li>Readiness to take responsibility for one's own academic and professional development and learning.</li>
+<li>Awareness and understanding of business, commercial and/or social issues and opportunities and the expectations of prospective employers.</li>
+<li>Motivation, drive and enthusiasm.</li>
+<li>To reflect on and benefit from one's own learning and that of others.</li>
+<li>To manage time and workload effectively.</li>
+<li>To articulate one's own skills and abilities confidently and convincingly, tailored to the target audience as appropriate.</li>
+</ul>
+
+</div>
+<div role="contentinfo"></div>
+</body>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/script.js'></script>
+</html>

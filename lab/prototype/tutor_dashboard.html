@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Leeds for Life 4 | Prototype</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico">
+		
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<link rel='stylesheet' href='sass/lfl4.css'>
+		<script src='js/modernizr-2.6.2.min.js'></script>
+		<meta http-equiv="cleartype" content="on">
+	</head>
+	<body>
+<div class="lfl-banner">
+
+	<div class="wrapper">
+
+		<h1 class="two-line-brevier"><a href="index.html">LEEDS for LIFE</a></h1>    
+		
+		<div role="navigation" class="nav nav--rev">
+		
+				<!-- Dashboard - logged in -->
+				<a class="" href="dashboard.html">Dashboard</a>
+				<!-- Log in -->
+				<!-- <a class="float--right" href="#">Log in</a> -->
+		
+			    <!-- Mobile nav toggle -->
+				<a class="mobile-nav__target" href="#">Menu</a>
+				   
+				<!-- Unlogged in access -->
+				<ul class="nav float--left nav--padding nav--mobile-links animated">
+					<li><a href="opportunities.html">Opportunities</a></li>
+					<li><a href="the_foundation.html">Apply for funding</a></li>
+					<li><a href="case_studies.html">Case studies</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+	
+		</div>	    
+
+	
+	</div>	
+			
+</div>  
+<div role="main" class="wrapper">
+<div class="secondary-nav">	
+	<a class="mobile-nav__target" href="#">Menu</a>
+		<ul class=" nav nav--padding nav--mobile-links ">
+			<li class='current'><a class='current' href="tutor_dashboard.html">Students</a></li>
+			<li><a href="tutor_upcoming_appointments.html">Upcoming Appointments</a></li>
+			<li><a href="tutor_book_meetings.html">Set up Meetings</a></li>
+		</ul>				
+	<a href="#help"><span class="i  i--block  i--block--right  i--help  i--large"></span></a>				   	    
+</div>
+<div class="student-filter">
+
+  	<span>Show</span>
+  	
+  	<select class="student-filter__select" name="filter-select" id="filter-select">
+  		<option value="student">All Years</option>
+    	<option value="student__first-year">First Year</option>
+    	<option value="student__second-year">Second Year</option>
+    	<option value="student__third-year">Third Year</option>
+    	<option value="student__fourth-year">Fourth Year</option>
+    	<option value="student__fifth-year">Fifth  Year</option>
+    	<option value="student__taught-postgraduate">Taught Postgraduate</option>
+    	<option value="student__former-tutees">Former Tutees</option>
+    </select>
+    
+    <a class="btn tooltip__target student-filter__email">Email</a>
+	
+	<div class="tooltip">
+		<form>
+			<legend>Send email to</legend>
+				<ul>
+					<li><input type="radio" name="This year" value="All years"><label for="All years">All years</label></li>
+					<li><input type="radio" name="This year" value="This year"><label for="This year">This year</label></li>
+					<li><input type="radio" name="This year" value="Former Tutees"><label for="Former Tutees">Former Tutees</label></li>
+					<li><input type="checkbox" name="Not filled out latest form" value="Not filled out latest form"><label for="Not Filled out latest form">Not filled out latest form</label></li>
+					<li class='current'><input type="submit" value="Email now" /></li>
+				</ul>
+		</form>
+	</div>
+	
+	<div class="student-filter__veiws">
+		 <a class='current' href="tutor_dashboard.html" title="grid view"><span class="i  i--grid"></span></a>
+		 <a href="tutor_dashboard_list.html" title="list view"><span class="i  i--list"></span></a>
+	</div>
+	
+	<input class="student-filter__search" type="search" placeholder="Search...">
+	
+</div>
+<div class="grid-view">
+
+	<div class=" grid-view__block  student  student__first-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+	
+	<div class=" grid-view__block  student  student__second-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+	
+		<div class=" grid-view__block  student  student__first-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+	
+		<div class=" grid-view__block  student  student__first-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+	
+		<div class=" grid-view__block  student  student__second-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+	
+		<div class=" grid-view__block  student  student__first-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+	
+		<div class=" grid-view__block  student  student__second-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+	
+		<div class=" grid-view__block  student  student__first-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+	
+		<div class=" grid-view__block  student  student__third-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+	
+		<div class=" grid-view__block  student  student__first-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+	
+		<div class=" grid-view__block  student  student__third-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+	
+		<div class=" grid-view__block  student  student__third-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+	
+		<div class=" grid-view__block  student  student__second-year ">
+			<h4 class="grid-view__heading">Simon Badger</h4>
+			<img class=" img--left  img--short  avatar " src="images/student_meta/badger-avater.jpg" alt="avatar" />
+			<ul class="block-list">
+				<li>1st year</li>
+				<li>History of Badgers</li>
+				<li>DUMMY0001</li>
+				<li>
+					<a href="mailto:badger@leeds.ac.uk">badger@leeds.ac.uk</a>
+				</li>
+			</ul>
+			<ul class="grid-view__aside nav nav--stacked">
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Career Readiness</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 1</a>
+				</li>
+				<li>
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 2</a>
+				</li>
+				<li class="submitted">
+					<a href="tutor_meeting_feedback.html">Personal Tutorial Meeting 3</a>
+				</li>
+			</ul>
+			<a href="#profile" class="btn fancybox">View Profile</a>	</div>
+
+</div>
+</div>
+<div class="profile-view" id="profile" style="display:none;" >
+<div class="accordion">
+	<h2>Upcoming Personal Tutorials</h2>
+	<a href="#" for="ac-1" class="accordion__target accordion--open">
+		<h5>First Year Tutorials (Academic Year 2012/13)</h5>
+	</a>
+	<div class="accordion__content">
+		<div>
+		    <table class="responsive table--bordered table--striped">
+		    	<tbody>
+		    		  <tr>
+		    			<th>Meeting</th>
+		    			<th>Form Status</th>
+		    			<th>Tutor Feedback</th>
+		    			<th>View Form</th>
+		    			<th>Tutorial Session</th>
+		    		</tr>
+		    		<tr>
+		    			<td>Career Readiness</td>
+		    			<td class="locked">Complete</td>
+		    			<td>Not required</td>
+		    			<td><a href="#">View</a></td>
+		    			<td>Not required</td>
+		    		</tr>
+		    		<tr>
+		    			<td>Meeting 1</td>
+		    			<td class="locked">Complete</td>
+		    			<td>Received</td>
+		    			<td><a href="#">View</a></td>
+		    			<td>Attended</td>
+		    		</tr>
+		    		<tr>
+		    			<td>Meeting 2</td>
+		    			<td class="locked">Complete</td>
+		    			<td>Received</td>
+		    			<td><a href="#">View</a></td>
+		    			<td>Attended</td>
+		    		</tr>
+		    		<tr>
+		    			<td>Meeting 3</td>
+		    			<td>To complete</td>
+		    			<td>Not Received</td>
+		    			<td><a href="#">View</a></td>
+		    			<td><a href="student_book_meetings.html">Book</a></td>
+		    		</tr>
+		    	</tbody>
+		    </table>
+	    </div>
+	</div>
+    <a href="#" for="ac-2" class="accordion__target">
+	    <h5>Second Year Tutorials (Academic Year 2013/14)</h5>
+    </a>
+    <div class="accordion__content">
+        <div>
+	        <table class="responsive table--bordered">
+	        	<tbody>
+	        		  <tr>
+	        			<th>Meeting</th>
+		    			<th>Form Status</th>
+		    			<th>Tutor Feedback</th>
+		    			<th>View Form</th>
+		    			<th>Tutorial Session</th>
+	        		</tr>
+	        		<tr>
+	        			<td>Meeting 1</td>
+	        			<td>To be complete</td>
+		    			<td>Not Received</td>
+		    			<td><a href="#">View</a></td>
+		    			<td><a href="student_book_meetings.html">Book</a></td>
+	        		</tr>
+	        		<tr>
+	        			<td>Meeting 2</td>
+	        			<td>To be complete</td>
+		    			<td>Not Received</td>
+		    			<td><a href="#">View</a></td>
+		    			<td><a href="student_book_meetings.html">Book</a></td>
+	        		</tr>
+	        		<tr>
+	        			<td>Meeting 3</td>
+	        			<td>To be complete</td>
+		    			<td>Not Received</td>
+		    			<td><a href="#">View</a></td>
+		    			<td><a href="student_book_meetings.html">Book</a></td>
+	        		</tr>
+	        	</tbody>
+	        </table>
+        </div>
+    </div>
+    <a href="#" for="ac-3" class="accordion__target">
+	    <h5>Third Year Tutorials (Academic Year 2014/15)</h5>
+    </a>
+    <div class="accordion__content">
+    	<div>
+		<table class="responsive table--bordered table--striped">
+			<tbody>
+				  <tr>
+					<th>Meeting</th>
+	    			<th>Form Status</th>
+	    			<th>Tutor Feedback</th>
+	    			<th>View Form</th>
+	    			<th>Tutorial Session</th>
+				</tr>
+				<tr>
+					<td>Meeting 1</td>
+					<td>To complete</td>
+	    			<td>Not Received</td>
+	    			<td><a href="#">View</a></td>
+	    			<td><a href="student_book_meetings.html">Book</a></td>
+				</tr>
+				<tr>
+					<td>Meeting 2</td>
+					<td>To complete</td>
+	    			<td>Not Received</td>
+	    			<td><a href="#">View</a></td>
+	    			<td><a href="student_book_meetings.html">Book</a></td>
+				</tr>
+				<tr>
+					<td>Meeting 3</td>
+					<td>To complete</td>
+	    			<td>Not Received</td>
+	    			<td><a href="#">View</a></td>
+	    			<td><a href="student_book_meetings.html">Book</a></td>
+				</tr>
+				<tr>
+					<td>Hear Statement</td>
+					<td>To complete</td>
+					<td>Not required</td>
+					<td><a href="#">View</a></td>
+					<td>Not required</td>
+				</tr>
+			</tbody>
+		</table> 
+		</div>
+	</div>
+</div>
+<div id="living_cv" class="timeline-header">
+	<h2 class="timeline-title">Living CV</h2>
+	<ul class="nav nav--padding float--right">
+		<li class="btn"><a href="#"  id="add">Add to timeline</a></li>
+		<li class="btn"><a href="#" id="export">Export timeline</a></li>
+	</ul>
+	<h3>Timeline View</h3>
+	<div class="helpers">
+		<h4>Timeline Help</h4>
+		<p>The timeline is used to record meetings and opportunities. You can use this information to build your CV, or apply for a job.</p>
+		<p>You can add things to your timeline with the add to timeline button.</p>
+		<p>You can export anything you add to your timeline, or export the entire timeline.</p>
+		<p>You can filter your timeline to show specific information.</p>
+	</div>
+	<select name="filter-select" id="filter-select">
+		<option value="timeline__entry">All Events</option>
+		<option value="timeline__entry--date">Important dates</option>
+		<option value="timeline__entry--tutorial">Tutorials</option>
+		<option value="timeline__entry--bookmark">Bookmarks</option>
+		<option value="timeline__entry--booking">bookings</option>
+		<option value="timeline__entry--opportunity">Opportunities</option>
+	</select>
+</div>
+
+<div class="export-timeline" id="export-timeline"> 
+    <h4>How would you like to export?</h4>
+    <form>
+        <label class="checkbox"><input type="checkbox"> Notes</label>
+        <label class="checkbox"><input type="checkbox"> Bookmarks</label>
+        <label class="checkbox"><input type="checkbox"> Opportunities</label>
+        <label class="checkbox"><input type="checkbox"> All</label>
+        <input class="submit-btn export-timeline__btn" type="submit" value="Download">
+        <input class="submit-btn export-timeline__btn" type="submit" value="Preview">
+    </form>
+</div>
+
+<div class="add-to-timeline" id="add-to-timeline"> 
+
+	<ul class="nav  nav--tabs  nav--padding ">
+		<li><a href="#">Notes</a></li>
+		<li><a href="#">Bookmark</a></li>
+		<li><a href="#">Opportunity</a></li>
+	</ul>
+
+	<div class="panes">    
+	   
+		<div class="add-to-timeline__form">
+		    <form>
+		    	<textarea placeholder="Add some notes!"></textarea>
+		    
+		    <div class="add-to-timeline__submit">
+		    	<select>
+		    		<option>Add Year</option>
+		    		<option>2012</option>
+		    		<option>2013</option>
+		    		<option>2014</option>
+		    	</select>
+		    	<select>
+		    		<option>Month</option>
+		    		<option>January</option>
+		    		<option>February</option>
+		    		<option>March</option>
+		    		<option>April</option>
+		    		<option>May</option>
+		    		<option>June</option>
+		    		<option>July</option>
+		    		<option>August</option>
+		    		<option>September</option>
+		    		<option>October</option>
+		    		<option>November</option>
+		    		<option>December</option>
+		    	</select>
+		    	<select>
+		    		<option>Day</option>
+		    		<option>1st</option>
+		    		<option>2nd</option>
+		    		<option>3nd</option>
+		    		<option>4th</option>
+		    		<option>5th</option>
+		    		<option>6th</option>
+		    		<option>7th</option>
+		    		<option>8th</option>
+		    		<option>9th</option>
+		    		<option>10th</option>
+		    		<option>11th</option>
+		    		<option>12th</option>
+		    		<option>13th</option>
+		    		<option>14th</option>
+		    		<option>15th</option>
+		    		<option>16th</option>
+		    		<option>17th</option>
+		    		<option>18th</option>
+		    		<option>19th</option>
+		    		<option>20th</option>
+		    		<option>21st</option>
+		    		<option>22nd</option>
+		    		<option>23rd</option>
+		    		<option>24th</option>
+		    		<option>25th</option>
+		    		<option>26th</option>
+		    		<option>27th</option>
+		    		<option>28th</option>
+		    		<option>29th</option>
+		    		<option>30th</option>
+		    		<option>31st</option>
+		    	</select>
+		    	
+		    	<label>Today</label>
+		    	<input type="checkbox">
+		    	
+		    	<input class="submit-btn add-to-timeline__btn" type="submit" value="Add To Timeline">
+		   </div>
+		    
+		    </form>
+		</div>
+		
+		<div class="add-to-timeline__form">
+		    <form>
+		    
+		    <ul class="block-list">
+		    	<li>
+		    		<label>Bookmark title</label>
+		    		<input type="text">
+		    	</li>
+		    	
+		    	<li>
+		    		<label>Link</label>
+		    		<input type="url">
+		    	</li>
+		    </ul>
+		    
+		    <div class="add-to-timeline__submit">
+		    	<select>
+		    		<option>Add Year</option>
+		    		<option>2012</option>
+		    		<option>2013</option>
+		    		<option>2014</option>
+		    	</select>
+		    	<select>
+		    		<option>Month</option>
+		    		<option>January</option>
+		    		<option>February</option>
+		    		<option>March</option>
+		    		<option>April</option>
+		    		<option>May</option>
+		    		<option>June</option>
+		    		<option>July</option>
+		    		<option>August</option>
+		    		<option>September</option>
+		    		<option>October</option>
+		    		<option>November</option>
+		    		<option>December</option>
+		    	</select>
+		    	<select>
+		    		<option>Day</option>
+		    		<option>1st</option>
+		    		<option>2nd</option>
+		    		<option>3nd</option>
+		    		<option>4th</option>
+		    		<option>5th</option>
+		    		<option>6th</option>
+		    		<option>7th</option>
+		    		<option>8th</option>
+		    		<option>9th</option>
+		    		<option>10th</option>
+		    		<option>11th</option>
+		    		<option>12th</option>
+		    		<option>13th</option>
+		    		<option>14th</option>
+		    		<option>15th</option>
+		    		<option>16th</option>
+		    		<option>17th</option>
+		    		<option>18th</option>
+		    		<option>19th</option>
+		    		<option>20th</option>
+		    		<option>21st</option>
+		    		<option>22nd</option>
+		    		<option>23rd</option>
+		    		<option>24th</option>
+		    		<option>25th</option>
+		    		<option>26th</option>
+		    		<option>27th</option>
+		    		<option>28th</option>
+		    		<option>29th</option>
+		    		<option>30th</option>
+		    		<option>31st</option>
+		    	</select>
+		    	
+		    	<label>Today</label>
+		    	<input type="checkbox">
+		    	
+		    	<input class="submit-btn add-to-timeline__btn" type="submit" value="Add To Timeline">
+		   </div>
+		    
+		    </form>
+		</div>
+		    
+		<div class="add-to-timeline__form">
+		    <form>
+		    
+		    <ul class="block-list">
+		    	<li>
+		    		<label>Title</label>
+		    		<input type="text">
+		    	</li>
+		    	
+		    	<li>
+		    		<label>Description</label>
+		    		<textarea></textarea>
+		    	</li>
+		    	
+		    	<li>
+		    		<label>Skills I will have the opportunity to gain/enhance/practise</label>
+		    		<textarea></textarea>
+		    	</li>
+		    </ul>
+		    
+		    <div class="add-to-timeline__submit">
+		    	<select>
+		    		<option>Add Year</option>
+		    		<option>2012</option>
+		    		<option>2013</option>
+		    		<option>2014</option>
+		    	</select>
+		    	<select>
+		    		<option>Month</option>
+		    		<option>January</option>
+		    		<option>February</option>
+		    		<option>March</option>
+		    		<option>April</option>
+		    		<option>May</option>
+		    		<option>June</option>
+		    		<option>July</option>
+		    		<option>August</option>
+		    		<option>September</option>
+		    		<option>October</option>
+		    		<option>November</option>
+		    		<option>December</option>
+		    	</select>
+		    	<select>
+		    		<option>Day</option>
+		    		<option>1st</option>
+		    		<option>2nd</option>
+		    		<option>3nd</option>
+		    		<option>4th</option>
+		    		<option>5th</option>
+		    		<option>6th</option>
+		    		<option>7th</option>
+		    		<option>8th</option>
+		    		<option>9th</option>
+		    		<option>10th</option>
+		    		<option>11th</option>
+		    		<option>12th</option>
+		    		<option>13th</option>
+		    		<option>14th</option>
+		    		<option>15th</option>
+		    		<option>16th</option>
+		    		<option>17th</option>
+		    		<option>18th</option>
+		    		<option>19th</option>
+		    		<option>20th</option>
+		    		<option>21st</option>
+		    		<option>22nd</option>
+		    		<option>23rd</option>
+		    		<option>24th</option>
+		    		<option>25th</option>
+		    		<option>26th</option>
+		    		<option>27th</option>
+		    		<option>28th</option>
+		    		<option>29th</option>
+		    		<option>30th</option>
+		    		<option>31st</option>
+		    	</select>
+		    	
+		    	<label>Today</label>
+		    	<input type="checkbox">
+		    	
+		    	<input class="submit-btn add-to-timeline__btn" type="submit" value="Add To Timeline">
+		   </div>
+		    
+		    </form>
+		</div>
+	    
+	</div>
+
+</div>
+
+<div class="alert alert--error" id="add-success">
+	<p>Your event on 16th April 2012 has been successfully added to your timeline.</p>
+	<p><a href="#">Go to this event</a></p>
+</div>
+
+<div class="alert alert--success" id="export-success">
+	<p>You have successfully exported to your timeline</p>
+</div>
+
+<div class="timeline">
+	<h3 class="timeline__heading">First Year</h3>
+
+	<ul class="timeline__first-year">
+		<h4 class="timeline__heading">September 2012</h4>
+		<li class=" timeline__entry  timeline__entry--left  timeline__entry--date ">
+			<div class="timeline__entry__head">
+				<h5>Term 1 Starts</h5>
+				<span class="timeline__entry__time"> Monday, 24 September 2012 - Friday, 7 December 2012</span>
+			</div>
+		</li>
+		<h4 class="timeline__heading">October 2012</h4>
+		<li class=" timeline__entry  timeline__entry--right  timeline__entry--career ">
+			<div class="timeline__entry__head">
+				<h5>Completed career readiness form</h5>
+				<ul class="timeline__entry__tools">
+					<li><a href="#" class="i i--eye"></a></li>
+				</ul>
+			</div>
+			<p class="timeline__entry__description">You have completed your career-readiness form, well done Badger.</p>
+			<span class="timeline__entry__time">12th October 2012</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--left  timeline__entry--booking">
+			<div class="timeline__entry__head">
+				<h5>Booked first tutor meeting</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+				</div>
+			</div>
+			<p>Your meeting is on <a href="student_book_meetings.html">16/11/12</a></p>
+			<span class="timeline__entry__time">15th October 2012</span>
+		</li>
+		<h4 class="timeline__heading">November 2012</h4>
+		<li class="timeline__entry  timeline__entry--right  timeline__entry--tutorial-meeting">
+			<div class="timeline__entry__head">
+				<h5>Completed first tutor meeting</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+				</div>
+			</div>
+			<p class="timeline__entry__description"><a href="#">View your tutors notes here</a>.</p>
+			<span class="timeline__entry__time">16th November 2012</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--left  timeline__entry--note">
+			<div class="timeline__entry__head">
+				<h5>Note</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+					<a href="#" class="i i--pencil"></a>
+				</div>
+			</div>
+			<div class="edit-entry">
+				<textarea>Remember to go to the careers fair.</textarea>
+				<input type="submit" value="Save" class="save-entry" />
+				<input type="submit" value="Cancel" class="cancel-entry" />
+			</div>
+			<p class="timeline__entry__description">Remember to go to the careers fair.</p>
+			<span class="timeline__entry__time">19th November 2012</span>
+		</li>
+		<h4 class="timeline__heading">December 2012</h4>
+		<li class="timeline__entry  timeline__entry--right  timeline__entry--date  timeline__entry--date--right ">
+			<h5>Term 1 ends</h5>
+			<span class="timeline__entry__time">7th December 2012</span>
+		</li>
+		<h4 class="timeline__heading">January 2013</h4>
+		<li class="timeline__entry  timeline__entry--left  timeline__entry--note">
+			<div class="timeline__entry__head">
+				<h5>Note</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+					<a href="#" class="i i--pencil"></a>
+				</div>
+			</div>
+			<p class="timeline__entry__description">START REVISING!</p>
+			<span class="timeline__entry__time">1st January</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--right  timeline__entry--date  timeline__entry--date--right">
+			<div class="timeline__entry__head">
+				<h5>Examinations period</h5>
+			</div>
+			<span class="timeline__entry__time">7th January – 18 January 2013</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--left  timeline__entry--note">
+			<div class="timeline__entry__head">
+				<h5>Note</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+					<a href="#" class="i i--pencil"></a>
+				</div>
+			</div>
+			<p class="timeline__entry__description">Exam today.</p>
+			<span class="timeline__entry__time">8th January</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--right  timeline__entry--grades">
+			<div class="timeline__entry__head">
+				<h5>Mock exam grades</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+				</div>
+			</div>
+			<ul>
+				<li>Module 1: 70%</li>
+				<li>Module 2: 60%</li>
+				<li>Module 2: 50%</li>
+			</ul>
+			<span class="timeline__entry__time">20th January 2013</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--left  timeline__entry--date">
+			<div class="timeline__entry__head">
+				<h5>Term 2 starts</h5>
+			</div>
+			<span class="timeline__entry__time">Monday, 21 January 2013</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--right  timeline__entry--booking">
+			<div class="timeline__entry__head">
+				<h5>Booked second tutor meeting</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+					<a href="#" class="i i--pencil"></a>
+				</div>
+			</div>
+			<p>Your meeting is on <a href="student_book_meetings.html">05/03/13</a></p>
+			<span class="timeline__entry__time">27th January 2013</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--left  timeline__entry--bookmark">
+			<div class="timeline__entry__head">
+				<h5>Bookmark</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+					<a href="#" class="i i--pencil"></a>
+				</div>
+			</div>
+			<p class="timeline__entry__description"><a href="#">Careers service</a></p>
+			<span class="timeline__entry__time">31st January 2013</span>
+		</li>
+		<h4 class="timeline__heading">February 2013</h4>
+		<li class="timeline__entry  timeline__entry--right  timeline__entry--opportunity">
+			<div class="timeline__entry__head">
+				<h5>Opportunity completed</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+					<a href="#" class="i i--pencil"></a>
+				</div>
+			</div>
+			<p class="timeline__entry__description">You have completed your <a href="#">schools volunteering placement</a>.</p>
+			<p class="timeline__entry__description">Opportunity skill(s): <a href="#">leadership</a>, <a href="#">communication skills,</a> <a href="#">initiative</a>. Click on a skill to view it's description to help you reflect.</p>
+			<span class="timeline__entry__time">04 February 2013</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--left  timeline__entry--tutorial">
+			<div class="timeline__entry__head">
+				<h5>Completed second tutor meeting form</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+					<a href="#" class="i i--pencil"></a>
+				</div>
+			</div>
+			<p><a href="#">View form</a></p>
+			<span class="timeline__entry__time">27 February 2012</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--right  timeline__entry--tutorial-meeting">
+			<div class="timeline__entry__head">
+				<h5>Completed second tutor meeting</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+				</div>
+			</div>
+			<p class="timeline__entry__description"><a href="#">View your tutors notes here</a>.</p></p>
+			<span class="timeline__entry__time">5th March 2012</span>
+		</li>
+		<h4 class="timeline__heading">May 2013</h4>
+		<li class="timeline__entry  timeline__entry--left  timeline__entry--date">
+			<div class="timeline__entry__head">
+				<h5>Term 2 ends</h5>
+			</div>
+			<span class="timeline__entry__time">Friday, 3 May 2013</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--right  timeline__entry--booking">
+			<div class="timeline__entry__head">
+				<h5>Booked third tutor meeting</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+					<a href="#" class="i i--pencil"></a>
+				</div>
+			</div>
+			<p>Your meeting is on <a href="student_book_meetings.html">24/05/13</a></p>
+			<span class="timeline__entry__time">5th May 2013</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--left  timeline__entry--opportunity">
+			<div class="timeline__entry__head">
+				<h5>Opportunity completed</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+					<a href="#" class="i i--pencil"></a>
+				</div>
+			</div>
+			<p class="timeline__entry__description">You have completed your <a href="#">schools volunteering placement</a>.</p>
+			<p class="timeline__entry__description">Opportunity skill(s): <a href="#">leadership</a>, <a href="#">communication skills,</a> <a href="#">initiative</a>. Click on a skill to view it's description to help you reflect.</p>
+			<span class="timeline__entry__time">15th May 2013</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--right  timeline__entry--date  timeline__entry--date--right ">
+			<div class="timeline__entry__head">
+				<h5>Term 3 starts</h5>
+			</div>
+			<span class="timeline__entry__time">Monday, 21 January 2013</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--left  timeline__entry--date">
+			<div class="timeline__entry__head">
+				<h5>Examinations period</h5>
+			</div>
+			<span class="timeline__entry__time">13 – 31 May 2013</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--right  timeline__entry--tutorial">
+			<div class="timeline__entry__head">
+				<h5>Completed third tutor meeting form</h5>
+				<div class="timeline__entry__tools">
+					<a href="#" class="i i--eye"></a>
+					<a href="#" class="i i--pencil"></a>
+				</div>
+			</div>
+			<p><a href="#">View form</a></p>
+			<span class="timeline__entry__time">20th May 2013</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--left  timeline__entry--tutorial-meeting">
+			<div class="timeline__entry__head">
+				<h5>Completed third tutor meeting</h5>
+			</div>
+			<p class="timeline__entry__description"><a href="#">View your tutors notes here</a>.</p>
+			<span class="timeline__entry__time">24th May 2013</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--right  timeline__entry--date  timeline__entry--date--right ">
+			<div class="timeline__entry__head">
+				<h5>Term 3 ends</h5>
+			</div>
+			<span class="timeline__entry__time">Friday, 30th June 2013</span>
+		</li>
+		<h4 class="timeline__heading">June 2013</h4>
+	</ul>
+	<h3 class="timeline__heading">Second Year</h3>
+
+	<ul class="timeline__second-year">
+		<li class=" timeline__entry   timeline__entry--left ">
+			<div class="timeline__entry__head">
+				<h5>Tutorial session</h5>
+			</div>
+			<p class="timeline__entry__description">You have attended your first tutorial, well done Badger.</p>
+			<span class="timeline__entry__time">12th October 2012</span>
+		</li>
+		<li class=" timeline__entry  timeline__entry--right ">
+			<div class="timeline__entry__head">
+				<h5>University closed</h5>
+			</div>
+			<p class="timeline__entry__description">Have a Merry Christmas.</p>
+		</li>
+	</ul>
+	<h3 class="timeline__heading">Third Year</h3>
+	<ul class="timeline__third-year">
+		<li class="timeline__entry  timeline__entry--left ">
+			<div class="timeline__entry__head">
+				<h5>Tutorial session</h5>
+			</div>
+			<p class="timeline__entry__description">You have attended your first tutorial, well done Badger.</p>
+			<span class="timeline__entry__time">12th October 2012</span>
+		</li>
+		<li class="timeline__entry  timeline__entry--right ">
+			<div class="timeline__entry__head">
+				<h5>University Closed</h5>
+			</div>
+			<p class="timeline__entry__description">Have a Merry Christmas.</p>
+		</li>
+	</ul>
+</div>
+<h2>Academic Summary</h2>
+
+<table>
+<caption>Credits earned</caption>
+	<thead>
+		<tr>
+			<th>Level</th>	
+			<th>Academic Year</th>
+			<th>Semester</th>	
+			<th>Credits</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Level</th>	
+			<th>Academic Year</th>
+			<th>Semester</th>	
+			<th>Credits</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>3</td>
+			<td>2012/13</td>
+			<td>Semester 1</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>2012/13</td>
+			<td>Semester 2</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>2012/13</td>
+			<td>Semesters 1 &amp; 2</td>
+			<td>80</td>
+		</tr>
+		<tr>
+			<td colspan="3"></td>
+			<td>120</td>
+		</tr>
+		<tr>
+			<td>2</td>	
+			<td>2011/12</td>
+			<td>Semester 1</td>
+			<td>60</td>
+		</tr>	
+		<tr>
+			<td>2</td>	
+			<td>2011/12</td>
+			<td>Semester 2</td>
+			<td>60</td>
+		</tr>	
+		<tr>
+			<td colspan="3"></td>
+			<td>120</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>20010/11</td>	
+			<td>Semester 1</td>	
+			<td>60</td>	
+		</tr>
+		<tr>
+			<td>1</td>	
+			<td>2010/11</td>
+			<td>Semester 2</td>	
+			<td>60</td>
+		</tr>
+		<tr>
+        	<td colspan="3"></td>
+			<td>120</td>
+        </tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th>1:1 Avg</th>
+			<th>1:2 Avg</th>
+			<th>Best Avg</th>	
+			<th>Award</th>
+		</tr>
+	<thead>
+	<tbody>
+		<tr>
+			<td>6.97</td>
+			<td>7.06</td>	
+			<td>7.06</td>	
+			<td>1</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<caption>2012/13 Academic Year</caption>
+	<thead>
+		<tr>
+			<th class="hide--portable">Module</th>
+			<th>Title</th>
+			<th class="hide--portable">Status</th>
+			<th class="hide--portable">Semester</th>
+			<th>Credits</th>
+			<th>Mark</th>
+			<th>Resit</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th class="hide--portable">Module</th>
+			<th>Title</th>
+			<th class="hide--portable">Status</th>
+			<th class="hide--portable">Semester</th>
+			<th>Credits</th>
+			<th>Mark</th>
+			<th>Resit</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td class="hide--portable">HIST345001</td>
+			<td>American History & Historians</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 1</td>
+			<td>20</td>
+			<td>74</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST371001</td>
+			<td>Nazism, Stalinism &amp; Rise</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>66</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST326001</td>
+			<td>Uganda's Kingdoms</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 1 &amp; 2</td>
+			<td>40</td>
+			<td>70</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST350001</td>
+			<td>History Dissertation</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 1 &amp; 2</td>
+			<td>40</td>
+			<td>77</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<caption>2011/12 Academic Year</caption>
+	<thead>
+		<tr>
+			<th class="hide--portable">Module</th>
+			<th>Title</th>
+			<th class="hide--portable">Status</th>
+			<th class="hide--portable">Semester</th>
+			<th>Credits</th>
+			<th>Mark</th>
+			<th>Resit</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th class="hide--portable">Module</th>
+			<th>Title</th>
+			<th class="hide--portable">Status</th>
+			<th class="hide--portable">Semester</th>
+			<th>Credits</th>
+			<th>Mark</th>
+			<th>Resit</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td class="hide--portable">HIST219001</td>
+			<td>British Imperial Culture</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 1</td>
+			<td>20</td>
+			<td>66</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST230501</td>
+			<td>'Company Raj' in India</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>67</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST244201</td>
+			<td>Black Politics</td>
+			<td class="hide--portable">RE</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>65</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST218001</td>
+			<td>Heretics, Witches & Conspirat</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>67</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST242001</td>
+			<td>India, 1857-1947</td>
+			<td class="hide--portable">RE</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>71</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST243001</td>
+			<td>History of Africa since 1900</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>66</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<caption>2010/11 Academic Year</caption>
+	<thead>
+		<tr>
+			<th class="hide--portable">Module</th>
+			<th>Title</th>
+			<th class="hide--portable">Status</th>
+			<th class="hide--portable">Semester</th>
+			<th>Credits</th>
+			<th>Mark</th>
+			<th>Resit</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th class="hide--portable">Module</th>
+			<th>Title</th>
+			<th class="hide--portable">Status</th>
+			<th class="hide--portable">Semester</th>
+			<th>Credits</th>
+			<th>Mark</th>
+			<th>Resit</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td class="hide--portable">HIST105001</td>
+			<td>Intro: Historical Skills</td>
+			<td class="hide--portable">RE</td>
+			<td class="hide--portable">Semester 1</td>
+			<td>20</td>
+			<td>62</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST109001</td>
+			<td>Medieval & Renaissance Europe</td>
+			<td class="hide--portable">RE</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>59</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">PIED180501</td>
+			<td>Contemporary Africas</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>56</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST121001</td>
+			<td>The Modern World</td>
+			<td class="hide--portable">RE</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>65</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST130001</td>
+			<td>Primary Sources for Historians</td>
+			<td class="hide--portable">RE</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>71</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">PIED151201</td>
+			<td>International Politics</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>66</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+<p>(*) Please note that module marks shown with an asterisk are pending marks.</p>
+</div>
+</div>
+<div role="contentinfo"></div>
+</body>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/script.js'></script>
+</html>

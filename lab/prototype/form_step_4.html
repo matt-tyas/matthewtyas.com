@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Leeds for Life 4 | Prototype</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico">
+		
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<link rel='stylesheet' href='sass/lfl4.css'>
+		<script src='js/modernizr-2.6.2.min.js'></script>
+		<meta http-equiv="cleartype" content="on">
+	</head>
+	<body>
+<div class="lfl-banner">
+
+	<div class="wrapper">
+
+		<h1 class="two-line-brevier"><a href="index.html">LEEDS for LIFE</a></h1>    
+		
+		<div role="navigation" class="nav nav--rev">
+		
+				<!-- Dashboard - logged in -->
+				<a class="" href="dashboard.html">Dashboard</a>
+				<!-- Log in -->
+				<!-- <a class="float--right" href="#">Log in</a> -->
+		
+			    <!-- Mobile nav toggle -->
+				<a class="mobile-nav__target" href="#">Menu</a>
+				   
+				<!-- Unlogged in access -->
+				<ul class="nav float--left nav--padding nav--mobile-links animated">
+					<li><a href="opportunities.html">Opportunities</a></li>
+					<li><a href="the_foundation.html">Apply for funding</a></li>
+					<li><a href="case_studies.html">Case studies</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+	
+		</div>	    
+
+	
+	</div>	
+			
+</div>  
+<div role="main" class="wrapper">
+<div class="secondary-nav">					
+		<a class="mobile-nav__target" href="#">Menu</a>	
+			<ul class=" nav nav--padding nav--mobile-links ">
+				<li><a href="dashboard.html">Dashboard</a></li>
+				<li><a href="dashboard.html#living_cv">Living CV</a></li>
+				<li><a href="academic_summary.html">Academic summary</a></li>
+				<li><a href="my_opportunities.html">My opportunities</a></li>
+				<li><a href="alumni_network.html">Leeds Network</a></li>
+			</ul>
+		<a class="help__target" href="#help"><span class="i  i--block  i--block--right  i--help  i--large"></span></a>
+</div>
+
+<h2>Year One, Personal Tutorial Meeting 1: Induction</h2>
+<ol class="form-wizard">
+<div class="gw">
+	<li class="form-wizard__item"><a href="form_step_1.html"><span class="form-wizard__number">1</span> <span>Introduction</span></a></li>
+	<li class="form-wizard__item"><a href="form_step_2.html"><span class="form-wizard__number">2</span> <span>About you</span></a></li>
+	<li class="form-wizard__item"><a href="form_step_3.html"><span class="form-wizard__number">3</span> <span>Becoming a student at UoL</span></a></li>
+	<li class="current form-wizard__item"><a class='current' href="form_step_4.html"><span class="form-wizard__number">4</span> <span>Student life</span></a></li>
+	<li class="form-wizard__item"><a href="form_step_5.html"><span class="form-wizard__number">5</span> <span>Discussion points</span></a></li>
+	<li class="form-wizard__item"><a href="form_step_6.html"><span class="form-wizard__number">6</span> <span>Developing your employability</span></a></li>
+</div>
+</ol>
+<form>
+
+<fieldset>
+
+	<legend>4. Student life</legend>
+
+	<fieldset>
+		<legend>7. Are you happy with your accommodation?</legend>
+		<label><input class="yes_toggle" type="radio" name="yes-no" value="yes"> Yes</label> 
+		<label><input class="no_toggle" type="radio" name="yes-no" value="no"> No</label>
+	</fieldset>
+
+	<a class="slider__target " href="#">More info</a>
+	<p class="form-help-text">Contact the accommodation office (<a href="http://www.leeds.ac.uk/accommodation">leeds.ac.uk/accommodation</a> or 0870 1200 189) if you are having problems with University accommodation.
+For advice about non-University accommodation, see <a href="http://www.leeds.ac.uk/accommodation">http://www.unipol.org.uk/leeds/.</a></p>
+
+	<fieldset>
+		<legend>8. Are you aware of the student-support services on campus?</legend>
+		<label><input class="yes_toggle" type="radio" name="yes-no" value="yes"> Yes</label> 
+		<label><input class="no_toggle" type="radio" name="yes-no" value="no"> No</label>
+	</fieldset>
+	
+	<a class="slider__target " href="#">More info</a>
+	<p class="form-help-text"><a href="http://help.leeds.ac.uk/">help@leeds</a> gives details of the University’s wide range of support services. Your department also offers support services - ask your personal tutor or departmental administrator about these.</p>
+
+	<fieldset>
+		<legend>9. Do you know how to contact your student representative?</legend>
+		<label><input class="yes_toggle" type="radio" name="yes-no" value="yes"> Yes</label> 
+    	<label><input class="no_toggle" type="radio" name="yes-no" value="no"> No</label>
+    </fieldset>
+    
+	<a class="slider__target " href="#">More info</a>
+	<p class="form-help-text">The LUU website has information about student academic representatives, plus contact details of your school rep: <a href="http://www.leedsuniversityunion.org.uk/yourreps/academicreps">leedsuniversityunion.org.uk/yourreps/academicreps</a>. 
+Find the contact details of your course representatives on the Rep panel of the Portal. Your faculty/school will also have a staff/student forum and student representation on its committees. See your faculty/school handbook for details.</p>
+
+	<fieldset>
+		<legend>10. Have you enrolled with a medical practice?</legend>
+		<label><input class="yes_toggle" type="radio" name="yes-no" value="yes"> Yes</label>  
+    	<label><input class="no_toggle" type="radio" name="yes-no" value="no"> No</label> 
+    </fieldset>
+    
+	<a class="slider__target " href="#">More info</a>
+	<p class="form-help-text">Register as soon as you can. Leeds Student Medical Practice <a href="http://www.leeds.ac.uk/lsmp">http://www.leeds.ac.uk/lsmp</a> is student-focused and close to the campus. help@leeds (<a href="http://help.leeds.ac.uk/health.html">help.leeds.ac.uk/health.html</a>) has further medical information if you need it.</p>
+
+	<fieldset>
+		<legend>11. Are you aware of the local guidelines on health & safety and any implications for your programme?</legend>
+		<label><input class="yes_toggle" type="radio" name="yes-no" value="yes"> Yes</label>  
+    	<label><input class="no_toggle" type="radio" name="yes-no" value="no"> No</label> 
+    </fieldset>
+    
+</fieldset>
+
+<a href="form_step_5.html" class="btn">Next - Step 5. Discussion points &raquo;</a>
+
+</form>
+</div>
+<div role="contentinfo"></div>
+</body>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/script.js'></script>
+</html>

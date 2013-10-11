@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Leeds for Life 4 | Prototype</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico">
+		
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<link rel='stylesheet' href='sass/lfl4.css'>
+		<script src='js/modernizr-2.6.2.min.js'></script>
+		<meta http-equiv="cleartype" content="on">
+	</head>
+	<body>
+<div class="lfl-banner">
+
+	<div class="wrapper">
+
+		<h1 class="two-line-brevier"><a href="index.html">LEEDS for LIFE</a></h1>    
+		
+		<div role="navigation" class="nav nav--rev">
+		
+				<!-- Dashboard - logged in -->
+				<a class="" href="dashboard.html">Dashboard</a>
+				<!-- Log in -->
+				<!-- <a class="float--right" href="#">Log in</a> -->
+		
+			    <!-- Mobile nav toggle -->
+				<a class="mobile-nav__target" href="#">Menu</a>
+				   
+				<!-- Unlogged in access -->
+				<ul class="nav float--left nav--padding nav--mobile-links animated">
+					<li><a href="opportunities.html">Opportunities</a></li>
+					<li><a href="the_foundation.html">Apply for funding</a></li>
+					<li><a href="case_studies.html">Case studies</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+	
+		</div>	    
+
+	
+	</div>	
+			
+</div>
+<div role="main" class="wrapper">
+	<div class="secondary-nav">	
+	<a class="mobile-nav__target" href="#">Menu</a>
+		<ul class=" nav nav--padding nav--mobile-links ">
+			<li><a href="tutor_dashboard.html">Students</a></li>
+			<li class='current'><a class='current' href="tutor_upcoming_appointments.html">Upcoming Appointments</a></li>
+			<li><a href="tutor_book_meetings.html">Set up Meetings</a></li>
+		</ul>				
+	<a href="#help"><span class="i  i--block  i--block--right  i--help  i--large"></span></a>				   	    
+</div>
+	<div class="appointments">
+<div class="gw">
+	<div class="appointments__today">
+		<div class="appointments__today__wrapper">
+		<h3>Today's Appointments</h3>
+		<p>Dec 4th 09:00 - 12:00 at EC10.01 in 30min slots</p>
+		<ul class=" block-list  block-list__padding ">
+			<li>09:00 Booked by
+				<a href="dashboard.html">Simon Badger</a>
+				<a class="delete"><span class=" i  i--bin"></span></a>
+			</li>
+			<li>10:30 Booked by
+				<a href="dashboard.html">John Smith</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+			<li>11:00 Booked by
+				<a href="dashboard.html">Kit Badger</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div class="appointments__tomorrow">
+		<h3>Tomorrow's Appointments</h3>
+		<p>Dec 5th 10:00 - 12:00 at EC10.01 in 20min slots</p>
+		<ul class=" block-list  block-list__padding ">
+			<li>09:30 Booked by
+				<a href="dashboard.html">Simon Bodger</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+			<li>10:30 Booked by
+				<a href="dashboard.html">Jane Smith</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+			<li>11:40 Booked by
+				<a href="dashboard.html">Boris Badger</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+<div class="appointments-week">
+	<h3>Rest of the Week Appointments</h3>
+<div class="gw">
+	<div class="appointments-week__day">
+		<p>Dec 6th 09:00 - 12:00 at EC10.01 in 30min slots</p>
+		<ul class=" block-list  block-list__padding ">
+			<li>09:00 Booked by
+				<a href="dashboard.html">Simon Badger</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+			<li>10:30 Booked by
+				<a href="dashboard.html">John Smith</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+			<li>11:00 Booked by
+				<a href="dashboard.html">Kit Badger</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+		</ul>
+	</div>
+	<div class="appointments-week__day">
+		<p>Dec 7th 09:00 - 12:00 at EC10.01 in 30min slots</p>
+		<ul class=" block-list  block-list__padding ">
+			<li>09:00 Booked by
+				<a href="dashboard.html">Simon Badger</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+			<li>10:30 Booked by
+				<a href="dashboard.html">John Smith</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+			<li>11:00 Booked by
+				<a href="dashboard.html">Kit Badger</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+		</ul>
+	</div>
+	<div class="appointments-week__day">
+		<p>Dec 8th 09:00 - 12:00 at EC10.01 in 30min slots</p>
+		<ul class=" block-list  block-list__padding ">
+			<li>09:00 Booked by
+				<a href="dashboard.html">Simon Badger</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+			<li>10:30 Booked by
+				<a href="dashboard.html">John Smith</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+			<li>11:00 Booked by
+				<a href="dashboard.html">Kit Badger</a>
+				<a class="delete"><span class=" i  i--bin "></span></a>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+<div role="contentinfo"></div>
+</body>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/script.js'></script>
+</html>

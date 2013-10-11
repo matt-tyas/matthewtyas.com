@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata></metadata>
+<defs>
+<font id="uolregular" horiz-adv-x="2048" >
+<font-face units-per-em="2048" ascent="1638" descent="-410" />
+<missing-glyph horiz-adv-x="500" />
+<glyph />
+<glyph />
+<glyph horiz-adv-x="682" />
+<glyph unicode="&#xd;" horiz-adv-x="600" />
+<glyph unicode="&#x2000;" horiz-adv-x="1024" />
+<glyph unicode="&#x2001;" />
+<glyph unicode="&#x2002;" horiz-adv-x="1024" />
+<glyph unicode="&#x2003;" />
+<glyph unicode="&#x2004;" horiz-adv-x="682" />
+<glyph unicode="&#x2005;" horiz-adv-x="512" />
+<glyph unicode="&#x2006;" horiz-adv-x="341" />
+<glyph unicode="&#x2007;" horiz-adv-x="341" />
+<glyph unicode="&#x2008;" horiz-adv-x="256" />
+<glyph unicode="&#x2009;" horiz-adv-x="409" />
+<glyph unicode="&#x200a;" horiz-adv-x="113" />
+<glyph unicode="&#x202f;" horiz-adv-x="409" />
+<glyph unicode="&#x205f;" horiz-adv-x="512" />
+<glyph unicode="&#xe000;" horiz-adv-x="500" d="M0 0z" />
+<glyph unicode="&#xf000;" d="M0 0h1057v672h224v-672h32v736h352v-736h32v672h224v-672h127v2048h-2048v-2048zM1121 704v160h32v480h32v256h608v-256h32v-480h32v-160h-160v64h-416v-64h-160zM1217 1344l32 -32h480l32 32h-544zM1281 864h64v320h64v64h-128v-384zM1281 1632v128h416v-128h-416z M1281 1792l206 128l210 -128h-416zM1345 1440h32v64h32v32h-64v-96zM1377 560q0 -46 32.5 -79t79.5 -33t79.5 33t32.5 79t-33 79t-79 33t-79 -33t-33 -79zM1409 560q0 33 23 56.5t57 23.5q33 0 56.5 -23.5t23.5 -56.5t-23.5 -56.5t-56.5 -23.5q-34 0 -57 23.5t-23 56.5z M1423 864h64v320h64v64h-128v-384zM1455 1440h32v64h32v32h-64v-96zM1569 864h64v320h64v64h-128v-384zM1569 1440h32v64h32v32h-64v-96z" />
+<glyph unicode="&#xf200;" d="M0 0h1019v576h192v-576h64v640h320v-640h64v576h192v-576h197v2048h-2048v-2048zM1019 640v64h64v512h64v256h576v-256h64v-512h64v-64h-192v64h-448v-64h-192zM1147 1536l64 64h448l64 -64h-576zM1211 768h64v256h64v64h-128v-320zM1211 1152h449v65h-445zM1211 1280h64 v64h64v64h-128v-128zM1211 1664l222 192l218 -192h-440zM1339 384h192v192h-192v-192zM1369 768h64v256h64v64h-128v-320zM1369 1280h64v64h64v64h-128v-128zM1403 448v64h64v-64h-64zM1531 768h64v256h64v64h-128v-320zM1531 1280h64v64h64v64h-128v-128z" />
+<glyph unicode="&#xf300;" d="M0 0h896v640h128v-640h128v768h384v-768h128v640h128v-640h256v2048h-2048v-2048zM896 768v128h128v640h640v-640h128v-128h-196v128h-508v-128h-192zM1024 1664l320 256l320 -256h-640zM1152 1024h384v128h-384v-128zM1152 1280h384v128h-384v-128zM1280 512h128v128 h-128v-128z" />
+</font>
+</defs></svg> 

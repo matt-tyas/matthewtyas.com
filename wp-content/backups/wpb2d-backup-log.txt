@@ -1,0 +1,372 @@
+01:11:51: Backup started on Friday October 11, 2013.
+01:11:51: Your time limit is 50000 seconds and your memory limit is 90M
+01:17:33: There has been no backup activity for a long time. Attempting to resume the backup.
+01:17:33: There has been no backup activity for a long time. Attempting to resume the backup.
+01:17:33: There has been no backup activity for a long time. Attempting to resume the backup.
+01:17:33: There has been no backup activity for a long time. Attempting to resume the backup.
+01:17:33: There has been no backup activity for a long time. Attempting to resume the backup.
+01:17:33: There has been no backup activity for a long time. Attempting to resume the backup.
+01:17:33: There has been no backup activity for a long time. Attempting to resume the backup.
+01:17:33: There has been no backup activity for a long time. Attempting to resume the backup.
+01:58:20: Approximately 45% complete.
+01:58:27: Approximately 45% complete.
+01:58:33: Approximately 45% complete.
+01:58:39: Approximately 45% complete.
+01:58:45: Approximately 45% complete.
+02:18:04: There has been no backup activity for a long time. Attempting to resume the backup.
+02:18:04: There has been no backup activity for a long time. Attempting to resume the backup.
+02:18:04: There has been no backup activity for a long time. Attempting to resume the backup.
+02:18:04: There has been no backup activity for a long time. Attempting to resume the backup.
+02:18:04: There has been no backup activity for a long time. Attempting to resume the backup.
+02:18:04: There has been no backup activity for a long time. Attempting to resume the backup.
+02:18:04: There has been no backup activity for a long time. Attempting to resume the backup.
+02:18:04: There has been no backup activity for a long time. Attempting to resume the backup.
+02:23:33: Approximately 45% complete.
+02:23:40: Approximately 45% complete.
+02:23:46: Approximately 45% complete.
+02:23:52: Approximately 45% complete.
+02:33:50: There has been no backup activity for a long time. Attempting to resume the backup.
+02:33:50: There has been no backup activity for a long time. Attempting to resume the backup.
+02:33:50: There has been no backup activity for a long time. Attempting to resume the backup.
+02:33:50: There has been no backup activity for a long time. Attempting to resume the backup.
+02:33:50: There has been no backup activity for a long time. Attempting to resume the backup.
+02:33:50: There has been no backup activity for a long time. Attempting to resume the backup.
+02:33:50: There has been no backup activity for a long time. Attempting to resume the backup.
+02:33:50: There has been no backup activity for a long time. Attempting to resume the backup.
+02:43:53: Approximately 45% complete.
+02:44:00: Approximately 45% complete.
+02:44:06: Approximately 45% complete.
+02:44:12: Approximately 45% complete.
+02:44:18: Approximately 45% complete.
+02:52:31: There has been no backup activity for a long time. Attempting to resume the backup.
+02:52:31: There has been no backup activity for a long time. Attempting to resume the backup.
+02:52:31: There has been no backup activity for a long time. Attempting to resume the backup.
+02:52:31: There has been no backup activity for a long time. Attempting to resume the backup.
+02:52:31: There has been no backup activity for a long time. Attempting to resume the backup.
+02:52:31: There has been no backup activity for a long time. Attempting to resume the backup.
+02:52:31: There has been no backup activity for a long time. Attempting to resume the backup.
+02:52:31: There has been no backup activity for a long time. Attempting to resume the backup.
+02:57:34: Approximately 45% complete.
+02:57:41: Approximately 45% complete.
+02:57:47: Approximately 45% complete.
+02:57:53: Approximately 45% complete.
+02:57:59: Approximately 45% complete.
+03:03:20: There has been no backup activity for a long time. Attempting to resume the backup.
+03:03:20: There has been no backup activity for a long time. Attempting to resume the backup.
+03:03:20: There has been no backup activity for a long time. Attempting to resume the backup.
+03:03:20: There has been no backup activity for a long time. Attempting to resume the backup.
+03:03:20: There has been no backup activity for a long time. Attempting to resume the backup.
+03:03:20: There has been no backup activity for a long time. Attempting to resume the backup.
+03:03:20: There has been no backup activity for a long time. Attempting to resume the backup.
+03:03:20: There has been no backup activity for a long time. Attempting to resume the backup.
+03:11:29: Approximately 45% complete.
+03:11:36: Approximately 45% complete.
+03:11:42: Approximately 45% complete.
+03:11:48: Approximately 45% complete.
+03:11:54: Approximately 45% complete.
+03:20:52: There has been no backup activity for a long time. Attempting to resume the backup.
+03:20:52: There has been no backup activity for a long time. Attempting to resume the backup.
+03:20:52: There has been no backup activity for a long time. Attempting to resume the backup.
+03:20:52: There has been no backup activity for a long time. Attempting to resume the backup.
+03:20:52: There has been no backup activity for a long time. Attempting to resume the backup.
+03:20:52: There has been no backup activity for a long time. Attempting to resume the backup.
+03:20:52: There has been no backup activity for a long time. Attempting to resume the backup.
+03:20:53: There has been no backup activity for a long time. Attempting to resume the backup.
+03:26:50: Approximately 45% complete.
+03:26:57: Approximately 45% complete.
+03:27:03: Approximately 45% complete.
+03:27:09: Approximately 45% complete.
+03:27:15: Approximately 45% complete.
+03:51:44: There has been no backup activity for a long time. Attempting to resume the backup.
+03:51:44: There has been no backup activity for a long time. Attempting to resume the backup.
+03:51:44: There has been no backup activity for a long time. Attempting to resume the backup.
+03:51:44: There has been no backup activity for a long time. Attempting to resume the backup.
+03:51:44: There has been no backup activity for a long time. Attempting to resume the backup.
+03:51:44: There has been no backup activity for a long time. Attempting to resume the backup.
+03:51:44: There has been no backup activity for a long time. Attempting to resume the backup.
+03:51:44: There has been no backup activity for a long time. Attempting to resume the backup.
+03:53:12: Approximately 45% complete.
+03:53:18: Approximately 45% complete.
+03:53:24: Approximately 45% complete.
+03:53:30: Approximately 45% complete.
+03:53:36: Approximately 45% complete.
+03:53:42: Approximately 45% complete.
+04:27:54: There has been no backup activity for a long time. Attempting to resume the backup.
+04:27:54: There has been no backup activity for a long time. Attempting to resume the backup.
+04:27:54: There has been no backup activity for a long time. Attempting to resume the backup.
+04:27:54: There has been no backup activity for a long time. Attempting to resume the backup.
+04:27:54: There has been no backup activity for a long time. Attempting to resume the backup.
+04:27:54: There has been no backup activity for a long time. Attempting to resume the backup.
+04:27:54: There has been no backup activity for a long time. Attempting to resume the backup.
+04:27:54: There has been no backup activity for a long time. Attempting to resume the backup.
+04:31:29: Approximately 45% complete.
+04:31:40: Approximately 45% complete.
+04:31:46: Approximately 45% complete.
+04:31:52: Approximately 45% complete.
+04:31:58: Approximately 45% complete.
+04:32:04: Approximately 45% complete.
+04:32:10: Approximately 45% complete.
+04:46:12: There has been no backup activity for a long time. Attempting to resume the backup.
+04:46:12: There has been no backup activity for a long time. Attempting to resume the backup.
+04:46:12: There has been no backup activity for a long time. Attempting to resume the backup.
+04:46:12: There has been no backup activity for a long time. Attempting to resume the backup.
+04:46:12: There has been no backup activity for a long time. Attempting to resume the backup.
+04:46:12: There has been no backup activity for a long time. Attempting to resume the backup.
+04:46:12: There has been no backup activity for a long time. Attempting to resume the backup.
+04:46:12: There has been no backup activity for a long time. Attempting to resume the backup.
+05:11:51: Approximately 45% complete.
+05:11:58: Approximately 45% complete.
+05:12:04: Approximately 45% complete.
+05:12:10: Approximately 45% complete.
+05:12:16: Approximately 45% complete.
+05:27:19: There has been no backup activity for a long time. Attempting to resume the backup.
+05:27:19: There has been no backup activity for a long time. Attempting to resume the backup.
+05:27:19: There has been no backup activity for a long time. Attempting to resume the backup.
+05:27:19: There has been no backup activity for a long time. Attempting to resume the backup.
+05:27:19: There has been no backup activity for a long time. Attempting to resume the backup.
+05:27:19: There has been no backup activity for a long time. Attempting to resume the backup.
+05:27:19: There has been no backup activity for a long time. Attempting to resume the backup.
+05:27:19: There has been no backup activity for a long time. Attempting to resume the backup.
+05:27:28: Approximately 45% complete.
+05:27:38: Approximately 45% complete.
+05:27:44: Approximately 45% complete.
+05:27:50: Approximately 45% complete.
+05:27:56: Approximately 45% complete.
+05:28:02: Approximately 45% complete.
+05:39:46: There has been no backup activity for a long time. Attempting to resume the backup.
+05:39:46: There has been no backup activity for a long time. Attempting to resume the backup.
+05:39:46: There has been no backup activity for a long time. Attempting to resume the backup.
+05:39:46: There has been no backup activity for a long time. Attempting to resume the backup.
+05:39:46: There has been no backup activity for a long time. Attempting to resume the backup.
+05:39:46: There has been no backup activity for a long time. Attempting to resume the backup.
+05:39:46: There has been no backup activity for a long time. Attempting to resume the backup.
+05:39:46: There has been no backup activity for a long time. Attempting to resume the backup.
+05:43:14: Approximately 45% complete.
+05:43:21: Approximately 45% complete.
+05:43:27: Approximately 45% complete.
+05:43:33: Approximately 45% complete.
+05:43:39: Approximately 45% complete.
+05:49:50: There has been no backup activity for a long time. Attempting to resume the backup.
+05:49:50: There has been no backup activity for a long time. Attempting to resume the backup.
+05:49:50: There has been no backup activity for a long time. Attempting to resume the backup.
+05:49:50: There has been no backup activity for a long time. Attempting to resume the backup.
+05:49:50: There has been no backup activity for a long time. Attempting to resume the backup.
+05:49:50: There has been no backup activity for a long time. Attempting to resume the backup.
+05:49:50: There has been no backup activity for a long time. Attempting to resume the backup.
+05:49:50: There has been no backup activity for a long time. Attempting to resume the backup.
+05:56:45: Approximately 45% complete.
+05:56:52: Approximately 45% complete.
+05:56:58: Approximately 45% complete.
+05:57:04: Approximately 45% complete.
+05:57:10: Approximately 45% complete.
+06:08:16: There has been no backup activity for a long time. Attempting to resume the backup.
+06:08:16: There has been no backup activity for a long time. Attempting to resume the backup.
+06:08:16: There has been no backup activity for a long time. Attempting to resume the backup.
+06:08:16: There has been no backup activity for a long time. Attempting to resume the backup.
+06:08:16: There has been no backup activity for a long time. Attempting to resume the backup.
+06:08:16: There has been no backup activity for a long time. Attempting to resume the backup.
+06:08:16: There has been no backup activity for a long time. Attempting to resume the backup.
+06:08:16: There has been no backup activity for a long time. Attempting to resume the backup.
+06:52:31: Approximately 45% complete.
+06:52:38: Approximately 45% complete.
+06:52:44: Approximately 45% complete.
+06:52:50: Approximately 45% complete.
+06:52:56: Approximately 45% complete.
+07:03:55: There has been no backup activity for a long time. Attempting to resume the backup.
+07:03:55: There has been no backup activity for a long time. Attempting to resume the backup.
+07:03:55: There has been no backup activity for a long time. Attempting to resume the backup.
+07:03:55: There has been no backup activity for a long time. Attempting to resume the backup.
+07:03:55: There has been no backup activity for a long time. Attempting to resume the backup.
+07:03:55: There has been no backup activity for a long time. Attempting to resume the backup.
+07:03:55: There has been no backup activity for a long time. Attempting to resume the backup.
+07:03:55: There has been no backup activity for a long time. Attempting to resume the backup.
+07:07:01: Approximately 45% complete.
+07:07:10: Approximately 45% complete.
+07:07:16: Approximately 45% complete.
+07:07:22: Approximately 45% complete.
+07:07:28: Approximately 45% complete.
+07:07:34: Approximately 45% complete.
+07:07:40: Approximately 45% complete.
+07:13:03: There has been no backup activity for a long time. Attempting to resume the backup.
+07:13:03: There has been no backup activity for a long time. Attempting to resume the backup.
+07:13:03: There has been no backup activity for a long time. Attempting to resume the backup.
+07:13:03: There has been no backup activity for a long time. Attempting to resume the backup.
+07:13:03: There has been no backup activity for a long time. Attempting to resume the backup.
+07:13:03: There has been no backup activity for a long time. Attempting to resume the backup.
+07:13:03: There has been no backup activity for a long time. Attempting to resume the backup.
+07:13:03: There has been no backup activity for a long time. Attempting to resume the backup.
+07:13:15: Approximately 45% complete.
+07:13:23: Approximately 45% complete.
+07:13:29: Approximately 45% complete.
+07:13:35: Approximately 45% complete.
+07:13:41: Approximately 45% complete.
+07:27:29: There has been no backup activity for a long time. Attempting to resume the backup.
+07:27:29: There has been no backup activity for a long time. Attempting to resume the backup.
+07:27:29: There has been no backup activity for a long time. Attempting to resume the backup.
+07:27:29: There has been no backup activity for a long time. Attempting to resume the backup.
+07:27:29: There has been no backup activity for a long time. Attempting to resume the backup.
+07:27:29: There has been no backup activity for a long time. Attempting to resume the backup.
+07:27:29: There has been no backup activity for a long time. Attempting to resume the backup.
+07:27:29: There has been no backup activity for a long time. Attempting to resume the backup.
+07:29:29: Approximately 45% complete.
+07:29:36: Approximately 45% complete.
+07:29:42: Approximately 45% complete.
+07:29:48: Approximately 45% complete.
+07:29:54: Approximately 45% complete.
+07:42:53: There has been no backup activity for a long time. Attempting to resume the backup.
+07:42:53: There has been no backup activity for a long time. Attempting to resume the backup.
+07:42:53: There has been no backup activity for a long time. Attempting to resume the backup.
+07:42:53: There has been no backup activity for a long time. Attempting to resume the backup.
+07:42:53: There has been no backup activity for a long time. Attempting to resume the backup.
+07:42:53: There has been no backup activity for a long time. Attempting to resume the backup.
+07:42:53: There has been no backup activity for a long time. Attempting to resume the backup.
+07:42:53: There has been no backup activity for a long time. Attempting to resume the backup.
+08:17:46: Approximately 45% complete.
+08:17:53: Approximately 45% complete.
+08:17:59: Approximately 45% complete.
+08:18:05: Approximately 45% complete.
+08:18:11: Approximately 45% complete.
+08:31:53: There has been no backup activity for a long time. Attempting to resume the backup.
+08:31:53: There has been no backup activity for a long time. Attempting to resume the backup.
+08:31:53: There has been no backup activity for a long time. Attempting to resume the backup.
+08:31:53: There has been no backup activity for a long time. Attempting to resume the backup.
+08:31:53: There has been no backup activity for a long time. Attempting to resume the backup.
+08:31:53: There has been no backup activity for a long time. Attempting to resume the backup.
+08:31:53: There has been no backup activity for a long time. Attempting to resume the backup.
+08:31:53: There has been no backup activity for a long time. Attempting to resume the backup.
+08:36:32: Approximately 45% complete.
+08:36:39: Approximately 45% complete.
+08:36:45: Approximately 45% complete.
+08:36:51: Approximately 45% complete.
+08:36:57: Approximately 45% complete.
+08:37:03: Approximately 45% complete.
+08:56:57: There has been no backup activity for a long time. Attempting to resume the backup.
+08:56:57: There has been no backup activity for a long time. Attempting to resume the backup.
+08:56:57: There has been no backup activity for a long time. Attempting to resume the backup.
+08:56:57: There has been no backup activity for a long time. Attempting to resume the backup.
+08:56:57: There has been no backup activity for a long time. Attempting to resume the backup.
+08:56:57: There has been no backup activity for a long time. Attempting to resume the backup.
+08:56:57: There has been no backup activity for a long time. Attempting to resume the backup.
+08:56:57: There has been no backup activity for a long time. Attempting to resume the backup.
+08:59:21: Approximately 45% complete.
+08:59:28: Approximately 45% complete.
+08:59:34: Approximately 45% complete.
+08:59:40: Approximately 45% complete.
+08:59:46: Approximately 45% complete.
+09:06:46: There has been no backup activity for a long time. Attempting to resume the backup.
+09:06:46: There has been no backup activity for a long time. Attempting to resume the backup.
+09:06:46: There has been no backup activity for a long time. Attempting to resume the backup.
+09:06:46: There has been no backup activity for a long time. Attempting to resume the backup.
+09:06:46: There has been no backup activity for a long time. Attempting to resume the backup.
+09:06:46: There has been no backup activity for a long time. Attempting to resume the backup.
+09:06:46: There has been no backup activity for a long time. Attempting to resume the backup.
+09:06:46: There has been no backup activity for a long time. Attempting to resume the backup.
+09:08:31: Approximately 45% complete.
+09:08:38: Approximately 45% complete.
+09:08:44: Approximately 45% complete.
+09:08:50: Approximately 45% complete.
+09:08:56: Approximately 45% complete.
+09:09:02: Approximately 45% complete.
+09:20:30: There has been no backup activity for a long time. Attempting to resume the backup.
+09:20:30: There has been no backup activity for a long time. Attempting to resume the backup.
+09:20:30: There has been no backup activity for a long time. Attempting to resume the backup.
+09:20:30: There has been no backup activity for a long time. Attempting to resume the backup.
+09:20:30: There has been no backup activity for a long time. Attempting to resume the backup.
+09:20:30: There has been no backup activity for a long time. Attempting to resume the backup.
+09:20:30: There has been no backup activity for a long time. Attempting to resume the backup.
+09:20:30: There has been no backup activity for a long time. Attempting to resume the backup.
+09:36:58: Approximately 45% complete.
+09:37:05: Approximately 45% complete.
+09:37:11: Approximately 45% complete.
+09:37:17: Approximately 45% complete.
+09:37:23: Approximately 45% complete.
+10:06:10: There has been no backup activity for a long time. Attempting to resume the backup.
+10:06:10: There has been no backup activity for a long time. Attempting to resume the backup.
+10:06:10: There has been no backup activity for a long time. Attempting to resume the backup.
+10:06:10: There has been no backup activity for a long time. Attempting to resume the backup.
+10:06:10: There has been no backup activity for a long time. Attempting to resume the backup.
+10:06:10: There has been no backup activity for a long time. Attempting to resume the backup.
+10:06:10: There has been no backup activity for a long time. Attempting to resume the backup.
+10:06:10: There has been no backup activity for a long time. Attempting to resume the backup.
+10:22:49: Approximately 45% complete.
+10:22:55: Approximately 45% complete.
+10:23:02: Approximately 45% complete.
+10:23:08: Approximately 45% complete.
+10:23:14: Approximately 45% complete.
+10:23:20: Approximately 45% complete.
+10:23:26: Approximately 45% complete.
+10:23:32: Approximately 45% complete.
+10:23:38: Approximately 45% complete.
+10:23:44: Approximately 45% complete.
+10:23:50: Approximately 45% complete.
+10:32:15: There has been no backup activity for a long time. Attempting to resume the backup.
+10:32:15: There has been no backup activity for a long time. Attempting to resume the backup.
+10:32:15: There has been no backup activity for a long time. Attempting to resume the backup.
+10:32:15: There has been no backup activity for a long time. Attempting to resume the backup.
+10:32:15: There has been no backup activity for a long time. Attempting to resume the backup.
+10:32:15: There has been no backup activity for a long time. Attempting to resume the backup.
+10:32:15: There has been no backup activity for a long time. Attempting to resume the backup.
+10:32:15: There has been no backup activity for a long time. Attempting to resume the backup.
+10:32:27: Approximately 45% complete.
+10:32:34: Approximately 45% complete.
+10:32:40: Approximately 45% complete.
+10:32:46: Approximately 45% complete.
+10:32:52: Approximately 45% complete.
+10:51:36: There has been no backup activity for a long time. Attempting to resume the backup.
+10:51:36: There has been no backup activity for a long time. Attempting to resume the backup.
+10:51:36: There has been no backup activity for a long time. Attempting to resume the backup.
+10:51:36: There has been no backup activity for a long time. Attempting to resume the backup.
+10:51:36: There has been no backup activity for a long time. Attempting to resume the backup.
+10:51:36: There has been no backup activity for a long time. Attempting to resume the backup.
+10:51:36: There has been no backup activity for a long time. Attempting to resume the backup.
+10:51:36: There has been no backup activity for a long time. Attempting to resume the backup.
+10:53:25: Approximately 45% complete.
+10:53:34: Approximately 45% complete.
+10:53:40: Approximately 45% complete.
+10:53:46: Approximately 45% complete.
+10:53:52: Approximately 45% complete.
+10:53:58: Approximately 45% complete.
+10:54:04: Approximately 45% complete.
+11:02:55: There has been no backup activity for a long time. Attempting to resume the backup.
+11:02:55: There has been no backup activity for a long time. Attempting to resume the backup.
+11:02:55: There has been no backup activity for a long time. Attempting to resume the backup.
+11:02:55: There has been no backup activity for a long time. Attempting to resume the backup.
+11:02:55: There has been no backup activity for a long time. Attempting to resume the backup.
+11:02:55: There has been no backup activity for a long time. Attempting to resume the backup.
+11:02:55: There has been no backup activity for a long time. Attempting to resume the backup.
+11:02:55: There has been no backup activity for a long time. Attempting to resume the backup.
+11:11:55: Approximately 45% complete.
+11:12:03: Approximately 45% complete.
+11:12:09: Approximately 45% complete.
+11:12:15: Approximately 45% complete.
+11:12:21: Approximately 45% complete.
+11:12:27: Approximately 45% complete.
+11:26:36: There has been no backup activity for a long time. Attempting to resume the backup.
+11:26:37: There has been no backup activity for a long time. Attempting to resume the backup.
+11:26:37: There has been no backup activity for a long time. Attempting to resume the backup.
+11:26:37: There has been no backup activity for a long time. Attempting to resume the backup.
+11:26:37: There has been no backup activity for a long time. Attempting to resume the backup.
+11:26:37: There has been no backup activity for a long time. Attempting to resume the backup.
+11:26:37: There has been no backup activity for a long time. Attempting to resume the backup.
+11:26:37: There has been no backup activity for a long time. Attempting to resume the backup.
+11:30:52: Approximately 45% complete.
+11:31:00: Approximately 45% complete.
+11:31:06: Approximately 45% complete.
+11:31:12: Approximately 45% complete.
+11:31:18: Approximately 45% complete.
+12:26:24: There has been no backup activity for a long time. Attempting to resume the backup.
+12:26:24: There has been no backup activity for a long time. Attempting to resume the backup.
+12:26:24: There has been no backup activity for a long time. Attempting to resume the backup.
+12:26:24: There has been no backup activity for a long time. Attempting to resume the backup.
+12:26:24: There has been no backup activity for a long time. Attempting to resume the backup.
+12:26:24: There has been no backup activity for a long time. Attempting to resume the backup.
+12:26:24: There has been no backup activity for a long time. Attempting to resume the backup.
+12:26:24: There has been no backup activity for a long time. Attempting to resume the backup.
+12:28:22: Approximately 45% complete.
+12:28:31: Approximately 45% complete.
+12:28:37: Approximately 45% complete.
+12:28:43: Approximately 45% complete.
+12:28:49: Approximately 45% complete.
+12:28:55: Approximately 45% complete.
+12:29:01: Approximately 45% complete.
+12:29:07: Approximately 45% complete.

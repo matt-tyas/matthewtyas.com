@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Leeds for Life 4 | Prototype</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico">
+		
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<link rel='stylesheet' href='sass/lfl4.css'>
+		<script src='js/modernizr-2.6.2.min.js'></script>
+		<meta http-equiv="cleartype" content="on">
+	</head>
+	<body>
+<div class="lfl-banner">
+
+	<div class="wrapper">
+
+		<h1 class="two-line-brevier"><a href="index.html">LEEDS for LIFE</a></h1>    
+		
+		<div role="navigation" class="nav nav--rev">
+		
+				<!-- Dashboard - logged in -->
+				<a class="" href="dashboard.html">Dashboard</a>
+				<!-- Log in -->
+				<!-- <a class="float--right" href="#">Log in</a> -->
+		
+			    <!-- Mobile nav toggle -->
+				<a class="mobile-nav__target" href="#">Menu</a>
+				   
+				<!-- Unlogged in access -->
+				<ul class="nav float--left nav--padding nav--mobile-links animated">
+					<li><a href="opportunities.html">Opportunities</a></li>
+					<li><a href="the_foundation.html">Apply for funding</a></li>
+					<li><a href="case_studies.html">Case studies</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+	
+		</div>	    
+
+	
+	</div>	
+			
+</div>  
+<div role="main" class="wrapper">
+<h2>Opportunities</h2>
+	
+	<ol class="breadcrumb  nav">
+       <li><a href="opportunities.html">Opportunities</a> 
+       <li class="current"><a href="#"> Knowledge Safe Spaces Ambassadors</a></li>
+	</ol>
+<div class="gw">
+	<div class=" g  three-quarters  portable-one-whole ">
+		<div class="opportunity-detail">		
+		
+			<h3>Knowledge Safe Spaces Ambassadors</h3>
+		
+				<ul class=" block-list  block-list--inline nav--inline-block__body">
+					<li>Leeds</li>
+					<li>Places: 6</li>
+					<li>Duration: ongoing</li>
+					<!--<li>HEAR approved</li>-->
+					<li>PAID</li>
+				</ul>
+		
+		<p>We are looking for a small team of volunteers to assist us in the expansion of the Safe Spaces campaign as coordinated by Knowledge.</p>
+		
+<img class="opportunity-detail__image  img--right  img--short" src="images/opportunities/company-logo-placeholder.png" alt="image" />
+
+<p>You will be involved in the recruitment of city centre business into the scheme, as well as the maintenance of existing relationships. You will also have the opportunity to come up with and develop promotional activities to ensure that students are aware of the scheme and how they can stay safe in Leeds after dark.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus condimentum commodo. Etiam tempor tristique dui, eget adipiscing lacus posuere non. Aenean adipiscing libero et neque bibendum varius. Morbi consequat mauris quis neque pretium eu euismod eros egestas. Morbi at neque sit amet ante tempor tincidunt id at erat. Pellentesque mollis gravida massa, eu cursus tellus suscipit vitae. Donec a dui urna. Sed vel velit felis, a scelerisque enim. Aenean lacus nisl, rhoncus eu mattis ac, condimentum in lectus.</p>
+
+<h4>Organisation</h4>
+
+<p>Leeds University Union</p>
+
+<h4>How to Apply</h4>
+
+<p>An application form should be downloaded and returned to <a class="icon-text--rev" href="mailto:H.Goddard@leeds.ac.uk">Hannah Goddard<span class="i  i--mail  icon-text__icon"></span></a>, stating where the vacancy was seen.</p>
+
+<h4>Training</h4>
+	
+<p>You will be given an induction into community volunteering more broadly. You will also receive a more specific induction into the Safe Space scheme and your role within it.
+
+<h4>Expenses Paid</h4>
+
+<p>As per LUU's Community Volunteering policy
+
+<h4>Degree Disciplines</h4>
+
+<p>Any</p>
+
+<h4>Leeds for Life Skills</h4>
+
+<ul class="nav nav--stacked">
+	<li><a href="#">Volunteering</a></li>
+	<li><a href="#">Community</a></li>
+	<li><a href="#">Societies</a></li>
+</ul>
+
+<h4>Attachements</h4>
+
+<ul class="nav nav--stacked">
+	<li><a class="icon-text" href="#"><span class="i  i--file  i--half  icon-text__icon"></span>Application-form.doc</a></li>
+	<li><a class="icon-text" href="#"><span class="i  i--file  i--half  icon-text__icon"></span>Notes.doc</a></li>
+</ul>  
+		</div>
+	</div>
+
+	<div class=" g  one-quarter  portable-one-whole ">
+		
+		
+		<div class="nav--inline-block">
+		
+			<ul class=" nav  nav--stacked ">
+				<li class="nav--inline-block__body">
+					<a class="icon-text" href="#"><span class="i  i--file  i--half  icon-text__icon"></span>Apply for this opportunity</a>
+				</li>
+				<li class="nav--inline-block__body">
+					<a class="icon-text" href="#"><span class="i  i--save  i--half  icon-text__icon"></span>Save to My Opportunities</a>
+				</li>
+				<li class="nav--inline-block__body">
+					<a class="icon-text" href="#"><span class="i  i--link  i--half  icon-text__icon"></span>Visit company website</a>
+				</li>
+				<li class="nav--inline-block__body">
+					<a class="icon-text" href="#"><span class="i  i--share  i--half  icon-text__icon"></span>Share this opportunity</a>
+				</li>
+			</ul>
+			
+		</div>
+		
+		<div class="nav--inline-block">
+		
+			<h4 class="nav--inline-block__header">Related Opportunities</h4>
+		
+			<ul class="nav nav--stacked">
+				<li>
+					<a class="nav--inline-block__body" href="#">Knowledge Safe Spaces Ambassadors</a>
+				</li>		
+				<li>
+					<a class="nav--inline-block__body" href="#">Green Impact Project Assistants</a>
+				</li>
+			</ul>
+			
+		</div>
+		
+		
+		<!--<div>
+		
+			<h4>Hear Approved?</h4>
+			
+			<p>Hear approved opportunities will appear on your final HEAR statement as they fulfil certain criteria.</p>
+		
+			<a href="help.html" class="btn all-opportunities">Find out more</a>
+			
+		</div>-->
+		<!--
+		<div class="lfl-skills">
+			<h4>Leeds for Life skills</h4>
+			<ul class="skills">
+                 <li><a class="skill" href="#">languages</a></li>
+                 <li><a class="skill" href="#">community</a></li>
+                 <li><a class="skill" href="#">employability</a></li>
+                 <li><a class="skill" href="#">skills help</a></li>
+                 <li><a class="skill" href="#">leadership</a></li>
+                 <li><a class="skill" href="#">volunteering</a></li>
+                 <li><a class="skill" href="#">business &amp; enterprise</a></li>
+                 <li><a class="skill" href="#">leadership</a></li>
+                 <li><a class="skill" href="#">employers</a></li>
+                 <li><a class="skill" href="#">societies</a></li>
+                 <li><a class="skill" href="#">cross-culture</a></li>
+                 <li><a class="skill" href="#">work</a></li>
+                 <li><a class="skill" href="#">study abroad</a></li>
+                 <li><a class="skill" href="#">network</a></li>
+                 <li><a class="skill" href="#">career plan</a></li>
+                 <li><a class="skill" href="#">new to Leeds</a></li>
+            </ul>
+			<a href="help.html" class="btn all-opportunities">Find out more</a>
+		</div>
+		-->
+</div>
+</div> 
+</div>
+<div role="contentinfo"></div>
+</body>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/script.js'></script>
+</html>

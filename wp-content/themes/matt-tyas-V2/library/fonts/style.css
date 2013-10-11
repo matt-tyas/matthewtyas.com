@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'IcoMoon';
+	src: url('iconic.eot');
+	src: url('iconic.eot?#iefix') format('embedded-opentype'),
+		url('iconic.svg#IcoMoon') format('svg'),
+		url('iconic.woff') format('woff'),
+		url('iconic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'IcoMoon';
+	content: attr(data-icon);
+	speak: none;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: 'IcoMoon';
+	font-style: normal;
+	speak: none;
+}
+.icon-search:before {
+	content: "\260c";
+}
+.icon-untitled:before {
+	content: "\e07d";
+}
+.icon-untitled-2:before {
+	content: "\e07e";
+}
+.icon-untitled-3:before {
+	content: "\e07f";
+}
+.icon-untitled-4:before {
+	content: "\e080";
+}
+.icon-untitled-5:before {
+	content: "\e081";
+}
+.icon-untitled-6:before {
+	content: "\e082";
+}
+.icon-untitled-7:before {
+	content: "\e083";
+}
+.icon-untitled-8:before {
+	content: "\e084";
+}
+.icon-untitled-9:before {
+	content: "\260f";
+}
+.icon-untitled-10:before {
+	content: "\e085";
+}
+.icon-untitled-11:before {
+	content: "\2605";
+}
+.icon-untitled-12:before {
+	content: "\272d";
+}
+.icon-untitled-13:before {
+	content: "\261e";
+}
+.icon-untitled-14:before {
+	content: "\2603";
+}
+.icon-untitled-15:before {
+	content: "\260e";
+}
+.icon-untitled-16:before {
+	content: "\270d";
+}
+.icon-untitled-17:before {
+	content: "\270e";
+}
+.icon-untitled-18:before {
+	content: "\25ba";
+}
+.icon-untitled-19:before {
+	content: "\e000";
+}

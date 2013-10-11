@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Leeds for Life 4 | Prototype</title>
+		<meta name="description" content="">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57x57-precomposed.png">
+		<link rel="shortcut icon" href="images/apple-touch-icon.png">
+		<link rel="shortcut icon" href="favicon.ico">
+		
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^\&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+		<link rel='stylesheet' href='sass/lfl4.css'>
+		<script src='js/modernizr-2.6.2.min.js'></script>
+		<meta http-equiv="cleartype" content="on">
+	</head>
+	<body>
+<div class="lfl-banner">
+
+	<div class="wrapper">
+
+		<h1 class="two-line-brevier"><a href="index.html">LEEDS for LIFE</a></h1>    
+		
+		<div role="navigation" class="nav nav--rev">
+		
+				<!-- Dashboard - logged in -->
+				<a class="" href="dashboard.html">Dashboard</a>
+				<!-- Log in -->
+				<!-- <a class="float--right" href="#">Log in</a> -->
+		
+			    <!-- Mobile nav toggle -->
+				<a class="mobile-nav__target" href="#">Menu</a>
+				   
+				<!-- Unlogged in access -->
+				<ul class="nav float--left nav--padding nav--mobile-links animated">
+					<li><a href="opportunities.html">Opportunities</a></li>
+					<li><a href="the_foundation.html">Apply for funding</a></li>
+					<li><a href="case_studies.html">Case studies</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+	
+		</div>	    
+
+	
+	</div>	
+			
+</div>  
+<div role="main" class="wrapper">
+<div class="secondary-nav">					
+		<a class="mobile-nav__target" href="#">Menu</a>	
+			<ul class=" nav nav--padding nav--mobile-links ">
+				<li><a href="dashboard.html">Dashboard</a></li>
+				<li><a href="dashboard.html#living_cv">Living CV</a></li>
+				<li class='current'><a class='current' href="academic_summary.html">Academic summary</a></li>
+				<li><a href="my_opportunities.html">My opportunities</a></li>
+				<li><a href="alumni_network.html">Leeds Network</a></li>
+			</ul>
+		<a class="help__target" href="#help"><span class="i  i--block  i--block--right  i--help  i--large"></span></a>
+</div>
+
+<h2>Academic Summary</h2>
+
+<table>
+<caption>Credits earned</caption>
+	<thead>
+		<tr>
+			<th>Level</th>	
+			<th>Academic Year</th>
+			<th>Semester</th>	
+			<th>Credits</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th>Level</th>	
+			<th>Academic Year</th>
+			<th>Semester</th>	
+			<th>Credits</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>3</td>
+			<td>2012/13</td>
+			<td>Semester 1</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>2012/13</td>
+			<td>Semester 2</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>2012/13</td>
+			<td>Semesters 1 &amp; 2</td>
+			<td>80</td>
+		</tr>
+		<tr>
+			<td colspan="3"></td>
+			<td>120</td>
+		</tr>
+		<tr>
+			<td>2</td>	
+			<td>2011/12</td>
+			<td>Semester 1</td>
+			<td>60</td>
+		</tr>	
+		<tr>
+			<td>2</td>	
+			<td>2011/12</td>
+			<td>Semester 2</td>
+			<td>60</td>
+		</tr>	
+		<tr>
+			<td colspan="3"></td>
+			<td>120</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>20010/11</td>	
+			<td>Semester 1</td>	
+			<td>60</td>	
+		</tr>
+		<tr>
+			<td>1</td>	
+			<td>2010/11</td>
+			<td>Semester 2</td>	
+			<td>60</td>
+		</tr>
+		<tr>
+        	<td colspan="3"></td>
+			<td>120</td>
+        </tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th>1:1 Avg</th>
+			<th>1:2 Avg</th>
+			<th>Best Avg</th>	
+			<th>Award</th>
+		</tr>
+	<thead>
+	<tbody>
+		<tr>
+			<td>6.97</td>
+			<td>7.06</td>	
+			<td>7.06</td>	
+			<td>1</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<caption>2012/13 Academic Year</caption>
+	<thead>
+		<tr>
+			<th class="hide--portable">Module</th>
+			<th>Title</th>
+			<th class="hide--portable">Status</th>
+			<th class="hide--portable">Semester</th>
+			<th>Credits</th>
+			<th>Mark</th>
+			<th>Resit</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th class="hide--portable">Module</th>
+			<th>Title</th>
+			<th class="hide--portable">Status</th>
+			<th class="hide--portable">Semester</th>
+			<th>Credits</th>
+			<th>Mark</th>
+			<th>Resit</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td class="hide--portable">HIST345001</td>
+			<td>American History & Historians</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 1</td>
+			<td>20</td>
+			<td>74</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST371001</td>
+			<td>Nazism, Stalinism &amp; Rise</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>66</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST326001</td>
+			<td>Uganda's Kingdoms</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 1 &amp; 2</td>
+			<td>40</td>
+			<td>70</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST350001</td>
+			<td>History Dissertation</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 1 &amp; 2</td>
+			<td>40</td>
+			<td>77</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<caption>2011/12 Academic Year</caption>
+	<thead>
+		<tr>
+			<th class="hide--portable">Module</th>
+			<th>Title</th>
+			<th class="hide--portable">Status</th>
+			<th class="hide--portable">Semester</th>
+			<th>Credits</th>
+			<th>Mark</th>
+			<th>Resit</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th class="hide--portable">Module</th>
+			<th>Title</th>
+			<th class="hide--portable">Status</th>
+			<th class="hide--portable">Semester</th>
+			<th>Credits</th>
+			<th>Mark</th>
+			<th>Resit</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td class="hide--portable">HIST219001</td>
+			<td>British Imperial Culture</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 1</td>
+			<td>20</td>
+			<td>66</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST230501</td>
+			<td>'Company Raj' in India</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>67</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST244201</td>
+			<td>Black Politics</td>
+			<td class="hide--portable">RE</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>65</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST218001</td>
+			<td>Heretics, Witches & Conspirat</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>67</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST242001</td>
+			<td>India, 1857-1947</td>
+			<td class="hide--portable">RE</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>71</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST243001</td>
+			<td>History of Africa since 1900</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>66</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<caption>2010/11 Academic Year</caption>
+	<thead>
+		<tr>
+			<th class="hide--portable">Module</th>
+			<th>Title</th>
+			<th class="hide--portable">Status</th>
+			<th class="hide--portable">Semester</th>
+			<th>Credits</th>
+			<th>Mark</th>
+			<th>Resit</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<th class="hide--portable">Module</th>
+			<th>Title</th>
+			<th class="hide--portable">Status</th>
+			<th class="hide--portable">Semester</th>
+			<th>Credits</th>
+			<th>Mark</th>
+			<th>Resit</th>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td class="hide--portable">HIST105001</td>
+			<td>Intro: Historical Skills</td>
+			<td class="hide--portable">RE</td>
+			<td class="hide--portable">Semester 1</td>
+			<td>20</td>
+			<td>62</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST109001</td>
+			<td>Medieval & Renaissance Europe</td>
+			<td class="hide--portable">RE</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>59</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">PIED180501</td>
+			<td>Contemporary Africas</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>56</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST121001</td>
+			<td>The Modern World</td>
+			<td class="hide--portable">RE</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>65</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">HIST130001</td>
+			<td>Primary Sources for Historians</td>
+			<td class="hide--portable">RE</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>71</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="hide--portable">PIED151201</td>
+			<td>International Politics</td>
+			<td class="hide--portable">RW</td>
+			<td class="hide--portable">Semester 2</td>
+			<td>20</td>
+			<td>66</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+<p>(*) Please note that module marks shown with an asterisk are pending marks.</p>
+</div>
+<div role="contentinfo"></div>
+</body>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script src='js/plugins.js'></script>
+<script src='js/script.js'></script>
+</html>

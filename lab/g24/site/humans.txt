@@ -1,0 +1,23 @@
+/* humanstxt.org */
+
+/* TEAM */
+
+Name: 			: Matt Tyas
+Site:			: http://matthewtyas.com
+Twitter:		: @MattTyas
+Location:		: UK
+
+
+/* SITE */
+
+Standards: 
+
+HTML5
+CSS3
+
+Components: 
+
+HTML5 Boilerplate   http://html5boilerplate.com
+jQuery: 		    http://jquery.com
+Modernizr: 		    http://modernizr.com
+Selectivizr: 		http://selectivizr.com

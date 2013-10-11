@@ -1,0 +1,14 @@
+/*
+Theme Name: BlackOps
+Theme URI: http://www.turkhitbox.com
+Description: A Premium theme for magazine, editor, community and more! WordPress Theme by <a href="http://www.themeforest.net/user/turkhitbox">turkhitbox</a>.
+Version: 1.0
+Author: turkhitbox
+Author URI: http://www.turkhitbox.com
+*/
+
+@import url('css/reset.css');
+@import url('css/style.css');
+@import url('css/superfish.css');
+@import url('css/nivo-slider.css');
+@import url('css/prettyPhoto.css');
